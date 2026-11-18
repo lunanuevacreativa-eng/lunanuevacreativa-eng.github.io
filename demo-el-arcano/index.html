@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>El Arcano · Cabañas en Capilla del Monte, Córdoba</title>
+<meta name="description" content="Cinco cabañas en un predio de 4 hectáreas en Capilla del Monte, con pileta climatizada con hidromasajes, quincho y desayuno. Consultá disponibilidad por WhatsApp.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#2A1A12">
+<meta property="og:title" content="El Arcano · Cabañas en Capilla del Monte">
+<meta property="og:image" content="assets/vista-sierras.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="preload" as="image" href="assets/vista-sierras.webp" fetchpriority="high">
+<style>
+:root{--noche:#22150F;--tierra:#3A2419;--ocre:#E3A72F;--ocre-claro:#F3C866;--fuego:#D3361F;--arena:#F8F1E4;--piedra:#EADFCB;--tinta:#2A1D16;--suave:#6A564A;--agua:#3FA9C9;--wa:#25D366;
+--f-tit:"Fraunces",Georgia,serif;--f-txt:"Inter",system-ui,sans-serif;--r:18px;--ease:cubic-bezier(.2,.7,.2,1)}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--f-txt);color:var(--tinta);background:var(--arena);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}a{color:inherit}h1,h2,h3,p,ul,figure{margin:0}ul{padding:0;list-style:none}
+.cont{max-width:1200px;margin-inline:auto;padding-inline:clamp(20px,5vw,48px)}
+.sec{padding-block:clamp(72px,10vw,128px)}
+.sobre{font-size:.75rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--fuego);display:flex;gap:12px;align-items:center;margin-bottom:16px}
+.sobre::before{content:"";width:28px;height:1px;background:currentColor}
+.tit{font-family:var(--f-tit);font-weight:600;font-size:clamp(2.1rem,4.8vw,3.6rem);line-height:1.05;letter-spacing:-.015em;text-wrap:balance}
+.tit em{font-weight:400;color:var(--fuego)}
+.bajada{margin-top:16px;font-size:1.0625rem;color:var(--suave);max-width:58ch}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:50px;padding:12px 26px;border-radius:999px;font:700 .8rem/1 var(--f-txt);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .25s var(--ease),box-shadow .25s var(--ease),background .25s}
+.btn:hover{transform:translateY(-2px)}
+.btn--ocre{background:var(--ocre);color:var(--noche)}.btn--ocre:hover{background:var(--ocre-claro);box-shadow:0 14px 30px -12px rgba(227,167,47,.8)}
+.btn--linea{border-color:rgba(248,241,228,.6);color:var(--arena)}.btn--linea:hover{background:rgba(248,241,228,.1)}
+.btn--wa{background:var(--wa);color:#fff;width:100%;justify-content:center}.btn--wa:hover{background:#1EBE5A;box-shadow:0 14px 30px -12px rgba(18,140,64,.7)}
+.btn svg{width:20px;height:20px}
+/* encabezado */
+.enc{position:fixed;inset:0 0 auto;z-index:50;transition:background .35s,box-shadow .35s,padding .35s;padding-block:14px;color:var(--arena)}
+.enc.solido{background:rgba(34,21,15,.88);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);box-shadow:0 1px 0 rgba(255,255,255,.06);padding-block:8px}
+.enc .cont{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.marca{display:flex;align-items:center;gap:12px;text-decoration:none}
+.marca img{width:44px;height:44px;border-radius:12px;object-fit:cover}
+.marca b{font-family:var(--f-tit);font-weight:600;font-size:1.45rem;line-height:1}.marca small{display:block;font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;opacity:.75;margin-top:3px}
+.nav ul{display:flex;gap:4px;align-items:center}
+.nav a:not(.btn){display:block;padding:10px 12px;font-size:.9rem;font-weight:500;text-decoration:none;position:relative}
+.nav a:not(.btn)::after{content:"";position:absolute;left:12px;right:12px;bottom:6px;height:1px;background:var(--ocre);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+.nav a:not(.btn):hover::after{transform:scaleX(1)}
+.nav .btn{min-height:42px;padding:8px 18px;font-size:.7rem}
+.hamb{display:none;width:46px;height:46px;border-radius:50%;border:1px solid rgba(248,241,228,.35);background:transparent;color:inherit;cursor:pointer;align-items:center;justify-content:center}
+.hamb span,.hamb span::before,.hamb span::after{display:block;width:18px;height:1.5px;background:currentColor;position:relative;transition:transform .3s,top .3s,background .3s}
+.hamb span::before,.hamb span::after{content:"";position:absolute;left:0}.hamb span::before{top:-6px}.hamb span::after{top:6px}
+.menu-abierto .hamb span{background:transparent}.menu-abierto .hamb span::before{top:0;transform:rotate(45deg)}.menu-abierto .hamb span::after{top:0;transform:rotate(-45deg)}
+@media (max-width:899px){
+ .hamb{display:inline-flex}
+ .nav{position:fixed;inset:0;background:var(--noche);display:flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s;z-index:-1}
+ .nav ul{flex-direction:column;gap:8px;text-align:center}
+ .nav a:not(.btn){font-family:var(--f-tit);font-size:2rem;transform:translateY(16px);opacity:0;transition:transform .45s var(--ease),opacity .45s}
+ .menu-abierto .nav{opacity:1;visibility:visible}
+ .menu-abierto .nav a{transform:none;opacity:1}
+ .menu-abierto .nav li:nth-child(2) a{transition-delay:.05s}.menu-abierto .nav li:nth-child(3) a{transition-delay:.1s}.menu-abierto .nav li:nth-child(4) a{transition-delay:.15s}.menu-abierto .nav li:nth-child(5) a{transition-delay:.2s}
+ .nav .btn{margin-top:16px}
+ body.menu-abierto{overflow:hidden}
+}
+/* portada */
+.portada{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:var(--arena);overflow:hidden;background:var(--noche)}
+.portada__img{position:absolute;inset:-6%;width:112%;height:112%;object-fit:cover;object-position:50% 60%;animation:kenburns 26s ease-in-out infinite alternate;will-change:transform}
+@keyframes kenburns{from{transform:scale(1) translate(0,0)}to{transform:scale(1.1) translate(-2%,-2%)}}
+.portada::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,21,15,.55) 0%,rgba(34,21,15,.15) 35%,rgba(34,21,15,.85) 100%)}
+.bruma{position:absolute;inset:auto -20% 0;height:45%;background:radial-gradient(60% 60% at 30% 100%,rgba(243,200,102,.28),transparent 70%);animation:bruma 9s ease-in-out infinite alternate;z-index:1;pointer-events:none}
+@keyframes bruma{to{transform:translateX(8%);opacity:.6}}
+.portada .cont{position:relative;z-index:2;padding-bottom:clamp(48px,9vh,96px);padding-top:140px;width:100%}
+.portada h1{font-family:var(--f-tit);font-weight:600;font-size:clamp(2.6rem,7.4vw,6rem);line-height:.98;letter-spacing:-.025em;max-width:13ch}
+.portada h1 em{font-weight:400;color:var(--ocre-claro)}
+.portada p.lead{margin-top:20px;font-size:clamp(1rem,1.6vw,1.2rem);max-width:46ch;opacity:.92}
+.acciones{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.datos{display:flex;flex-wrap:wrap;gap:clamp(20px,4vw,56px);margin-top:44px;padding-top:24px;border-top:1px solid rgba(248,241,228,.22)}
+.datos strong{display:block;font-family:var(--f-tit);font-size:clamp(1.7rem,3vw,2.3rem);font-weight:600;color:var(--ocre-claro);line-height:1}
+.datos span{font-size:.8rem;opacity:.8;letter-spacing:.04em}
+.letra{display:inline-block;opacity:0;transform:translateY(.5em);animation:subir .9s var(--ease) forwards}
+@keyframes subir{to{opacity:1;transform:none}}
+.entra{opacity:0;transform:translateY(18px);animation:subir 1s var(--ease) forwards}
+.bajar{position:absolute;right:clamp(20px,5vw,48px);bottom:32px;z-index:2;width:26px;height:42px;border:1.5px solid rgba(248,241,228,.6);border-radius:14px}
+.bajar::after{content:"";position:absolute;left:50%;top:8px;width:4px;height:8px;margin-left:-2px;border-radius:2px;background:var(--arena);animation:rueda 1.8s infinite}
+@keyframes rueda{to{transform:translateY(12px);opacity:0}}
+/* revelar */
+.rev{opacity:0;transform:translateY(32px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rev.ok{opacity:1;transform:none}
+.rev.d1{transition-delay:.1s}.rev.d2{transition-delay:.2s}.rev.d3{transition-delay:.3s}.rev.d4{transition-delay:.4s}
+/* historia */
+.historia{display:grid;gap:48px;align-items:center}
+.historia__fotos{position:relative;aspect-ratio:4/5}
+.historia__fotos img{position:absolute;border-radius:var(--r);object-fit:cover;box-shadow:0 30px 60px -30px rgba(34,21,15,.5)}
+.historia__fotos img:first-child{inset:0 18% 18% 0;width:82%;height:82%}
+.historia__fotos img:last-child{inset:auto 0 0 auto;width:52%;height:46%;border:6px solid var(--arena)}
+.cita{margin-top:28px;padding-left:20px;border-left:2px solid var(--ocre);font-family:var(--f-tit);font-style:italic;font-size:1.25rem;color:var(--tierra)}
+@media (min-width:900px){.historia{grid-template-columns:1fr 1fr;gap:80px}}
+/* cabañas */
+.oscuro{background:var(--noche);color:var(--arena)}.oscuro .bajada{color:rgba(248,241,228,.72)}.oscuro .tit em{color:var(--ocre-claro)}.oscuro .sobre{color:var(--ocre)}
+.elementos{display:flex;flex-wrap:wrap;gap:8px;margin:36px 0 28px}
+.elem{padding:12px 20px;border-radius:999px;border:1px solid rgba(248,241,228,.22);background:transparent;color:var(--arena);font:600 .9rem var(--f-txt);cursor:pointer;transition:all .3s var(--ease);display:flex;gap:8px;align-items:center}
+.elem:hover{border-color:var(--ocre)}
+.elem[aria-selected="true"]{background:var(--ocre);color:var(--noche);border-color:var(--ocre)}
+.ficha{display:grid;gap:32px;align-items:center;border-radius:24px;background:rgba(248,241,228,.04);border:1px solid rgba(248,241,228,.1);padding:clamp(20px,3vw,36px);min-height:340px}
+.ficha__simbolo{font-size:clamp(5rem,12vw,9rem);line-height:1;text-align:center;filter:drop-shadow(0 18px 40px rgba(227,167,47,.35));animation:flotar 5s ease-in-out infinite}
+@keyframes flotar{50%{transform:translateY(-10px)}}
+.ficha h3{font-family:var(--f-tit);font-size:clamp(2rem,4vw,2.8rem);font-weight:600}
+.ficha h3 small{display:block;font-family:var(--f-txt);font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ocre);font-weight:600;margin-bottom:6px}
+.ficha p{margin-top:14px;color:rgba(248,241,228,.85);max-width:56ch}
+.ficha .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chip{font-size:.78rem;padding:6px 12px;border-radius:999px;background:rgba(227,167,47,.14);color:var(--ocre-claro)}
+.ficha.cambia{animation:cambia .5s var(--ease)}
+@keyframes cambia{from{opacity:0;transform:translateY(12px)}}
+@media (min-width:760px){.ficha{grid-template-columns:240px 1fr}}
+.nota{margin-top:20px;font-size:.85rem;color:rgba(248,241,228,.6)}
+/* pileta */
+.pileta{position:relative;overflow:hidden;background:linear-gradient(180deg,#0E3A4A,#0B2B37);color:#EAF7FB}
+.ondas{position:absolute;inset:0;pointer-events:none;opacity:.35}
+.ondas svg{position:absolute;width:200%;left:0;animation:ola 14s linear infinite}
+.ondas svg:nth-child(2){animation-duration:22s;opacity:.6;top:40%}
+@keyframes ola{to{transform:translateX(-50%)}}
+.pileta__grid{position:relative;display:grid;gap:40px;align-items:center}
+.pileta .tit em{color:#8FE0F5}.pileta .sobre{color:#8FE0F5}.pileta .bajada{color:rgba(234,247,251,.8)}
+.termo{display:flex;align-items:center;gap:18px;margin-top:28px;padding:18px 22px;border-radius:16px;background:rgba(255,255,255,.06);border:1px solid rgba(143,224,245,.25);max-width:460px}
+.termo__ico{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:rgba(143,224,245,.15);font-size:1.6rem;animation:latir 2.6s ease-in-out infinite}
+@keyframes latir{50%{box-shadow:0 0 0 12px rgba(143,224,245,0)}0%{box-shadow:0 0 0 0 rgba(143,224,245,.45)}}
+.termo b{display:block;font-family:var(--f-tit);font-size:1.25rem}
+.pileta__fotos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pileta__fotos img{border-radius:var(--r);aspect-ratio:4/3;object-fit:cover;width:100%}
+.pileta__fotos img:first-child{grid-column:1/-1;aspect-ratio:16/10}
+.pileta ul.lista{margin-top:24px;display:grid;gap:10px}
+.pileta ul.lista li{display:flex;gap:10px;align-items:center}.pileta ul.lista li::before{content:"";width:8px;height:8px;border-radius:50%;background:#8FE0F5}
+@media (min-width:900px){.pileta__grid{grid-template-columns:5fr 6fr;gap:72px}}
+/* galería */
+.galeria{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;grid-auto-rows:160px}
+.galeria button{all:unset;cursor:zoom-in;position:relative;overflow:hidden;border-radius:14px;display:block}
+.galeria button:focus-visible{outline:3px solid var(--fuego);outline-offset:3px}
+.galeria img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease),filter .6s}
+.galeria button:hover img{transform:scale(1.07);filter:saturate(1.15)}
+.galeria button::after{content:attr(data-texto);position:absolute;left:12px;bottom:10px;color:#fff;font-size:.8rem;font-weight:600;text-shadow:0 1px 8px rgba(0,0,0,.6);opacity:0;transform:translateY(6px);transition:all .4s var(--ease)}
+.galeria button:hover::after{opacity:1;transform:none}
+.g-alta{grid-row:span 2}.g-ancha{grid-column:span 2}
+@media (min-width:760px){.galeria{grid-template-columns:repeat(4,1fr);grid-auto-rows:200px}}
+.visor{position:fixed;inset:0;z-index:90;background:rgba(20,12,8,.94);display:grid;place-items:center;padding:20px;opacity:0;visibility:hidden;transition:opacity .3s}
+.visor.abierto{opacity:1;visibility:visible}
+.visor img{max-height:82vh;width:auto;border-radius:12px;transform:scale(.96);transition:transform .4s var(--ease)}
+.visor.abierto img{transform:none}
+.visor p{color:var(--arena);margin-top:12px;text-align:center;font-size:.9rem}
+.visor button{position:absolute;background:rgba(255,255,255,.1);color:#fff;border:0;width:48px;height:48px;border-radius:50%;font-size:1.4rem;cursor:pointer}
+.v-cerrar{top:16px;right:16px}.v-ant{left:12px;top:50%}.v-sig{right:12px;top:50%}
+/* servicios */
+.serv{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.serv li{background:#fff;border-radius:16px;padding:22px;border:1px solid rgba(58,36,25,.08);transition:transform .35s var(--ease),box-shadow .35s}
+.serv li:hover{transform:translateY(-4px);box-shadow:0 20px 40px -24px rgba(58,36,25,.45)}
+.serv .ico{font-size:1.6rem;display:block;margin-bottom:10px}
+.serv b{display:block;font-size:1rem}.serv span{font-size:.88rem;color:var(--suave)}
+/* opiniones */
+.estrellas{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:28px}
+.nota-grande{font-family:var(--f-tit);font-size:4.5rem;line-height:1;font-weight:600;color:var(--fuego)}
+.est{font-size:1.4rem;letter-spacing:4px;color:var(--ocre);position:relative}
+/* consulta */
+.piedra{background:var(--piedra)}
+.consulta{display:grid;gap:40px;align-items:start}
+@media (min-width:900px){.consulta{grid-template-columns:5fr 7fr;gap:64px}.consulta__txt{position:sticky;top:110px}}
+.tarjeta{background:#fff;border-radius:24px;padding:clamp(20px,3vw,32px);box-shadow:0 30px 60px -36px rgba(58,36,25,.45)}
+.cal__cab{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.cal__cab b{font-family:var(--f-tit);font-size:1.3rem;text-transform:capitalize}
+.cal__cab button{width:40px;height:40px;border-radius:50%;border:1px solid rgba(58,36,25,.18);background:#fff;cursor:pointer;font-size:1.1rem}
+.cal__cab button:disabled{opacity:.3;cursor:default}
+.cal__grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;text-align:center}
+.cal__grid .ds{font-size:.7rem;font-weight:700;text-transform:uppercase;color:var(--suave);padding:6px 0}
+.dia{aspect-ratio:1;border:0;background:transparent;border-radius:10px;font:500 .95rem var(--f-txt);cursor:pointer;color:var(--tinta);transition:background .2s,color .2s,transform .2s}
+.dia:hover:not(:disabled){background:var(--piedra);transform:scale(1.06)}
+.dia:disabled{color:#c9bfb2;cursor:default;text-decoration:line-through}
+.dia.rango{background:rgba(227,167,47,.22);border-radius:0}
+.dia.ini,.dia.fin{background:var(--tierra);color:#fff}
+.dia.hoy{box-shadow:inset 0 0 0 1.5px var(--ocre)}
+.resumen{margin:14px 0 18px;padding:12px 14px;border-radius:12px;background:var(--arena);font-size:.9rem}
+.campos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.campo label{display:block;font-size:.78rem;font-weight:600;margin-bottom:6px;color:var(--suave)}
+.campo input,.campo select{width:100%;min-height:48px;padding:10px 14px;border-radius:12px;border:1px solid rgba(58,36,25,.2);font:500 1rem var(--f-txt);background:#fff}
+.campo input:focus,.campo select:focus{outline:2px solid var(--ocre);border-color:transparent}
+.campo--full{grid-column:1/-1}
+.error{color:var(--fuego);font-size:.85rem;min-height:1.2em;margin:10px 0}
+.previa{margin-top:14px;padding:14px;border-radius:12px;background:#E9F9EF;font-size:.88rem;white-space:pre-line;color:#14532D;display:none}
+.previa.ver{display:block;animation:cambia .4s var(--ease)}
+/* mapa */
+.mapa{display:grid;gap:32px;align-items:center}
+.mapa iframe{width:100%;height:420px;border:0;border-radius:var(--r);filter:saturate(.9)}
+@media (min-width:900px){.mapa{grid-template-columns:4fr 6fr}}
+.dato-lista{margin-top:24px;display:grid;gap:14px}
+.dato-lista li{display:flex;gap:12px}.dato-lista b{display:block}
+/* pie */
+.pie{background:var(--noche);color:rgba(248,241,228,.75);padding:56px 0 100px;font-size:.9rem}
+.pie .cont{display:grid;gap:24px}
+.pie b{font-family:var(--f-tit);font-size:1.6rem;color:var(--arena)}
+.pie a{text-decoration:none}.pie a:hover{color:var(--ocre)}
+.credito{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;opacity:.5;border-top:1px solid rgba(248,241,228,.1);padding-top:20px}
+@media (min-width:760px){.pie .cont{grid-template-columns:1fr 1fr}.credito{grid-column:1/-1}}
+/* whatsapp flotante */
+.wa-fijo{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;align-items:center;gap:10px;height:58px;padding:0 22px 0 18px;border-radius:999px;background:var(--wa);color:#fff;text-decoration:none;font-weight:700;box-shadow:0 14px 34px -10px rgba(18,140,64,.65);transition:transform .3s var(--ease)}
+.wa-fijo::before{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:0 0 0 0 rgba(37,211,102,.6);animation:pulso 2.4s infinite}
+@keyframes pulso{70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.wa-fijo:hover{transform:translateY(-3px)}.wa-fijo svg{width:26px;height:26px}
+@media (max-width:599px){.wa-fijo{width:58px;padding:0;justify-content:center}.wa-fijo span{display:none}}
+.menu-abierto .wa-fijo{opacity:0;pointer-events:none}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rev,.letra,.entra{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header class="enc" id="enc">
+ <div class="cont">
+  <a class="marca" href="#inicio"><img src="assets/logo-el-arcano.webp" alt="" width="44" height="44"><span><b>El Arcano</b><small>Capilla del Monte</small></span></a>
+  <button class="hamb" id="hamb" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú"><span></span></button>
+  <nav class="nav" id="nav" aria-label="Secciones">
+   <ul>
+    <li><a href="#cabanas">Cabañas</a></li>
+    <li><a href="#pileta">Pileta</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#ubicacion">Ubicación</a></li>
+    <li><a class="btn btn--ocre" href="#consulta">Consultá disponibilidad</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+
+<main>
+<section class="portada" id="inicio">
+ <img class="portada__img" src="assets/vista-sierras.webp" alt="Vista de las sierras de Punilla al atardecer desde una terraza de El Arcano" width="960" height="640" fetchpriority="high">
+ <div class="bruma" aria-hidden="true"></div>
+ <div class="cont">
+  <p class="sobre entra" style="color:var(--ocre-claro);animation-delay:.1s">Capilla del Monte · Sierras de Córdoba</p>
+  <h1 id="titulo" aria-label="Bajá el ritmo, volvé a lo esencial">Bajá el ritmo, <em>volvé a lo esencial</em></h1>
+  <p class="lead entra" style="animation-delay:.9s">Cinco cabañas en un predio de 4 hectáreas de naturaleza autóctona, con pileta climatizada con hidromasajes, quincho y desayuno incluido.</p>
+  <div class="acciones entra" style="animation-delay:1.1s">
+   <a class="btn btn--ocre" href="#consulta">Consultá disponibilidad</a>
+   <a class="btn btn--linea" href="#cabanas">Conocé las cabañas</a>
+  </div>
+  <ul class="datos entra" style="animation-delay:1.3s">
+   <li><strong data-contar="4.6" data-dec="1">4,6</strong><span>★ en Google · 195 reseñas</span></li>
+   <li><strong data-contar="5">5</strong><span>cabañas</span></li>
+   <li><strong data-contar="4">4</strong><span>hectáreas de naturaleza</span></li>
+   <li><strong>2 a 8</strong><span>personas por cabaña</span></li>
+  </ul>
+ </div>
+ <span class="bajar" aria-hidden="true"></span>
+</section>
+
+<section class="sec">
+ <div class="cont historia">
+  <div class="historia__fotos rev">
+   <img src="assets/cabana-piedra.webp" alt="Cabaña de piedra y paredes ocre de El Arcano" loading="lazy" width="500" height="367">
+   <img src="assets/complejo-atardecer.webp" alt="Las cabañas entre el monte serrano al atardecer" loading="lazy" width="500" height="367">
+  </div>
+  <div>
+   <p class="sobre rev">Nuestra historia</p>
+   <h2 class="tit rev d1">Un proyecto familiar <em>en diálogo con las sierras</em></h2>
+   <p class="bajada rev d2">El Arcano nació hace más de 11 años con una idea simple pero profunda: crear un lugar donde bajar el ritmo y volver a conectar. Estamos a 10 minutos del centro de Capilla del Monte, lo suficientemente apartados para garantizar privacidad y tranquilidad.</p>
+   <p class="cita rev d3">Somos nosotros, los propios dueños, quienes les damos la bienvenida y los acompañamos en toda su estadía.</p>
+  </div>
+ </div>
+</section>
+
+<section class="sec oscuro" id="cabanas">
+ <div class="cont">
+  <p class="sobre rev">Las cabañas</p>
+  <h2 class="tit rev d1">Cinco cabañas, <em>cinco energías</em></h2>
+  <p class="bajada rev d2">Cada una tiene su carácter. Elegí la tuya.</p>
+  <div class="elementos rev d3" role="tablist" aria-label="Cabañas" id="elementos"></div>
+  <article class="ficha rev d4" id="ficha" role="tabpanel" aria-live="polite"></article>
+  <p class="nota">Todas incluyen cocina equipada, vajilla, ropa blanca y toallas, wifi, DirecTV, calefacción y desayuno seco.</p>
+ </div>
+</section>
+
+<section class="sec pileta" id="pileta">
+ <div class="ondas" aria-hidden="true">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none" style="top:8%;height:120px"><path fill="none" stroke="#8FE0F5" stroke-width="1.5" d="M0 60 Q 90 20 180 60 T 360 60 T 540 60 T 720 60 T 900 60 T 1080 60 T 1260 60 T 1440 60"/></svg>
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none" style="height:120px"><path fill="none" stroke="#8FE0F5" stroke-width="1" d="M0 60 Q 90 100 180 60 T 360 60 T 540 60 T 720 60 T 900 60 T 1080 60 T 1260 60 T 1440 60"/></svg>
+ </div>
+ <div class="cont pileta__grid">
+  <div>
+   <p class="sobre rev">Novedad de la temporada</p>
+   <h2 class="tit rev d1">Pileta <em>climatizada</em>, aunque el clima improvise</h2>
+   <p class="bajada rev d2">En las sierras puede salir el sol, refrescar o cambiar el tiempo… pero las ganas de meterse a la pileta siguen. Por eso incorporamos la pileta climatizada, con hidromasajes y vista panorámica.</p>
+   <div class="termo rev d3"><span class="termo__ico" aria-hidden="true">💧</span><span><b>Agua a temperatura agradable</b>Para disfrutarla sin depender del día perfecto.</span></div>
+   <ul class="lista rev d4">
+    <li>Hidromasajes y solárium</li>
+    <li>Vista panorámica a las sierras</li>
+    <li>Quincho con horno a leña y asadores al lado</li>
+   </ul>
+  </div>
+  <div class="pileta__fotos rev d2">
+   <img src="assets/pileta.webp" alt="Pileta de El Arcano rodeada de monte y reposeras" loading="lazy" width="500" height="367">
+   <img src="assets/pileta-2.webp" alt="Pileta junto al muro de piedra" loading="lazy" width="500" height="367">
+   <img src="assets/horno-a-lena.webp" alt="Horno a leña del quincho" loading="lazy" width="500" height="367">
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="galeria">
+ <div class="cont">
+  <p class="sobre rev">Galería</p>
+  <h2 class="tit rev d1">Mirá <em>cómo se vive</em> El Arcano</h2>
+  <p class="bajada rev d2" style="margin-bottom:36px">Tocá cualquier foto para verla en grande.</p>
+  <div class="galeria" id="galeria-grid">
+   <button class="g-alta rev" data-texto="Entrada al atardecer"><img src="assets/portada.webp" alt="Entrada de El Arcano al atardecer frente a las sierras" loading="lazy"></button>
+   <button class="g-ancha rev d1" data-texto="Vista desde la terraza"><img src="assets/vista-sierras.webp" alt="Vista desde la terraza de una cabaña" loading="lazy"></button>
+   <button class="rev d2" data-texto="Pileta"><img src="assets/pileta.webp" alt="Pileta con reposeras" loading="lazy"></button>
+   <button class="rev d3" data-texto="Interior de cabaña"><img src="assets/interior.webp" alt="Living comedor de una cabaña con cocina integrada" loading="lazy"></button>
+   <button class="g-alta rev" data-texto="Cabañas de piedra"><img src="assets/cabana-exterior.webp" alt="Cabaña con muros de piedra y ocre" loading="lazy"></button>
+   <button class="rev d1" data-texto="Horno a leña"><img src="assets/horno-a-lena.webp" alt="Horno a leña encendido" loading="lazy"></button>
+   <button class="rev d2" data-texto="Las sierras"><img src="assets/sierras.webp" alt="Cerro de las sierras entre la vegetación" loading="lazy"></button>
+   <button class="g-ancha rev d3" data-texto="Escalera de piedra"><img src="assets/cabana-escalera.webp" alt="Escalera de piedra hacia una cabaña" loading="lazy"></button>
+   <button class="rev" data-texto="El complejo"><img src="assets/complejo-atardecer.webp" alt="Vista del complejo entre la vegetación" loading="lazy"></button>
+  </div>
+ </div>
+</section>
+
+<section class="sec piedra">
+ <div class="cont">
+  <p class="sobre rev">Servicios</p>
+  <h2 class="tit rev d1">Todo resuelto <em>para descansar</em></h2>
+  <ul class="serv" style="margin-top:40px">
+   <li class="rev"><span class="ico">☕</span><b>Desayuno incluido</b><span>Desayuno seco en la cabaña</span></li>
+   <li class="rev d1"><span class="ico">💧</span><b>Pileta climatizada</b><span>Con hidromasajes y solárium</span></li>
+   <li class="rev d2"><span class="ico">🔥</span><b>Quincho y parrilla</b><span>Horno a leña y asadores</span></li>
+   <li class="rev d3"><span class="ico">🚗</span><b>Cochera techada</b><span>Estacionamiento privado</span></li>
+   <li class="rev"><span class="ico">📶</span><b>Wifi y DirecTV</b><span>Smart TV nuevas</span></li>
+   <li class="rev d1"><span class="ico">❄️</span><b>Climatización</b><span>Aire acondicionado nuevo y calefacción</span></li>
+   <li class="rev d2"><span class="ico">🛏️</span><b>Colchones nuevos</b><span>Colchones y sommiers renovados</span></li>
+   <li class="rev d3"><span class="ico">🐾</span><b>Mascotas</b><span>Aceptamos mascotas</span></li>
+   <li class="rev"><span class="ico">🧒</span><b>Juegos para chicos</b><span>Espacio recreativo</span></li>
+   <li class="rev d1"><span class="ico">🚌</span><b>Traslado</b><span>Te buscamos en la terminal</span></li>
+   <li class="rev d2"><span class="ico">🌿</span><b>4 hectáreas</b><span>Naturaleza autóctona</span></li>
+   <li class="rev d3"><span class="ico">📅</span><b>Todo el año</b><span>Abierto las cuatro estaciones</span></li>
+  </ul>
+  <div class="estrellas rev">
+   <span class="nota-grande">4,6</span>
+   <div><span class="est" aria-label="4,6 de 5 estrellas">★★★★★</span><p style="color:var(--suave)">195 reseñas en Google</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="consulta">
+ <div class="cont consulta">
+  <div class="consulta__txt">
+   <p class="sobre rev">Reservas directas</p>
+   <h2 class="tit rev d1">Elegí tu fecha, <em>tu escapada se arma acá</em></h2>
+   <p class="bajada rev d2">Marcá llegada y salida en el calendario y te armamos el mensaje para consultarnos por WhatsApp. Te respondemos con disponibilidad y tarifa.</p>
+  </div>
+  <form class="tarjeta rev d2" id="form" novalidate>
+   <div class="cal__cab"><button type="button" id="cal-ant" aria-label="Mes anterior">‹</button><b id="cal-mes"></b><button type="button" id="cal-sig" aria-label="Mes siguiente">›</button></div>
+   <div class="cal__grid" id="cal-grid"></div>
+   <p class="resumen" id="resumen" aria-live="polite">Tocá el día de llegada.</p>
+   <div class="campos">
+    <div class="campo"><label for="pers">Personas</label><select id="pers"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></div>
+    <div class="campo"><label for="cab">Cabaña</label><select id="cab"><option>Cualquiera</option><option>Fuego</option><option>Agua</option><option>Aire</option><option>Tierra</option><option>Sol</option></select></div>
+    <div class="campo campo--full"><label for="nom">Tu nombre</label><input id="nom" autocomplete="name"></div>
+   </div>
+   <p class="error" id="error" role="alert"></p>
+   <button class="btn btn--wa" type="submit"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35M12.05 21.79a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88a9.88 9.88 0 0 1 9.88 9.89c0 5.45-4.43 9.88-9.88 9.88M20.46 3.49A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.42"/></svg>Consultar por WhatsApp</button>
+   <p class="previa" id="previa"></p>
+  </form>
+ </div>
+</section>
+
+<section class="sec piedra" id="ubicacion">
+ <div class="cont mapa">
+  <div>
+   <p class="sobre rev">Ubicación</p>
+   <h2 class="tit rev d1">Cerca de todo, <em>lejos del ruido</em></h2>
+   <ul class="dato-lista rev d2">
+    <li><span>📍</span><span><b>Av. Latinoamérica 1000</b>Capilla del Monte, Valle de Punilla, Córdoba</span></li>
+    <li><span>🏔️</span><span><b>Frente al Cerro Uritorco</b>Caminatas, Las Gemelas, cabalgatas, avistaje de aves</span></li>
+    <li><span>🚶</span><span><b>A 12 cuadras del centro</b>Y de la terminal de ómnibus</span></li>
+   </ul>
+  </div>
+  <iframe class="rev d2" title="Mapa de El Arcano en Capilla del Monte" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=-30.846098,-64.529243&z=14&output=embed"></iframe>
+ </div>
+</section>
+</main>
+
+<footer class="pie">
+ <div class="cont">
+  <div><b>El Arcano</b><p>Complejo turístico de cabañas · Capilla del Monte, Córdoba</p></div>
+  <div>
+   <p><a href="https://wa.me/5493426106997" target="_blank" rel="noopener">WhatsApp +54 9 342 610-6997</a></p>
+   <p><a href="https://instagram.com/elarcano.alojamiento" target="_blank" rel="noopener">Instagram @elarcano.alojamiento</a></p>
+  </div>
+  <p class="credito">Demo diseñada por Luna Nueva Creativa</p>
+ </div>
+</footer>
+
+<a class="wa-fijo" href="https://wa.me/5493426106997?text=Hola%20El%20Arcano%2C%20quiero%20consultar%20disponibilidad." target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35M12.05 21.79a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88a9.88 9.88 0 0 1 9.88 9.89c0 5.45-4.43 9.88-9.88 9.88M20.46 3.49A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.42"/></svg><span>WhatsApp</span></a>
+
+<div class="visor" id="visor" role="dialog" aria-modal="true" aria-label="Foto ampliada">
+ <button class="v-cerrar" aria-label="Cerrar">×</button><button class="v-ant" aria-label="Foto anterior">‹</button><button class="v-sig" aria-label="Foto siguiente">›</button>
+ <figure><img id="visor-img" alt=""><p id="visor-txt"></p></figure>
+</div>
+
+<script>
+(function(){
+'use strict';
+var WA='5493426106997';
+var reducir=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// título letra por letra
+var h1=document.getElementById('titulo');
+(function(){var d=0;function partir(n){Array.prototype.slice.call(n.childNodes).forEach(function(c){if(c.nodeType===3){var f=document.createDocumentFragment();c.textContent.split(/(\s+)/).forEach(function(p){if(/^\s+$/.test(p)){f.appendChild(document.createTextNode(p));return}var w=document.createElement('span');w.style.display='inline-block';w.setAttribute('aria-hidden','true');p.split('').forEach(function(ch){var s=document.createElement('span');s.className='letra';s.textContent=ch;s.style.animationDelay=(.2+d++*.03)+'s';w.appendChild(s)});f.appendChild(w)});n.replaceChild(f,c)}else partir(c)})}if(!reducir)partir(h1)})();
+
+// encabezado sólido
+var enc=document.getElementById('enc');
+function alScroll(){enc.classList.toggle('solido',scrollY>40)}addEventListener('scroll',alScroll,{passive:true});alScroll();
+
+// parallax suave en portada
+var pimg=document.querySelector('.portada__img');
+if(!reducir)addEventListener('scroll',function(){if(scrollY<innerHeight)pimg.style.translate='0 '+(scrollY*.25)+'px'},{passive:true});
+
+// menú hamburguesa
+var hamb=document.getElementById('hamb');
+function menu(abrir){document.body.classList.toggle('menu-abierto',abrir);hamb.setAttribute('aria-expanded',abrir);hamb.setAttribute('aria-label',abrir?'Cerrar menú':'Abrir menú')}
+hamb.addEventListener('click',function(){menu(!document.body.classList.contains('menu-abierto'))});
+document.querySelectorAll('#nav a').forEach(function(a){a.addEventListener('click',function(){menu(false)})});
+addEventListener('keydown',function(e){if(e.key==='Escape')menu(false)});
+
+// revelar al hacer scroll + contadores
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('ok');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.rev').forEach(function(el){reducir?el.classList.add('ok'):io.observe(el)});
+if(!reducir)document.querySelectorAll('[data-contar]').forEach(function(el){var fin=+el.dataset.contar,dec=+(el.dataset.dec||0),t0=null;function paso(t){t0=t0||t;var p=Math.min((t-t0)/1600,1),v=fin*(1-Math.pow(1-p,3));el.textContent=v.toFixed(dec).replace('.',',');if(p<1)requestAnimationFrame(paso)}setTimeout(function(){requestAnimationFrame(paso)},1400)});
+
+// cabañas
+var CABANAS=[
+ {n:'Fuego',s:'🔥',t:'Cerca de la pileta y los espacios comunes',d:'Ubicada al sur del complejo. Ideal para quienes buscan una transmutación, destrabar ideas o arrancar algo nuevo.',c:['Hasta 8 personas','Parrilla propia','Privacidad total']},
+ {n:'Agua',s:'💧',t:'Armonía constante',d:'Terraza con vista a las sierras y buena ubicación. Pensada para quienes buscan bajar el ritmo, fluir y reconectar sin aislarse del todo.',c:['Terraza con vista','Totalmente equipada','Silenciosa']},
+ {n:'Aire',s:'🌬️',t:'La mejor vista del complejo',d:'Ideal para quienes necesitan perspectiva, silencio profundo y espacio mental para pensar.',c:['Terraza accesible','Amplitud','Vista a las sierras']},
+ {n:'Tierra',s:'⛰️',t:'La más reservada',d:'Construida sobre la lomada. Perfecta para quienes priorizan calma, estabilidad y desconexión total.',c:['Estacionamiento propio','Entorno reservado','Desconexión total']},
+ {n:'Sol',s:'☀️',t:'El mejor espacio exterior',d:'Para sentarse, leer, matear o simplemente estar. Sin terraza elevada, pero con una conexión directa y cálida con el entorno.',c:['Gran espacio exterior','Ideal para matear','Estadía sin apuro']}
+];
+var cont=document.getElementById('elementos'),ficha=document.getElementById('ficha');
+function mostrar(i){cont.querySelectorAll('button').forEach(function(b,j){b.setAttribute('aria-selected',i===j)});var c=CABANAS[i];ficha.classList.remove('cambia');void ficha.offsetWidth;ficha.classList.add('cambia');
+ ficha.innerHTML='<div class="ficha__simbolo" aria-hidden="true">'+c.s+'</div><div><h3><small>Cabaña '+(i+1)+' · '+c.t+'</small>'+c.n+'</h3><p>'+c.d+'</p><div class="chips">'+c.c.map(function(x){return '<span class="chip">'+x+'</span>'}).join('')+'</div></div>'}
+CABANAS.forEach(function(c,i){var b=document.createElement('button');b.type='button';b.className='elem';b.setAttribute('role','tab');b.innerHTML='<span aria-hidden="true">'+c.s+'</span>'+c.n;b.addEventListener('click',function(){mostrar(i);auto&&clearInterval(auto);auto=null});cont.appendChild(b)});
+mostrar(0);var idx=0,auto=reducir?null:setInterval(function(){idx=(idx+1)%5;mostrar(idx)},6000);
+
+// galería con visor
+var btns=Array.prototype.slice.call(document.querySelectorAll('#galeria-grid button')),visor=document.getElementById('visor'),vimg=document.getElementById('visor-img'),vtxt=document.getElementById('visor-txt'),act=0,origen;
+function ver(i){act=(i+btns.length)%btns.length;var im=btns[act].querySelector('img');vimg.src=im.src;vimg.alt=im.alt;vtxt.textContent=btns[act].dataset.texto}
+btns.forEach(function(b,i){b.addEventListener('click',function(){origen=b;ver(i);visor.classList.add('abierto');visor.querySelector('.v-cerrar').focus()})});
+function cerrar(){visor.classList.remove('abierto');origen&&origen.focus()}
+visor.querySelector('.v-cerrar').onclick=cerrar;visor.querySelector('.v-ant').onclick=function(){ver(act-1)};visor.querySelector('.v-sig').onclick=function(){ver(act+1)};
+visor.addEventListener('click',function(e){if(e.target===visor)cerrar()});
+addEventListener('keydown',function(e){if(!visor.classList.contains('abierto'))return;if(e.key==='Escape')cerrar();if(e.key==='ArrowLeft')ver(act-1);if(e.key==='ArrowRight')ver(act+1)});
+
+// calendario y WhatsApp
+var MESES=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+var hoy=new Date();hoy.setHours(0,0,0,0);
+var vista=new Date(hoy.getFullYear(),hoy.getMonth(),1),ini=null,fin=null;
+var grid=document.getElementById('cal-grid'),lbl=document.getElementById('cal-mes'),res=document.getElementById('resumen');
+function fmt(d){return d.getDate()+'/'+(d.getMonth()+1)+'/'+d.getFullYear()}
+function dibujar(){lbl.textContent=MESES[vista.getMonth()]+' '+vista.getFullYear();
+ document.getElementById('cal-ant').disabled=vista<=new Date(hoy.getFullYear(),hoy.getMonth(),1);
+ var h='';['lu','ma','mi','ju','vi','sá','do'].forEach(function(d){h+='<span class="ds">'+d+'</span>'});
+ var off=(vista.getDay()+6)%7,dias=new Date(vista.getFullYear(),vista.getMonth()+1,0).getDate();
+ for(var i=0;i<off;i++)h+='<span></span>';
+ for(var d=1;d<=dias;d++){var f=new Date(vista.getFullYear(),vista.getMonth(),d),cl='dia';
+  if(+f===+hoy)cl+=' hoy';if(ini&&+f===+ini)cl+=' ini';if(fin&&+f===+fin)cl+=' fin';if(ini&&fin&&f>ini&&f<fin)cl+=' rango';
+  h+='<button type="button" class="'+cl+'" data-t="'+(+f)+'"'+(f<hoy?' disabled':'')+' aria-label="'+d+' de '+MESES[f.getMonth()]+'">'+d+'</button>'}
+ grid.innerHTML=h;
+ if(!ini)res.textContent='Tocá el día de llegada.';
+ else if(!fin)res.textContent='Llegada: '+fmt(ini)+' · ahora tocá el día de salida.';
+ else{var n=Math.round((fin-ini)/864e5);res.textContent='Del '+fmt(ini)+' al '+fmt(fin)+' · '+n+(n===1?' noche':' noches')}}
+grid.addEventListener('click',function(e){var b=e.target.closest('.dia');if(!b||b.disabled)return;var f=new Date(+b.dataset.t);
+ if(!ini||fin||f<=ini){ini=f;fin=null}else fin=f;dibujar()});
+document.getElementById('cal-ant').onclick=function(){vista=new Date(vista.getFullYear(),vista.getMonth()-1,1);dibujar()};
+document.getElementById('cal-sig').onclick=function(){vista=new Date(vista.getFullYear(),vista.getMonth()+1,1);dibujar()};
+dibujar();
+document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();var err=document.getElementById('error'),nom=document.getElementById('nom').value.trim();
+ if(!ini||!fin){err.textContent='Elegí en el calendario la llegada y la salida.';return}
+ if(nom.length<2){err.textContent='Escribí tu nombre.';document.getElementById('nom').focus();return}
+ err.textContent='';var n=Math.round((fin-ini)/864e5),cab=document.getElementById('cab').value,p=document.getElementById('pers').value;
+ var msg='¡Hola, El Arcano! Soy '+nom+'. Quiero consultar disponibilidad del '+fmt(ini)+' al '+fmt(fin)+' ('+n+(n===1?' noche':' noches')+') para '+p+(p==='1'?' persona':' personas')+(cab!=='Cualquiera'?', en la cabaña '+cab:'')+'. ¿Tienen lugar y cuál sería la tarifa? ¡Gracias!';
+ var pv=document.getElementById('previa');pv.textContent=msg;pv.classList.add('ver');
+ window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(msg),'_blank','noopener')});
+})();
+</script>
+</body>
+</html>
