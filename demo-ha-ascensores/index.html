@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>H.A. Ascensores · Mantenimiento e inspección en Córdoba</title>
+<meta name="description" content="H.A. Ascensores, a cargo de Hugo Alarcón. Mantenimiento y reparación de ascensores electromecánicos e hidráulicos, adecuación según la Ordenanza 10.950/05, bombas de agua y visado por ingeniero representante técnico en Córdoba.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0E3550">
+<meta property="og:title" content="H.A. Ascensores · Córdoba">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{
+  --azul:#0E3550; --azul-2:#0A2740; --azul-3:#123F5F;
+  --celeste:#6EC1E4; --celeste-2:#4FA8D8; --celeste-osc:#2A86BF; --celeste-luz:#A9DDF3; --celeste-bg:#EEF7FC;
+  --grad:linear-gradient(135deg,#8ED2EE 0%,#6EC1E4 45%,#4FA8D8 100%);
+  --hueso:#FFFFFF; --papel:#F2F7FA; --tinta:#10283C; --suave:#4E6274; --linea:#D5E3EC;
+  --enc:76px;
+  --f-tit:"Archivo",system-ui,sans-serif; --f-txt:"Inter",system-ui,sans-serif;
+  --ease:cubic-bezier(.65,0,.25,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--f-txt);color:var(--tinta);background:var(--hueso);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}h1,h2,h3,p,ul,figure{margin:0}ul{padding:0;list-style:none}
+button,input,select,textarea{font:inherit}
+.skip{position:absolute;left:-999px;top:0;background:var(--negro);color:#fff;padding:8px 16px;z-index:200}
+.skip:focus{left:12px;top:12px}
+.cont{max-width:1160px;margin-inline:auto;padding-inline:clamp(20px,5vw,48px)}
+.sec{padding-block:clamp(80px,11vw,128px)}
+.sobre{font-family:var(--f-tit);font-size:.74rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--celeste-osc);display:flex;gap:12px;align-items:center;margin-bottom:16px}
+.sobre::before{content:"";width:30px;height:3px;background:var(--grad);border-radius:2px}
+.tit{font-family:var(--f-tit);font-weight:800;font-stretch:88%;font-size:clamp(2.2rem,5.4vw,3.9rem);line-height:1;letter-spacing:-.025em;text-wrap:balance}
+.bajada{margin-top:20px;font-size:1.06rem;color:var(--suave);max-width:52ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 26px;border-radius:4px;font-family:var(--f-tit);font-weight:700;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .25s var(--ease),filter .25s,background .25s,border-color .25s,color .25s;color:inherit;background:none}
+.btn:hover{transform:translateY(-1px)}
+.btn:focus-visible{outline:2px solid var(--celeste-2);outline-offset:3px}
+.btn--azul{background:var(--azul);color:#fff;box-shadow:0 14px 30px -16px rgba(14,53,80,.7),inset 0 -3px 0 var(--celeste-2)}
+.btn--azul:hover{background:var(--azul-3)}
+.btn--linea{border-color:rgba(255,255,255,.4);color:#fff}
+.btn--linea:hover{border-color:var(--celeste);color:var(--celeste-luz)}
+.btn--claro{border-color:var(--celeste-2);color:var(--azul);background:#fff}
+.btn--claro:hover{background:var(--celeste-bg)}
+.btn--linea-osc{border-color:var(--tinta);color:var(--tinta)}
+.btn--linea-osc:hover{background:var(--tinta);color:#fff}
+
+/* Encabezado */
+.enc{position:sticky;top:0;z-index:80;height:var(--enc);background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--linea)}
+.enc .int{height:100%;max-width:1160px;margin-inline:auto;padding-inline:clamp(16px,4vw,48px);display:flex;align-items:center;justify-content:space-between;gap:16px}
+.marca{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--azul)}
+.marca span{display:flex;flex-direction:column;line-height:1.05;padding-left:12px;border-left:3px solid var(--celeste)}
+.marca b{font-family:var(--f-tit);font-weight:800;font-stretch:90%;font-size:1.3rem;letter-spacing:.005em}
+.marca b i{font-style:normal;color:var(--celeste-2)}
+.marca small{font-size:.64rem;letter-spacing:.26em;text-transform:uppercase;color:var(--suave);margin-top:5px;font-weight:600}
+.menu{display:flex;align-items:center;gap:26px}
+.menu nav{display:flex;gap:22px}
+.menu nav a{text-decoration:none;font-size:.74rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--suave)}
+.menu nav a:hover{color:var(--celeste-osc)}
+.enc .btn{min-height:44px;padding:10px 20px}
+@media (max-width:860px){.menu nav{display:none}}
+@media (max-width:520px){.enc .btn{display:none}}
+
+/* Hero */
+.hero{min-height:calc(100svh - var(--enc));display:grid;align-items:center;padding:40px 0 72px;background:
+  radial-gradient(ellipse 45% 60% at 76% 40%, rgba(110,193,228,.28), transparent 70%),
+  radial-gradient(ellipse 70% 50% at 0% 100%, rgba(79,168,216,.12), transparent 60%),
+  linear-gradient(180deg,#FFFFFF 0%,#EEF7FC 100%);
+  color:var(--azul);position:relative;overflow:hidden}
+.hero .cont{display:grid;gap:40px;align-items:center;width:100%}
+@media (min-width:980px){.hero .cont{grid-template-columns:1fr 1fr;gap:48px}}
+.hero .tit em{font-style:normal;background:linear-gradient(90deg,#2A86BF,#4FA8D8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .bajada{color:var(--suave)}
+.hero .acciones{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+.hero .acciones .btn{padding-inline:16px;font-size:.72rem;letter-spacing:.08em}
+.hero .dato{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:38px;padding-top:24px;border-top:1px solid var(--linea)}
+.hero .dato b{display:block;font-family:var(--f-tit);font-weight:800;font-stretch:88%;font-size:1.65rem;color:var(--azul);line-height:1;margin-bottom:6px}
+.hero .dato span{font-size:.8rem;color:var(--suave);line-height:1.3}
+
+/* ===== Palier dúplex ===== */
+.ascensor{position:relative;width:100%;max-width:540px;aspect-ratio:16/13;margin-inline:auto;container-type:inline-size;border-radius:10px;overflow:hidden;
+  box-shadow:0 40px 80px -40px rgba(14,53,80,.45),0 0 0 1px rgba(14,53,80,.08);background:#E6E0D6}
+.muro{position:absolute;inset:0 0 18% 0;background:
+  radial-gradient(ellipse 30% 40% at 26% 0%,rgba(255,255,255,.55),transparent 70%),
+  radial-gradient(ellipse 30% 40% at 74% 0%,rgba(255,255,255,.55),transparent 70%),
+  repeating-linear-gradient(0deg,rgba(90,70,40,.012) 0 1px,transparent 1px 3px),
+  linear-gradient(180deg,#F1EDE6 0%,#E8E2D8 65%,#DED7CB 100%)}
+.zocalo{position:absolute;left:0;right:0;bottom:18%;height:2%;background:linear-gradient(#D6CEC1,#C7BEB0);box-shadow:0 -1px 0 rgba(255,255,255,.7)}
+.suelo{position:absolute;left:0;right:0;bottom:0;height:18%;background:
+  linear-gradient(180deg,rgba(60,45,25,.14),rgba(60,45,25,0) 28%),
+  linear-gradient(180deg,transparent 0 30%,rgba(120,100,75,.16) 30% 31.5%,transparent 31.5% 66%,rgba(120,100,75,.14) 66% 67.5%,transparent 67.5%),
+  linear-gradient(180deg,#D9D0C1,#E7E0D3)}
+.suelo::before,.suelo::after{content:"";position:absolute;top:0;height:70%;width:30%;
+  background:linear-gradient(90deg,rgba(150,150,150,0),rgba(160,165,170,.28) 15%,rgba(200,203,206,.22) 50%,rgba(160,165,170,.28) 85%,rgba(150,150,150,0));
+  -webkit-mask-image:linear-gradient(180deg,#000,transparent);mask-image:linear-gradient(180deg,#000,transparent)}
+.suelo::before{left:9%;width:32%}.suelo::after{left:59%;width:32%}
+.derrame{position:absolute;left:60%;width:30%;bottom:0;height:18%;opacity:0;transition:opacity 1.4s var(--ease) .4s;
+  background:radial-gradient(ellipse 60% 110% at 50% 0%,rgba(255,255,255,.75),rgba(255,255,255,0) 75%)}
+.ascensor.abierto .derrame{opacity:1}
+
+/* cada ascensor */
+.elev{position:absolute;top:13%;bottom:18%;width:32%}
+.elev.a{left:9%}.elev.b{left:59%}
+.marco{position:absolute;inset:0;
+  background:
+   repeating-linear-gradient(90deg,rgba(255,255,255,.06) 0 1px,rgba(0,0,0,.05) 1px 2px),
+   linear-gradient(90deg,#9A9EA3 0%,#D9DCDF 14%,#C2C6CA 40%,#E6E8EA 70%,#A3A7AC 100%);
+  box-shadow:0 0 0 1px rgba(70,60,45,.25),.9cqw .6cqw 1.6cqw -0.2cqw rgba(70,55,35,.22),inset 1px 1px 0 rgba(255,255,255,.75),inset -1px 0 0 rgba(0,0,0,.2)}
+.vano{position:absolute;left:10%;right:10%;top:7%;bottom:0;overflow:hidden;background:#8d9399;
+  box-shadow:0 0 0 1px rgba(0,0,0,.25)}
+.vano::after{content:"";position:absolute;inset:0;z-index:6;pointer-events:none;
+  background:linear-gradient(90deg,rgba(0,0,0,.22),rgba(0,0,0,0) 5%,rgba(0,0,0,0) 95%,rgba(0,0,0,.18)),linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,0) 4%)}
+.umbral{position:absolute;left:8%;right:8%;bottom:-1.6%;height:2.2%;background:linear-gradient(180deg,#F2F3F4,#A9ADB1);box-shadow:0 1px 2px rgba(0,0,0,.25)}
+
+/* cabina convencional */
+.cabina{position:absolute;inset:0;background:#B9BEC3}
+.cabina>*{position:absolute}
+.c-techo{inset:0 0 auto 0;height:9%;clip-path:polygon(0 0,100% 0,86% 100%,14% 100%);
+  background:radial-gradient(circle at 30% 45%,#fff 0 3%,transparent 4%),radial-gradient(circle at 50% 45%,#fff 0 3%,transparent 4%),radial-gradient(circle at 70% 45%,#fff 0 3%,transparent 4%),linear-gradient(180deg,#5B6066,#73797F)}
+.c-lat{top:0;bottom:0;width:14%}
+.c-lat.i{left:0;clip-path:polygon(0 0,100% 9%,100% 87%,0 100%);background:repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 3px),linear-gradient(90deg,#7C8288,#A9AFB5)}
+.c-lat.d{right:0;clip-path:polygon(0 9%,100% 0,100% 100%,0 87%);background:repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 3px),linear-gradient(270deg,#767C82,#A2A8AE)}
+.c-fondo{left:14%;right:14%;top:9%;bottom:13%;background:
+  linear-gradient(90deg,transparent 33%,rgba(0,0,0,.16) 33% 33.6%,rgba(255,255,255,.35) 33.6% 34.2%,transparent 34.2% 66%,rgba(0,0,0,.16) 66% 66.6%,rgba(255,255,255,.35) 66.6% 67.2%,transparent 67.2%),
+  repeating-linear-gradient(90deg,rgba(255,255,255,.06) 0 1px,rgba(0,0,0,.04) 1px 2px),
+  linear-gradient(180deg,#E3E6E9 0%,#C9CED2 55%,#B5BBC0 100%)}
+.baranda{left:2%;right:2%;height:3.4%;border-radius:99px;background:linear-gradient(180deg,#FDFDFD,#B9BEC3 50%,#7E848A);box-shadow:0 .5cqw .6cqw rgba(0,0,0,.25)}
+.baranda.u{top:52%}.baranda.v{top:60%}
+.c-piso{left:0;right:0;bottom:0;height:13%;clip-path:polygon(14% 0,86% 0,100% 100%,0 100%);background:linear-gradient(180deg,#C9CED2,#AEB5BA)}
+.botonera-cab{right:16%;top:34%;width:6%;height:20%;background:linear-gradient(180deg,#2E3338,#1C2024);border-radius:2px;box-shadow:0 0 0 1px #9aa0a5}
+.botonera-cab::before{content:"";position:absolute;left:25%;right:25%;top:10%;bottom:10%;background:radial-gradient(circle,#cfd4d8 0 38%,transparent 42%) 0 0/100% 20% repeat-y}
+
+/* hojas */
+.hoja{position:absolute;top:0;bottom:0;width:50%;z-index:4;transition:transform 1.9s var(--ease);
+  background:
+   repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 1px,rgba(0,0,0,.05) 1px 2px,transparent 2px 3px),
+   repeating-linear-gradient(90deg,transparent 0 7px,rgba(0,0,0,.03) 7px 8px,transparent 8px 13px,rgba(255,255,255,.05) 13px 14px),
+   linear-gradient(180deg,rgba(255,255,255,.16),rgba(255,255,255,0) 35%,rgba(0,0,0,.08) 100%),
+   linear-gradient(90deg,#A2A6AB 0%,#D2D5D8 22%,#E9EBED 40%,#C1C5C9 62%,#D9DCDF 82%,#A9ADB2 100%)}
+.hoja.i{left:0;box-shadow:inset -1px 0 0 rgba(0,0,0,.35)}
+.hoja.d{right:0;box-shadow:inset 1px 0 0 rgba(0,0,0,.35)}
+.ascensor.abierto .elev.b .hoja.i{transform:translateX(-100%)}
+.ascensor.abierto .elev.b .hoja.d{transform:translateX(100%)}
+.ascensor.cerrando .hoja{transition-duration:1.1s}
+
+/* indicadores */
+.disp{position:absolute;top:4.6%;width:9.5%;height:4.6%;transform:translateX(-50%);border-radius:.5cqw;
+  background:linear-gradient(180deg,#14181C,#07090B);box-shadow:0 0 0 .35cqw #B9BDC1,0 0 0 .5cqw #8F9499,0 .6cqw 1cqw rgba(60,45,30,.25);
+  display:flex;align-items:center;justify-content:center;gap:.9cqw}
+.disp.a{left:25%}.disp.b{left:75%}
+.flecha{width:1.9cqw;height:1.9cqw;fill:var(--celeste);transition:opacity .3s}
+.flecha.mueve{animation:baja .9s ease-in-out infinite}
+.flecha.quieta{opacity:.15}
+@keyframes baja{0%{transform:translateY(-20%);opacity:.4}50%{opacity:1}100%{transform:translateY(20%);opacity:.4}}
+.led{font-family:var(--f-tit);font-weight:700;font-stretch:80%;font-size:2.8cqw;line-height:1;min-width:3.4cqw;text-align:center;color:#BFE7F8;text-shadow:0 0 .8cqw rgba(110,193,228,.8);font-variant-numeric:tabular-nums}
+
+/* pulsadores del palier */
+.botonera{position:absolute;left:50%;top:47%;transform:translateX(-50%);width:3.2%;height:10%;border-radius:.4cqw;
+  background:repeating-linear-gradient(90deg,rgba(255,255,255,.07) 0 1px,transparent 1px 2px),linear-gradient(90deg,#A3A7AC,#E1E3E5 45%,#B2B6BA);
+  box-shadow:0 0 0 1px rgba(70,60,45,.3),.4cqw .4cqw .8cqw rgba(70,55,35,.2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.2cqw}
+.pulsador{width:1.9cqw;height:1.9cqw;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FAFBFC,#AEB2B7 65%,#7A7F84);box-shadow:0 1px 1px rgba(0,0,0,.35)}
+.pulsador.on{background:radial-gradient(circle at 35% 30%,#E6F6FD,#8ED2EE 60%,#4FA8D8);box-shadow:0 0 0 .25cqw rgba(79,168,216,.55),0 0 1.2cqw rgba(110,193,228,.9)}
+
+.replay{position:absolute;left:50%;transform:translateX(-50%);bottom:3.2cqw;z-index:8;border:1px solid rgba(79,168,216,.55);background:rgba(255,255,255,.9);color:var(--azul);box-shadow:0 8px 20px -10px rgba(14,53,80,.5);
+  padding:1.5cqw 2.8cqw;border-radius:99px;font-family:var(--f-tit);font-weight:700;font-size:clamp(.62rem,2.2cqw,.74rem);letter-spacing:.16em;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;gap:1.4cqw;white-space:nowrap}
+.replay::before{content:"";width:1.4cqw;height:1.4cqw;min-width:6px;min-height:6px;border-radius:50%;background:var(--celeste-2)}
+.replay:hover{background:#fff}
+.replay:focus-visible{outline:2px solid var(--celeste-2);outline-offset:2px}
+
+@media (max-height:720px) and (min-width:980px){
+  .hero{padding:22px 0 26px}
+  .tit{font-size:clamp(2rem,4.4vw,3.1rem)}
+  .hero .bajada{margin-top:12px;font-size:1rem}
+  .hero .acciones{margin-top:20px}
+  .hero .dato{margin-top:20px;padding-top:14px}
+  .ascensor{width:min(100%,calc((100svh - var(--enc) - 60px) * 16 / 13))}
+}
+@media (max-width:979px){
+  .hero{min-height:auto;padding:24px 0 calc(90px + env(safe-area-inset-bottom))}
+  .hero .cont{gap:28px}
+  .ascensor{order:-1;max-width:460px}
+  .hero .dato{grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:24px}
+  .tit{font-size:clamp(2rem,9.4vw,2.8rem)}
+}
+
+/* Secciones */
+.servicios{background:var(--hueso)}
+.rejilla{display:grid;gap:18px;margin-top:44px}
+@media (min-width:800px){.rejilla{grid-template-columns:1fr 1fr}}
+.card{position:relative;padding:30px 28px 28px;background:var(--celeste-bg);border-radius:6px;box-shadow:0 1px 0 var(--linea),0 20px 40px -30px rgba(14,53,80,.3);overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;right:0;height:4px;background:var(--grad)}
+.card .n{font-family:var(--f-tit);font-weight:800;font-size:.8rem;letter-spacing:.2em;color:var(--celeste-osc)}
+.card h3{font-family:var(--f-tit);font-weight:800;font-stretch:90%;font-size:1.55rem;line-height:1.1;margin:10px 0 8px}
+.card p{color:var(--suave)}
+
+.norma{background:radial-gradient(ellipse 60% 80% at 90% 0%,rgba(255,255,255,.35),transparent 60%),var(--grad);color:var(--azul-2)}
+.norma .sobre{color:var(--azul-2)}
+.norma .sobre::before{background:var(--azul-2)}
+.norma .bajada{color:#16405E}
+.cita{margin-top:36px;padding:28px 0 0;border-top:1px solid rgba(10,39,64,.25);font-family:var(--f-tit);font-weight:700;font-stretch:90%;font-size:clamp(1.25rem,2.6vw,1.65rem);color:var(--azul-2);max-width:46ch;line-height:1.3}
+
+.empresa{background:var(--papel)}
+.empresa .caja{display:grid;gap:28px;margin-top:36px}
+@media (min-width:800px){.empresa .caja{grid-template-columns:.9fr 1.1fr;align-items:start}}
+.dato-emp{display:grid;gap:18px}
+.dato-emp div{padding-bottom:16px;border-bottom:1px solid var(--linea)}
+.dato-emp b{display:block;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--celeste-osc);margin-bottom:4px}
+.dato-emp p{font-family:var(--f-tit);font-size:1.35rem;font-weight:700;font-stretch:92%}
+.dato-emp a{text-decoration:none}
+
+.ubi{background:var(--hueso)}
+.ubi .caja{display:grid;gap:28px;margin-top:36px}
+@media (min-width:880px){.ubi .caja{grid-template-columns:1.1fr .9fr;align-items:stretch}}
+.mapa{min-height:340px;overflow:hidden;border-radius:6px;border:1px solid var(--linea);background:#E8E2D6}
+.mapa img{width:100%;height:100%;min-height:340px;object-fit:cover;filter:grayscale(.3) contrast(1.03)}
+.ubi address{font-style:normal;margin:16px 0;font-size:1.25rem;font-family:var(--f-tit);font-weight:700}
+.ubi p{color:var(--suave)}
+
+.contacto{background:linear-gradient(180deg,var(--azul),var(--azul-2));color:#fff}
+.contacto .sobre{color:var(--celeste)}
+.contacto .sobre::before{background:var(--celeste)}
+.contacto .bajada{color:#C4D6E3}
+.formu{margin-top:40px;display:grid;gap:16px}
+.formu label{display:grid;gap:6px;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#C4D6E3}
+.formu input,.formu select,.formu textarea{width:100%;border:0;border-bottom:1px solid rgba(110,193,228,.45);background:transparent;color:#fff;padding:12px 0;min-height:48px;border-radius:0}
+.formu select option{color:#111}
+.formu textarea{min-height:110px;resize:vertical}
+.formu input:focus,.formu select:focus,.formu textarea:focus{outline:none;border-bottom-color:var(--celeste)}
+.formu input::placeholder,.formu textarea::placeholder{color:#8AA3B6}
+.formu .fila{display:grid;gap:16px}
+@media (min-width:700px){.formu .fila{grid-template-columns:1fr 1fr}}
+.formu .acciones{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.aviso{font-size:.9rem;color:#A9C0D0}
+
+.pie{background:#071D30;color:#A9C0D0;padding:56px 0 120px;font-size:.92rem}
+.pie .cont{display:grid;gap:20px}
+.pie .marca{color:#fff}.pie .marca small{color:#A9C0D0}.pie .marca b{font-size:1.4rem}
+.pie p{margin-top:10px}
+.pie a{color:var(--celeste);text-decoration:none}
+.pie a:hover{color:#fff}
+.credito{margin-top:8px;padding-top:20px;border-top:1px solid rgba(110,193,228,.2);font-size:.85rem}
+@media (min-width:760px){.pie .cont{grid-template-columns:1.2fr 1fr}.credito{grid-column:1/-1}}
+
+.barra-movil{position:fixed;left:0;right:0;bottom:0;z-index:90;display:grid;grid-template-columns:1.2fr 1fr 1fr;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-top:1px solid var(--linea);padding:8px 10px calc(8px + env(safe-area-inset-bottom))}
+.barra-movil a{display:flex;align-items:center;justify-content:center;min-height:48px;border-radius:4px;font-family:var(--f-tit);font-size:.76rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
+.barra-movil .bm-p{background:var(--azul);color:#fff;box-shadow:inset 0 -3px 0 var(--celeste-2)}
+.barra-movil .bm-t{color:var(--azul);border:1px solid var(--celeste-2);margin-left:8px}
+@media (min-width:861px){.barra-movil{display:none}.pie{padding-bottom:56px}}
+
+.rev{opacity:0;transform:translateY(18px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rev.visto{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rev{opacity:1;transform:none;transition:none}
+  .hoja,.derrame{transition:none!important}
+  .flecha.mueve{animation:none}
+  .btn:hover{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="enc">
+  <div class="int">
+    <a class="marca" href="#inicio">
+      <span><b><i>H.A.</i> Ascensores</b><small>Córdoba</small></span>
+    </a>
+    <div class="menu">
+      <nav aria-label="Secciones">
+        <a href="#servicios">Servicios</a>
+        <a href="#norma">Ordenanza</a>
+        <a href="#ubicacion">Ubicación</a>
+      </nav>
+      <a class="btn btn--azul" href="#contacto">Presupuesto</a>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+<section class="hero" id="inicio">
+  <div class="cont">
+    <div>
+      <p class="sobre">Mantenimiento e inspección</p>
+      <h1 class="tit">El ascensor del edificio, <em>siempre en regla.</em></h1>
+      <p class="bajada">H.A. Ascensores, a cargo de Hugo Alarcón, realiza mantenimiento e instalaciones de ascensores electromecánicos e hidráulicos en Córdoba, con adecuación según la Ordenanza municipal 10.950/05.</p>
+      <div class="acciones">
+        <a class="btn btn--azul" href="#contacto">Pedir presupuesto</a>
+        <a class="btn btn--claro" href="tel:+5493512111770">Llamar</a>
+        <a class="btn btn--claro" href="https://wa.me/5493512111770" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <div class="dato">
+        <div><b>24 h</b><span>Reclamos, 365 días</span></div>
+        <div><b>10.950/05</b><span>Ordenanza municipal</span></div>
+        <div><b>Alberdi</b><span>27 de Abril 936</span></div>
+      </div>
+    </div>
+
+    <div class="ascensor" id="ascensor">
+      <div class="muro" aria-hidden="true"></div>
+      <div class="zocalo" aria-hidden="true"></div>
+      <div class="suelo" aria-hidden="true"></div>
+      <div class="derrame" aria-hidden="true"></div>
+      <div class="disp a" aria-hidden="true"><svg class="flecha quieta" viewBox="0 0 24 24"><path d="M12 21 3 9h18z"/></svg><span class="led">3</span></div>
+      <div class="disp b" aria-hidden="true"><svg class="flecha quieta" id="flecha" viewBox="0 0 24 24"><path d="M12 21 3 9h18z"/></svg><span class="led" id="led">5</span></div>
+      <div class="elev a" aria-hidden="true">
+        <div class="marco"></div>
+        <div class="vano"><div class="hoja i"></div><div class="hoja d"></div></div>
+        <div class="umbral"></div>
+      </div>
+      <div class="elev b" aria-hidden="true">
+        <div class="marco"></div>
+        <div class="vano">
+          <div class="cabina">
+            <div class="c-fondo"><div class="baranda u" style="position:absolute"></div><div class="baranda v" style="position:absolute"></div></div>
+            <div class="c-lat i"></div><div class="c-lat d"></div>
+            <div class="c-techo"></div><div class="c-piso"></div>
+          </div>
+          <div class="hoja i"></div><div class="hoja d"></div>
+        </div>
+        <div class="umbral"></div>
+      </div>
+      <div class="botonera" aria-hidden="true"><span class="pulsador"></span><span class="pulsador" id="b-baja"></span></div>
+      <button class="replay" type="button" id="replay">Abrir puertas</button>
+    </div>
+  </div>
+</section>
+
+<section class="servicios sec" id="servicios">
+  <div class="cont">
+    <p class="sobre">Servicios</p>
+    <h2 class="tit">Conservación, reparación y visado técnico.</h2>
+    <p class="bajada">Los trabajos que la empresa declara en sus fichas públicas, para consorcios y administradores.</p>
+    <div class="rejilla">
+      <article class="card rev"><span class="n">01</span><h3>Mantenimiento e instalaciones</h3><p>Mantenimiento, reparación e instalaciones de ascensores electromecánicos e hidráulicos en Córdoba.</p></article>
+      <article class="card rev"><span class="n">02</span><h3>Adecuación normativa</h3><p>Trabajos de adecuación según la Ordenanza 10.950/05 de la Municipalidad de Córdoba.</p></article>
+      <article class="card rev"><span class="n">03</span><h3>Visado del representante técnico</h3><p>Visado de los ascensores por el ingeniero representante técnico, y visado mensual a cargo de un ingeniero del CIEC, según publican.</p></article>
+      <article class="card rev"><span class="n">04</span><h3>Bombas de agua y electricidad</h3><p>Atención de bombas de agua y service de electricidad en edificios, con reclamos las 24 horas, los 365 días del año.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="norma sec" id="norma">
+  <div class="cont rev">
+    <p class="sobre">Normativa municipal</p>
+    <h2 class="tit">Ordenanza 10.950/05.</h2>
+    <p class="bajada">La norma se titula «Conservación y adecuación a la seguridad, higiene y confort de los medios de circulación mecánica estacionaria». Obliga al propietario a contar con un conservador inscripto y con el libro de inspección habilitado por la Municipalidad de Córdoba.</p>
+    <p class="cita">Una conservación seria no es un trámite de más: es la seguridad de quienes suben y bajan todos los días.</p>
+  </div>
+</section>
+
+<section class="empresa sec" id="empresa">
+  <div class="cont">
+    <p class="sobre">La empresa</p>
+    <h2 class="tit">Una atención directa, a cargo de Hugo Alarcón.</h2>
+    <div class="caja">
+      <div class="dato-emp rev">
+        <div><b>Responsable</b><p>Hugo Alarcón</p></div>
+        <div><b>Domicilio</b><p>27 de Abril 936, piso 2, dpto. B, Alberdi</p></div>
+        <div><b>Teléfono y WhatsApp</b><p><a href="tel:+5493512111770">+54 9 351 211-1770</a> · <a href="https://wa.me/5493512111770" target="_blank" rel="noopener">WhatsApp</a></p></div>
+        <div><b>Correo</b><p><a href="mailto:hugoalarcon101@hotmail.com">hugoalarcon101@hotmail.com</a></p></div>
+      </div>
+      <div class="rev">
+        <p class="bajada" style="margin-top:0">La empresa se presenta como conservadora de medios de circulación mecánica, con atención de reclamos de funcionamiento en ascensores y bombas de agua durante todo el año.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ubi sec" id="ubicacion">
+  <div class="cont">
+    <p class="sobre">Ubicación</p>
+    <h2 class="tit">En Alberdi, a pasos de 27 de Abril y Deán Funes.</h2>
+    <div class="caja">
+      <a class="mapa" href="https://www.google.com/maps/search/?api=1&query=27+de+Abril+936+Alberdi+C%C3%B3rdoba" target="_blank" rel="noopener">
+        <img src="assets/mapa.webp" width="1200" height="760" alt="Mapa de H.A. Ascensores en 27 de Abril 936, Alberdi, Córdoba" loading="lazy">
+      </a>
+      <div class="rev">
+        <address>27 de Abril 936, piso 2, dpto. B<br>Barrio Alberdi, Córdoba</address>
+        <p>El domicilio figura en la constancia de habilitación municipal que la empresa publica en su Facebook.</p>
+        <p style="margin-top:18px"><a class="btn btn--linea-osc" href="https://www.google.com/maps/search/?api=1&query=27+de+Abril+936+Alberdi+C%C3%B3rdoba" target="_blank" rel="noopener">Cómo llegar</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contacto sec" id="contacto">
+  <div class="cont">
+    <p class="sobre">Contacto</p>
+    <h2 class="tit">Consultas para el consorcio o el edificio.</h2>
+    <p class="bajada">Completá los datos y se abre el correo con el mensaje armado. También pueden llamar al teléfono de la empresa.</p>
+    <form class="formu" id="formu">
+      <div class="fila">
+        <label>Nombre <input name="nombre" required autocomplete="name" placeholder="Su nombre"></label>
+        <label>Teléfono <input name="telefono" required autocomplete="tel" inputmode="tel" placeholder="Su teléfono"></label>
+      </div>
+      <div class="fila">
+        <label>Consorcio o edificio <input name="consorcio" placeholder="Nombre del edificio"></label>
+        <label>Dirección <input name="direccion" placeholder="Calle y barrio"></label>
+      </div>
+      <label>Consulta
+        <select name="tipo">
+          <option>Mantenimiento</option>
+          <option>Reparación</option>
+          <option>Adecuación Ordenanza 10.950/05</option>
+          <option>Visado técnico</option>
+          <option>Bombas de agua</option>
+          <option>Otra consulta</option>
+        </select>
+      </label>
+      <label>Mensaje <textarea name="mensaje" placeholder="Cuéntenos brevemente lo que necesita el edificio"></textarea></label>
+      <div class="acciones">
+        <button class="btn btn--claro" type="submit">Enviar por mail</button>
+        <a class="btn btn--linea" href="tel:+5493512111770">Llamar ahora</a>
+        <a class="btn btn--linea" href="https://wa.me/5493512111770" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <p class="aviso">El mensaje se envía a hugoalarcon101@hotmail.com.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="pie">
+  <div class="cont">
+    <div>
+      <span class="marca"><span><b><i>H.A.</i> Ascensores</b><small>Córdoba</small></span></span>
+      <p>Mantenimiento, reparación e inspección de ascensores en Córdoba.</p>
+    </div>
+    <div>
+      <p>27 de Abril 936, piso 2, dpto. B, Alberdi, Córdoba</p>
+      <p><a href="tel:+5493512111770">+54 9 351 211-1770</a></p>
+      <p><a href="mailto:hugoalarcon101@hotmail.com">hugoalarcon101@hotmail.com</a></p>
+    </div>
+    <p class="credito">Demo realizada por Luna Nueva Creativa</p>
+  </div>
+</footer>
+
+<nav class="barra-movil" aria-label="Acciones rápidas">
+  <a class="bm-p" href="#contacto">Presupuesto</a>
+  <a class="bm-t" href="https://wa.me/5493512111770" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="bm-t" href="tel:+5493512111770">Llamar</a>
+</nav>
+
+<script>
+(function(){
+  var MAIL='hugoalarcon101@hotmail.com';
+  var asc=document.getElementById('ascensor'), led=document.getElementById('led'),
+      fl=document.getElementById('flecha'), bb=document.getElementById('b-baja'),
+      btn=document.getElementById('replay');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var timers=[];
+  function t(fn,ms){timers.push(setTimeout(fn,ms));}
+  function limpiar(){timers.forEach(clearTimeout);timers=[];}
+  function abrir(){
+    fl.classList.remove('mueve');fl.classList.add('quieta');bb.classList.remove('on');
+    asc.classList.remove('cerrando');asc.classList.add('abriendo','abierto');
+    btn.textContent='Abrir de nuevo';
+    t(function(){asc.classList.remove('abriendo');},1300);
+  }
+  function viaje(){
+    limpiar();
+    var pisos=['5','4','3','2','1','PB'];
+    led.textContent=pisos[0];
+    bb.classList.add('on');fl.classList.remove('quieta');fl.classList.add('mueve');
+    pisos.forEach(function(p,i){t(function(){led.textContent=p;},i*520);});
+    t(abrir,pisos.length*520+150);
+  }
+  if(reduce){led.textContent='PB';asc.classList.add('abierto');}
+  else{t(viaje,350);}
+  btn.addEventListener('click',function(){
+    if(asc.classList.contains('abierto')){
+      limpiar();asc.classList.add('cerrando');asc.classList.remove('abierto');
+      setTimeout(viaje,1150);
+    } else viaje();
+  });
+
+  var io=new IntersectionObserver(function(ents){
+    ents.forEach(function(e){ if(e.isIntersecting) e.target.classList.add('visto'); });
+  },{threshold:.15});
+  document.querySelectorAll('.rev').forEach(function(el){ io.observe(el); });
+
+  var form=document.getElementById('formu');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!form.reportValidity()) return;
+    var d=new FormData(form);
+    var lineas=[
+      'Estimado Sr. Alarcón, quiero pedir un presupuesto a H.A. Ascensores.',
+      '',
+      'Nombre: '+(d.get('nombre')||''),
+      'Consorcio o edificio: '+(d.get('consorcio')||'—'),
+      'Dirección: '+(d.get('direccion')||'—'),
+      'Teléfono: '+(d.get('telefono')||''),
+      'Consulta: '+(d.get('tipo')||''),
+      'Mensaje: '+(d.get('mensaje')||'—')
+    ];
+    var as='Consulta para H.A. Ascensores'+(d.get('consorcio')?' — '+d.get('consorcio'):'');
+    window.location.href='mailto:'+MAIL+'?subject='+encodeURIComponent(as)+'&body='+encodeURIComponent(lineas.join('\n'));
+  });
+})();
+</script>
+</body>
+</html>
