@@ -166,6 +166,7 @@ button,input,select,textarea{font:inherit}
 .replay{position:absolute;left:50%;transform:translateX(-50%);bottom:3.2cqw;z-index:8;border:1px solid rgba(79,168,216,.55);background:rgba(255,255,255,.9);color:var(--azul);box-shadow:0 8px 20px -10px rgba(14,53,80,.5);
   padding:1.5cqw 2.8cqw;border-radius:99px;font-family:var(--f-tit);font-weight:700;font-size:clamp(.62rem,2.2cqw,.74rem);letter-spacing:.16em;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;gap:1.4cqw;white-space:nowrap}
 .replay::before{content:"";width:1.4cqw;height:1.4cqw;min-width:6px;min-height:6px;border-radius:50%;background:var(--celeste-2)}
+.replay{touch-action:manipulation;-webkit-tap-highlight-color:transparent}
 .replay:hover{background:#fff}
 .replay:focus-visible{outline:2px solid var(--celeste-2);outline-offset:2px}
 
@@ -254,7 +255,8 @@ button,input,select,textarea{font:inherit}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .rev{opacity:1;transform:none;transition:none}
-  .hoja,.derrame{transition:none!important}
+  .hoja,.ascensor.cerrando .hoja{transition:transform .35s ease!important}
+  .derrame{transition:opacity .35s ease!important}
   .flecha.mueve{animation:none}
   .btn:hover{transform:none}
 }
@@ -453,10 +455,19 @@ button,input,select,textarea{font:inherit}
   function t(fn,ms){timers.push(setTimeout(fn,ms));}
   function limpiar(){timers.forEach(clearTimeout);timers=[];}
   function abrir(){
+    limpiar();
+    led.textContent='PB';
     fl.classList.remove('mueve');fl.classList.add('quieta');bb.classList.remove('on');
     asc.classList.remove('cerrando');asc.classList.add('abriendo','abierto');
-    btn.textContent='Abrir de nuevo';
+    btn.textContent='Cerrar puertas';btn.setAttribute('aria-pressed','true');
     t(function(){asc.classList.remove('abriendo');},1300);
+  }
+  function cerrar(){
+    limpiar();
+    fl.classList.remove('mueve');fl.classList.add('quieta');bb.classList.remove('on');
+    asc.classList.remove('abriendo','abierto');asc.classList.add('cerrando');
+    btn.textContent='Abrir puertas';btn.setAttribute('aria-pressed','false');
+    t(function(){asc.classList.remove('cerrando');},reduce?400:1150);
   }
   function viaje(){
     limpiar();
@@ -466,13 +477,12 @@ button,input,select,textarea{font:inherit}
     pisos.forEach(function(p,i){t(function(){led.textContent=p;},i*520);});
     t(abrir,pisos.length*520+150);
   }
-  if(reduce){led.textContent='PB';asc.classList.add('abierto');}
+  btn.setAttribute('aria-pressed','false');
+  if(reduce){abrir();}
   else{t(viaje,350);}
   btn.addEventListener('click',function(){
-    if(asc.classList.contains('abierto')){
-      limpiar();asc.classList.add('cerrando');asc.classList.remove('abierto');
-      setTimeout(viaje,1150);
-    } else viaje();
+    if(asc.classList.contains('abierto')) cerrar();
+    else abrir();
   });
 
   var io=new IntersectionObserver(function(ents){
