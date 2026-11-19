@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Criterio Enfermero · Formación, conocimiento e innovación en Enfermería</title>
+<meta name="description" content="Espacio de la Prof. Lic. Carolina Guerra Giovanetti en Córdoba: formación, consultoría y producción de conocimiento para una enfermería que decide con criterio.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="Criterio Enfermero">
+<meta property="og:description" content="Formación · Conocimiento · Innovación en Enfermería. Prof. Lic. Carolina Guerra Giovanetti, Córdoba.">
+<meta property="og:image" content="assets/logo-criterio-enfermero.webp">
+<link rel="icon" type="image/webp" href="assets/logo-criterio-enfermero.webp">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"></noscript>
+<link rel="preload" as="image" href="assets/logo-criterio-enfermero.webp" fetchpriority="high">
+<style>
+:root{
+  --negro:#000000;--calido:#120F0D;--bordo:#630202;--profundo:#330203;
+  --crema:#F0E7DB;
+  --plata-luz:#F5F2ED;
+  --plata-letra:#E6DDD2;
+  --plata-cuerpo:#B7AA9D;
+  --plata:#B7AA9D;
+  --line:rgba(230,221,210,.32);
+  --f-tit:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --f-marca:"Cinzel",Palatino,"Palatino Linotype",serif;
+  --f-txt:"Source Sans 3",system-ui,sans-serif;
+  --wa:#25D366;
+  --ease:cubic-bezier(.2,.7,.2,1);
+  --max:1180px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:118px}
+body{margin:0;font-family:var(--f-txt);background:var(--negro);color:var(--crema);line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3,p,ul,figure,blockquote{margin:0}
+ul{padding:0;list-style:none}
+button,input{font:inherit}
+:focus-visible{outline:2px solid var(--plata-letra);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--plata-letra);color:var(--negro);padding:8px 16px;z-index:200}
+.skip:focus{left:8px}
+.cont{width:min(var(--max),calc(100% - 40px));margin-inline:auto}
+@media (min-width:800px){.cont{width:min(var(--max),calc(100% - 64px))}}
+.sec{padding-block:clamp(64px,8.5vw,100px);scroll-margin-top:118px}
+.kicker{display:flex;align-items:center;gap:14px;font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--plata-letra);margin-bottom:16px}
+.kicker::before{content:"";width:28px;height:1px;background:var(--plata-cuerpo)}
+.tit{font-family:var(--f-tit);font-weight:500;font-size:clamp(2.1rem,4.4vw,3.4rem);line-height:1.08;letter-spacing:-.02em;text-wrap:balance}
+.tit em,.oro{font-style:italic;color:var(--plata-cuerpo);font-weight:500}
+.bajada{margin-top:16px;max-width:58ch;color:var(--plata);font-size:1.05rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 22px;border-radius:999px;text-decoration:none;border:1px solid transparent;cursor:pointer;font-weight:600;font-size:.82rem;letter-spacing:.06em;transition:transform .25s var(--ease),background .25s,border-color .25s,box-shadow .25s,color .25s}
+.btn:hover{transform:translateY(-1px)}
+.btn--oro,.btn--plata{background:linear-gradient(180deg,var(--plata-luz),var(--plata-letra) 48%,var(--plata-cuerpo));color:#120F0D;border-color:transparent;box-shadow:0 8px 24px -12px rgba(183,170,157,.55)}
+.btn--oro:hover,.btn--plata:hover{box-shadow:0 12px 28px -10px rgba(245,242,237,.28)}
+.btn--linea{border-color:var(--line);color:var(--crema);background:transparent}
+.btn--linea:hover{border-color:var(--plata-letra);color:var(--plata-luz)}
+.btn--wa{background:#1f8f4a;color:#fff}
+.btn--wa:hover{background:#187a3e}
+.btn svg{width:18px;height:18px;flex:none}
+/* Encabezado a dos filas, como la maqueta */
+.enc{position:fixed;inset:0 0 auto;z-index:80;color:var(--crema);background:linear-gradient(180deg,rgba(0,0,0,.88),rgba(0,0,0,.55) 70%,transparent);transition:background .35s,box-shadow .35s,border-color .35s;border-bottom:1px solid transparent}
+.enc.solido{background:rgba(0,0,0,.92);backdrop-filter:blur(16px) saturate(1.2);-webkit-backdrop-filter:blur(16px) saturate(1.2);border-bottom-color:var(--line);box-shadow:0 10px 40px rgba(0,0,0,.35)}
+.enc__top{display:flex;align-items:center;gap:16px;padding-top:10px;padding-bottom:8px}
+.marca{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.marca img{width:58px;height:58px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 1px rgba(230,221,210,.45),0 0 18px rgba(230,221,210,.18)}
+.marca .nombre{font-family:var(--f-marca);font-weight:600;font-size:clamp(1.02rem,2vw,1.35rem);letter-spacing:.12em;line-height:1.1;color:var(--plata-letra);
+  background:linear-gradient(180deg,var(--plata-luz) 0%,var(--plata-letra) 46%,var(--plata-cuerpo) 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.marca small{display:none}
+.lema-enc{margin-left:auto;text-align:right;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--plata);line-height:1.5;max-width:28ch}
+.hamb{display:none;margin-left:12px;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--crema);cursor:pointer;align-items:center;justify-content:center;flex:none}
+.hamb span,.hamb span::before,.hamb span::after{display:block;width:16px;height:1.5px;background:currentColor;position:relative}
+.hamb span::before,.hamb span::after{content:"";position:absolute;left:0}
+.hamb span::before{top:-5px}.hamb span::after{top:5px}
+.menu-abierto .hamb span{background:transparent}
+.menu-abierto .hamb span::before{top:0;transform:rotate(45deg)}
+.menu-abierto .hamb span::after{top:0;transform:rotate(-45deg)}
+.enc__nav{display:flex;align-items:center;gap:4px;padding:6px 0 10px;border-top:1px solid rgba(230,221,210,.18);overflow-x:auto;scrollbar-width:none}
+.enc__nav::-webkit-scrollbar{display:none}
+.enc__nav a{flex:none;color:var(--plata);text-decoration:none;font-size:.78rem;font-weight:500;letter-spacing:.04em;padding:8px 12px;border-radius:999px;transition:color .2s,background .2s}
+.enc__nav a:hover{color:var(--crema)}
+.enc__nav a[aria-current="page"],.enc__nav a.activo{background:var(--bordo);color:var(--crema)}
+@media (max-width:899px){
+  .lema-enc{display:none}
+  .hamb{display:inline-flex;position:relative;z-index:90}
+  .enc__nav{position:fixed;inset:0;width:100vw;height:100svh;background:#000;flex-direction:column;justify-content:center;align-items:center;gap:6px;padding:96px 24px 88px;overflow:auto;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;border:0;z-index:60}
+  .menu-abierto .enc__nav{opacity:1;visibility:visible}
+  body.menu-abierto .enc{inset:0;background:#000;backdrop-filter:none;-webkit-backdrop-filter:none;border-color:transparent}
+  .enc__nav a{font-family:var(--f-tit);font-size:1.7rem;letter-spacing:0;padding:8px 16px;color:var(--crema);background:none}
+  .enc__nav a[aria-current="page"],.enc__nav a.activo{background:none;color:var(--plata-letra)}
+  body.menu-abierto{overflow:hidden}
+  body.menu-abierto .wa-flotante,body.menu-abierto .barra-movil{visibility:hidden;opacity:0;pointer-events:none}
+  .marca img{width:48px;height:48px}
+}
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding-top:148px;overflow:hidden;background:
+  radial-gradient(80% 70% at 80% 40%,rgba(99,2,2,.45),transparent 60%),
+  radial-gradient(50% 50% at 15% 80%,rgba(230,221,210,.07),transparent 55%),
+  linear-gradient(180deg,#000 0%,#120F0D 55%,#0a0706 100%)}
+.hero::before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .045 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");opacity:.55;pointer-events:none;mix-blend-mode:overlay}
+.hero__grid{position:relative;z-index:1;display:grid;gap:32px;padding-bottom:24px;align-items:center}
+@media (min-width:900px){.hero__grid{grid-template-columns:1.05fr .95fr;gap:40px;padding-bottom:16px}}
+.hero h1{font-family:var(--f-tit);font-style:italic;font-weight:500;font-size:clamp(2.15rem,5.4vw,3.85rem);line-height:1.08;letter-spacing:-.02em;max-width:16ch;text-wrap:balance;color:#f7efe4}
+.hero h1 .acento{font-style:italic;color:var(--plata-cuerpo);
+  background:linear-gradient(180deg,var(--plata-letra) 10%,var(--plata-cuerpo) 78%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  text-shadow:none}
+.hero .lead{margin-top:20px;max-width:40ch;color:var(--plata);font-size:clamp(.98rem,1.5vw,1.12rem)}
+.hero .acciones{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+/* Visual: balanza, ECG, libros */
+.visual{position:relative;min-height:320px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding:8px 8px 4px}
+.visual .balanza{width:min(180px,40%);height:auto;color:var(--plata-letra);filter:drop-shadow(0 8px 18px rgba(230,221,210,.22));margin-bottom:-6px;z-index:2}
+.visual .balanza .platillo-izq{transform-origin:62px 38px;animation:vaiven 5.5s ease-in-out infinite}
+.visual .balanza .platillo-der{transform-origin:138px 38px;animation:vaiven 5.5s ease-in-out infinite reverse}
+@keyframes vaiven{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+.ecg{width:min(420px,100%);height:54px;margin:2px 0 12px;overflow:visible}
+.ecg path{fill:none;stroke:var(--plata-letra);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:520;stroke-dashoffset:520;animation:trazo 3.4s var(--ease) .4s forwards,pulso 3.8s ease-in-out 4s infinite;filter:drop-shadow(0 0 6px rgba(230,221,210,.35))}
+@keyframes trazo{to{stroke-dashoffset:0}}
+@keyframes pulso{0%,100%{opacity:1}50%{opacity:.55}}
+.pila{position:relative;width:min(100%,360px);height:250px;perspective:900px;align-self:center}
+.libro{position:absolute;left:50%;width:78%;height:46px;border-radius:3px 10px 10px 3px;display:flex;align-items:center;padding:0 22px 0 28px;transform-origin:center bottom;box-shadow:0 10px 18px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.08),inset 4px 0 0 rgba(230,221,210,.5);background:
+  linear-gradient(90deg,rgba(0,0,0,.35) 0 8px,transparent 8px),
+  repeating-linear-gradient(90deg,transparent,transparent 2px,rgba(255,255,255,.015) 3px),
+  var(--tapa);
+  color:var(--plata-letra);font-family:var(--f-marca);font-size:clamp(.62rem,.95vw,.78rem);letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.libro::before{content:"";position:absolute;left:10px;top:6px;bottom:6px;width:3px;border-radius:1px;background:linear-gradient(180deg,var(--plata-luz),var(--plata-cuerpo));opacity:.9}
+.libro:nth-child(1){--tapa:linear-gradient(180deg,#1a1010,#0a0606);bottom:0;transform:translateX(-46%) rotate(-7deg)}
+.libro:nth-child(2){--tapa:linear-gradient(180deg,#4a0a0a,#2a0303);bottom:38px;transform:translateX(-50%) rotate(-5deg);width:80%}
+.libro:nth-child(3){--tapa:linear-gradient(180deg,#140f0c,#070605);bottom:76px;transform:translateX(-54%) rotate(-3.5deg);width:82%}
+.libro:nth-child(4){--tapa:linear-gradient(180deg,#5a0c0c,#330203);bottom:114px;transform:translateX(-58%) rotate(-2deg);width:84%}
+.libro:nth-child(5){--tapa:linear-gradient(180deg,#1c1210,#090707);bottom:152px;transform:translateX(-62%) rotate(-.6deg);width:86%}
+.barra{position:relative;z-index:1;display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);background:linear-gradient(180deg,rgba(51,2,3,.65),rgba(0,0,0,.9))}
+.barra a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;text-decoration:none;color:var(--crema);padding:16px 8px;font-size:.72rem;letter-spacing:.02em;border-right:1px solid rgba(230,221,210,.16);min-height:86px}
+.barra a:last-child{border-right:0}
+.barra a:hover{background:rgba(230,221,210,.06);color:var(--plata-luz)}
+.barra svg{width:22px;height:22px;stroke:var(--plata-letra);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+@media (max-width:699px){
+  .barra{grid-template-columns:1fr 1fr;padding-right:0}
+  .barra a{min-height:72px;border-bottom:1px solid rgba(230,221,210,.16);font-size:.7rem}
+  .barra a:nth-child(2n){border-right:0}
+  .hero{min-height:0;padding-top:108px;justify-content:flex-start}
+  .hero__grid{padding-bottom:8px}
+  .hero h1{font-size:clamp(1.95rem,9vw,2.35rem);max-width:none}
+  .hero .lead{margin-top:14px}
+  .hero .acciones{margin-top:20px}
+  .visual{min-height:0;padding:4px 4px 12px}
+  .visual .balanza{width:100px}
+  .ecg{height:40px;margin:0 0 8px}
+  .pila{height:188px;width:min(100%,300px);margin-right:44px}
+  .libro{height:34px;padding:0 16px 0 22px;font-size:.58rem}
+  .libro:nth-child(1){bottom:0}
+  .libro:nth-child(2){bottom:30px}
+  .libro:nth-child(3){bottom:60px}
+  .libro:nth-child(4){bottom:90px}
+  .libro:nth-child(5){bottom:120px}
+}
+@media (max-height:700px) and (min-width:900px){
+  .hero{padding-top:126px}
+  .hero h1{font-size:clamp(2rem,4.2vw,3.05rem)}
+  .hero .lead{margin-top:12px}
+  .hero .acciones{margin-top:18px}
+  .visual{min-height:260px}
+  .pila{height:210px}
+  .libro{height:40px}
+  .barra a{min-height:72px;padding:10px 6px}
+}
+/* Quiénes somos */
+.nosotros{background:var(--calido);border-top:1px solid var(--line)}
+.nosotros__grid{display:grid;gap:48px;margin-top:36px}
+@media (min-width:860px){.nosotros__grid{grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}}
+.retrato{position:relative;background:radial-gradient(circle at 50% 30%,#4a1212,#120F0D 70%);border:1px solid var(--line);padding:36px 28px 32px;text-align:center}
+.retrato img{width:168px;height:168px;margin:0 auto 18px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 1px var(--plata-cuerpo),0 0 0 8px rgba(230,221,210,.12)}
+.retrato h3{font-family:var(--f-tit);font-size:1.85rem;font-weight:500;line-height:1.15}
+.retrato p{color:var(--plata);font-size:.92rem;margin-top:6px}
+.sello-mini{margin-top:22px;font-family:var(--f-marca);font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--plata-letra)}
+.nosotros__texto p+p{margin-top:16px}
+.nosotros__texto p{color:#d8cfc4}
+.fajas{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.faja{border:1px solid var(--line);color:var(--plata-letra);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;padding:7px 12px;border-radius:999px}
+/* Áreas */
+.areas{background:#000;border-top:1px solid var(--line)}
+.rejilla{display:grid;gap:18px;margin-top:36px}
+@media (min-width:700px){.rejilla{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1020px){.rejilla.cinco{grid-template-columns:repeat(6,1fr)}.rejilla.cinco article:nth-child(1){grid-column:1/3}.rejilla.cinco article:nth-child(2){grid-column:3/5}.rejilla.cinco article:nth-child(3){grid-column:5/7}.rejilla.cinco article:nth-child(4){grid-column:2/4}.rejilla.cinco article:nth-child(5){grid-column:4/6}}
+.area{display:block;text-decoration:none;padding:28px 24px 26px;border:1px solid var(--line);background:linear-gradient(180deg,rgba(99,2,2,.18),rgba(18,15,13,.4));transition:border-color .25s,transform .25s,background .25s;min-height:100%}
+.area:hover{border-color:var(--plata-cuerpo);transform:translateY(-3px);background:linear-gradient(180deg,rgba(99,2,2,.32),rgba(18,15,13,.55))}
+.area .num{font-family:var(--f-marca);color:var(--plata-letra);font-size:.72rem;letter-spacing:.16em}
+.area h3{font-family:var(--f-tit);font-weight:500;font-size:1.7rem;margin:10px 0 8px;line-height:1.15}
+.area p{color:var(--plata);font-size:.95rem}
+/* Campus */
+.campus{background:linear-gradient(180deg,#0d0808,#120F0D 40%,#000);border-top:1px solid var(--line)}
+.campus__intro{display:grid;gap:22px;margin-top:24px}
+.soportes{display:grid;gap:14px;margin-top:8px}
+@media (min-width:720px){.soportes{grid-template-columns:1fr 1fr}}
+.soporte{border:1px solid var(--line);padding:18px 18px 16px;background:rgba(0,0,0,.35)}
+.soporte h3{font-family:var(--f-tit);font-size:1.45rem;font-weight:500;margin-bottom:6px;display:flex;align-items:center;gap:12px}
+.soporte p{color:var(--plata);font-size:.92rem}
+.sello{width:54px;height:54px;flex:none}
+.cursos{display:grid;gap:18px;margin-top:40px}
+@media (min-width:700px){.cursos{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1060px){.cursos{grid-template-columns:repeat(3,1fr)}}
+.curso{display:flex;flex-direction:column;border:1px solid var(--line);background:#0a0707;min-height:100%;padding:0}
+.curso__cap{height:7px;background:linear-gradient(90deg,var(--profundo),var(--plata-cuerpo))}
+.curso__cuerpo{padding:22px 22px 20px;display:flex;flex-direction:column;flex:1}
+.tag{align-self:flex-start;font-size:.65rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#120F0D;background:linear-gradient(180deg,var(--plata-luz),var(--plata-cuerpo));padding:4px 8px;margin-bottom:12px}
+.curso h3{font-family:var(--f-tit);font-size:1.45rem;font-weight:500;line-height:1.2;margin-bottom:8px}
+.curso .area-txt{font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--plata-letra);margin-bottom:10px}
+.curso p{color:var(--plata);font-size:.92rem;flex:1}
+.curso .btn{margin-top:18px;align-self:flex-start}
+.aula{margin-top:36px;border:1px solid var(--line);background:linear-gradient(135deg,rgba(99,2,2,.2),rgba(0,0,0,.5));padding:28px 24px;display:grid;gap:22px}
+@media (min-width:800px){.aula{grid-template-columns:1fr 1.2fr;align-items:center;padding:32px 36px}}
+.aula h3{font-family:var(--f-tit);font-size:2rem;font-weight:500}
+.aula p{color:var(--plata);margin-top:8px}
+.aula__panel{display:grid;gap:10px}
+.fila{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 14px;background:rgba(0,0,0,.4);border:1px solid rgba(230,221,210,.2)}
+.fila b{font-weight:600}
+.prog{width:90px;height:4px;background:#2a1a14;border-radius:99px;overflow:hidden}
+.prog span{display:block;height:100%;background:linear-gradient(90deg,var(--plata-cuerpo),var(--plata-luz))}
+/* Consultoría */
+.consulta{background:var(--calido);border-top:1px solid var(--line)}
+.lista-serv{display:grid;gap:16px;margin-top:36px}
+@media (min-width:800px){.lista-serv{grid-template-columns:1fr 1fr}}
+.serv{padding:24px 22px;border-left:2px solid var(--plata-cuerpo);background:rgba(0,0,0,.28)}
+.serv h3{font-family:var(--f-tit);font-size:1.5rem;font-weight:500;margin-bottom:8px}
+.serv p{color:var(--plata);font-size:.95rem}
+/* Investigación */
+.invest{background:#000;border-top:1px solid var(--line)}
+.notas{display:grid;gap:16px;margin-top:36px}
+@media (min-width:720px){.notas{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1060px){.notas{grid-template-columns:repeat(3,1fr)}.notas article:first-child{grid-column:span 1}}
+.nota{padding:26px 22px 22px;border:1px solid var(--line);background:#0c0909;display:flex;flex-direction:column;min-height:100%}
+.nota time,.nota .tipo{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--plata-letra)}
+.nota h3{font-family:var(--f-tit);font-size:1.4rem;font-weight:500;margin:12px 0 10px;line-height:1.2}
+.nota p{color:var(--plata);font-size:.92rem;flex:1}
+/* Recursos */
+.recursos{background:var(--calido);border-top:1px solid var(--line)}
+.docs{display:grid;gap:14px;margin-top:36px}
+@media (min-width:720px){.docs{grid-template-columns:repeat(2,1fr)}}
+.doc{display:flex;gap:16px;align-items:flex-start;padding:20px 18px;border:1px solid var(--line);text-decoration:none;background:rgba(0,0,0,.3);transition:border-color .2s}
+.doc:hover{border-color:var(--plata-cuerpo)}
+.doc svg{flex:none;width:36px;height:36px;color:var(--plata-letra)}
+.doc h3{font-family:var(--f-tit);font-size:1.25rem;font-weight:500}
+.doc p{color:var(--plata);font-size:.88rem;margin-top:4px}
+/* Contacto */
+.contacto{background:#000;border-top:1px solid var(--line)}
+.contacto__grid{display:grid;gap:28px;margin-top:32px}
+@media (min-width:800px){.contacto__grid{grid-template-columns:1fr 1fr}}
+.dato a{color:var(--plata-letra);text-decoration:none;border-bottom:1px solid rgba(230,221,210,.4)}
+.dato a:hover{border-bottom-color:var(--plata-luz);color:var(--plata-luz)}
+.dato h3{font-family:var(--f-tit);font-size:1.5rem;font-weight:500;margin-bottom:6px}
+.dato p{color:var(--plata)}
+.dato + .dato{margin-top:22px}
+.pie{border-top:1px solid var(--line);padding:28px 0 120px;color:var(--plata);font-size:.85rem;display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between}
+.pie b{font-family:var(--f-marca);font-weight:600;letter-spacing:.12em;font-size:.75rem;color:var(--plata-letra);
+  background:linear-gradient(180deg,var(--plata-luz),var(--plata-cuerpo));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+/* WhatsApp flotante y barra móvil */
+.barra{padding-right:84px}
+@media (max-width:699px){.barra{padding-right:0}}
+.wa-flotante{position:fixed;right:20px;bottom:22px;z-index:90;width:56px;height:56px;border-radius:50%;background:var(--calido);color:var(--crema);border:1px solid var(--plata-cuerpo);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.45),0 0 0 4px rgba(230,221,210,.1);transition:transform .25s,background .25s}
+.wa-flotante:hover{transform:translateY(-2px);background:#1a1010}
+.wa-flotante svg{width:26px;height:26px}
+.barra-movil{display:none;position:fixed;inset:auto 0 0;z-index:85;background:rgba(0,0,0,.94);border-top:1px solid var(--line);backdrop-filter:blur(12px);padding:8px 12px calc(8px + env(safe-area-inset-bottom))}
+.barra-movil nav{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.barra-movil a{display:flex;flex-direction:column;align-items:center;gap:3px;text-decoration:none;color:var(--plata);font-size:.65rem;letter-spacing:.06em;text-transform:uppercase;padding:6px 4px}
+.barra-movil a svg{width:18px;height:18px;stroke:var(--plata-letra);fill:none;stroke-width:1.7}
+.barra-movil a.wa{color:var(--crema)}
+@media (max-width:899px){
+  .wa-flotante{bottom:78px;right:16px}
+  .barra-movil{display:block}
+  .pie{padding-bottom:110px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .visual .balanza .platillo-izq,.visual .balanza .platillo-der,.ecg path{animation:none}
+  .ecg path{stroke-dashoffset:0}
+  .btn:hover,.area:hover{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header class="enc" id="encabezado">
+  <div class="cont">
+    <div class="enc__top">
+      <a class="marca" href="#inicio">
+        <img src="assets/logo-criterio-enfermero.webp" width="58" height="58" alt="Logotipo de Criterio Enfermero: balanza, estetoscopio y trazo de electrocardiograma">
+        <span>
+          <span class="nombre">Criterio Enfermero</span>
+        </span>
+      </a>
+      <p class="lema-enc">Formación · Conocimiento · Innovación en Enfermería</p>
+      <button class="hamb" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú"><span></span></button>
+    </div>
+    <nav class="enc__nav" id="menu-principal" aria-label="Principal">
+      <a href="#inicio" aria-current="page">Inicio</a>
+      <a href="#quienes-somos">Quiénes somos</a>
+      <a href="#formacion">Formación</a>
+      <a href="#consultoria">Consultoría</a>
+      <a href="#investigacion">Investigación y publicaciones</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+<section class="hero" id="inicio">
+  <div class="cont hero__grid">
+    <div>
+      <h1>Criterio, conocimiento y liderazgo para una <span class="acento">enfermería</span> que decide y transforma.</h1>
+      <p class="lead">Formación profesional, desarrollo académico, asesoramiento y producción de conocimiento para fortalecer la práctica de enfermería.</p>
+      <div class="acciones">
+        <a class="btn btn--oro" href="#formacion">Conocé nuestra propuesta</a>
+        <a class="btn btn--linea" href="#contacto">Escribinos</a>
+      </div>
+    </div>
+    <div class="visual" aria-hidden="true">
+      <svg class="balanza" viewBox="0 0 200 120" fill="none">
+        <g class="platillo-izq">
+          <path d="M36 76h52" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M40 76c2 12 12 18 22 18s20-6 22-18" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M62 36v40" stroke="currentColor" stroke-width="1.4"/>
+        </g>
+        <g class="platillo-der">
+          <path d="M112 76h52" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M116 76c2 12 12 18 22 18s20-6 22-18" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M138 36v40" stroke="currentColor" stroke-width="1.4"/>
+        </g>
+        <path d="M62 36h76" stroke="currentColor" stroke-width="1.9"/>
+        <path d="M100 16v20" stroke="currentColor" stroke-width="2"/>
+        <circle cx="100" cy="14" r="5.5" fill="#E6DDD2" stroke="currentColor" stroke-width="1.2"/>
+        <path d="M100 36v68" stroke="currentColor" stroke-width="2"/>
+        <path d="M86 104h28l8 10H78l8-10z" fill="currentColor" opacity=".95"/>
+      </svg>
+      <svg class="ecg" viewBox="0 0 420 54" aria-hidden="true">
+        <path d="M0 32h62l8-8 10 22 14-36 12 26 8-12h26l8-8 10 22 14-36 12 26 8-12h54l8-8 10 22 14-36 12 26 8-12H420"/>
+      </svg>
+      <div class="pila">
+        <div class="libro">Práctica basada en la evidencia</div>
+        <div class="libro">Enfermería ocupacional</div>
+        <div class="libro">Enfermería legal y forense</div>
+        <div class="libro">Calidad y seguridad del paciente</div>
+        <div class="libro">Gestión y liderazgo</div>
+      </div>
+    </div>
+  </div>
+  <div class="barra">
+    <a href="#formacion">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V6a2 2 0 0 1 2-2h5v16H6a2 2 0 0 1-2-2Z"/><path d="M11 4h7a2 2 0 0 1 2 2v14h-9V4Z"/><path d="M11 20h9"/></svg>
+      Formación y capacitación
+    </a>
+    <a href="#consultoria">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19V9l5 4 4-6 5 8"/><path d="M4 19h16"/></svg>
+      Consultoría y gestión
+    </a>
+    <a href="#investigacion">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h9l5 5v11H6V4Z"/><path d="M15 4v5h5"/><path d="M9 13h8M9 17h5"/></svg>
+      Investigación y publicaciones
+    </a>
+    <a href="#quienes-somos">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3"/><path d="M5 19c1.2-3 4-4.5 7-4.5S17.8 16 19 19"/></svg>
+      Desarrollo profesional
+    </a>
+    <a href="#formacion">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v16M8 20h8"/><path d="M5 10h6M13 10h6"/><path d="M8 5h8"/><path d="M8 5v5M16 5v5"/><path d="M5 10c.6 2 2.4 3 3.5 3S11.4 12 12 10M12 10c.6 2 2.4 3 3.5 3S18.4 12 19 10"/></svg>
+      Enfermería legal y ocupacional
+    </a>
+  </div>
+</section>
+
+<section class="nosotros sec" id="quienes-somos">
+  <div class="cont">
+    <p class="kicker">Quiénes somos</p>
+    <h2 class="tit">Una práctica que se sostiene en el <em>criterio</em> profesional.</h2>
+    <div class="nosotros__grid">
+      <aside class="retrato">
+        <img src="assets/logo-criterio-enfermero.webp" width="168" height="168" alt="Sello de Criterio Enfermero">
+        <h3>Prof. Lic. Carolina Guerra Giovanetti</h3>
+        <p>Córdoba, Argentina</p>
+        <p class="sello-mini">Criterio · Conocimiento · Innovación</p>
+      </aside>
+      <div class="nosotros__texto">
+        <p>Criterio Enfermero es el espacio de formación, consultoría y producción de conocimiento de la Prof. Lic. Carolina Guerra Giovanetti, en Córdoba.</p>
+        <p>Profesora y licenciada en Enfermería, especializada en Enfermería Legal y experta en Calidad y Seguridad del Paciente. Se desempeña como mando medio y tiene trayectoria en enfermería ocupacional. Es conferencista, cofundadora y Secretaria de Capacitación de la Sociedad de Enfermería Legal y Forense de la República Argentina (SELF).</p>
+        <p>Durante casi dieciocho años se desempeñó en el Hospital de Clínicas José de San Martín (Universidad de Buenos Aires). Allí ejerció jefaturas de unidad —entre ellas Neurocirugía, Terapia Intensiva, Cuidados Cardiocoronarios Intensivos y la Planta Obstétrica— y fue enfermera jefe del Departamento de Programas de calidad de atención.</p>
+        <p>Su trabajo parte de una convicción: el cuidado se sostiene en el criterio profesional, la evidencia y el marco normativo vigente.</p>
+        <div class="fajas">
+          <span class="faja">Enfermería legal</span>
+          <span class="faja">Calidad y SDP</span>
+          <span class="faja">Gestión</span>
+          <span class="faja">Enfermería ocupacional</span>
+          <span class="faja">Formación continua</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="areas sec" id="areas">
+  <div class="cont">
+    <p class="kicker">Campos de trabajo</p>
+    <h2 class="tit">Cinco áreas para decidir con fundamento.</h2>
+    <p class="bajada">El campus y la consultoría se organizan en torno a los ejes que atraviesan su práctica y su enseñanza.</p>
+    <div class="rejilla cinco">
+      <a class="area" href="#formacion">
+        <span class="num">01</span>
+        <h3>Gestión y liderazgo</h3>
+        <p>Conducción de equipos, procesos asistenciales y toma de decisiones en el servicio de enfermería.</p>
+      </a>
+      <a class="area" href="#formacion">
+        <span class="num">02</span>
+        <h3>Calidad y seguridad del paciente</h3>
+        <p>Mejora continua, indicadores, protocolos y una cultura que anticipa el daño evitable.</p>
+      </a>
+      <a class="area" href="#formacion">
+        <span class="num">03</span>
+        <h3>Enfermería legal y forense</h3>
+        <p>Marco normativo, registro, responsabilidad profesional y el lema de formar para saber hacer.</p>
+      </a>
+      <a class="area" href="#formacion">
+        <span class="num">04</span>
+        <h3>Enfermería ocupacional</h3>
+        <p>Cuidado de la salud de las personas en el ámbito del trabajo, prevención y articulación interdisciplinaria.</p>
+      </a>
+      <a class="area" href="#formacion">
+        <span class="num">05</span>
+        <h3>Práctica basada en la evidencia</h3>
+        <p>El juicio clínico como método: interpretar, fundamentar y actuar con la mejor evidencia disponible.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="campus sec" id="formacion">
+  <div class="cont">
+    <p class="kicker">Formación · Campus</p>
+    <h2 class="tit">Un aula propia, con certificado y pago en pesos.</h2>
+    <div class="campus__intro">
+      <p class="bajada" style="margin-top:0">El campus de Criterio Enfermero se integra a este sitio: los cursos viven en su marca y en su dominio, con aula del alumno, certificación y cobro a través de Mercado Pago. Lo que sigue es una muestra de cómo se vería la oferta.</p>
+    </div>
+    <div class="soportes">
+      <div class="soporte">
+        <h3>
+          <svg class="sello" viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="30" fill="none" stroke="#B7AA9D" stroke-width="1.4"/>
+            <circle cx="32" cy="32" r="25" fill="none" stroke="#E6DDD2" stroke-width=".7"/>
+            <path d="M32 16l2.2 6.6h7l-5.6 4.1 2.1 6.6L32 29.3l-5.7 4 2.1-6.6-5.6-4.1h7L32 16z" fill="#E6DDD2"/>
+            <path d="M20 44h24" stroke="#B7AA9D" stroke-width="1.2"/>
+          </svg>
+          Certificado profesional
+        </h3>
+        <p>Al completar un curso, el campus emite un certificado con la marca de Criterio Enfermero.</p>
+      </div>
+      <div class="soporte">
+        <h3>Pago con Mercado Pago</h3>
+        <p>Inscripción en pesos, con los medios de pago habituales en Argentina. En esta demo no se muestran aranceles ni se realiza ningún cobro.</p>
+      </div>
+    </div>
+
+    <div class="cursos">
+      <article class="curso">
+        <div class="curso__cap"></div>
+        <div class="curso__cuerpo">
+          <span class="tag">Curso de ejemplo</span>
+          <p class="area-txt">Gestión y liderazgo</p>
+          <h3>Liderazgo y gestión de equipos de enfermería</h3>
+          <p>Una introducción al mando medio, la conducción de turnos y la toma de decisiones en el servicio.</p>
+          <a class="btn btn--linea" href="#contacto">Pedir información</a>
+        </div>
+      </article>
+      <article class="curso">
+        <div class="curso__cap"></div>
+        <div class="curso__cuerpo">
+          <span class="tag">Curso de ejemplo</span>
+          <p class="area-txt">Calidad y seguridad del paciente</p>
+          <h3>Calidad asistencial y seguridad del paciente</h3>
+          <p>Protocolos, indicadores y una mirada del cuidado que anticipa el evento adverso evitable.</p>
+          <a class="btn btn--linea" href="#contacto">Pedir información</a>
+        </div>
+      </article>
+      <article class="curso">
+        <div class="curso__cap"></div>
+        <div class="curso__cuerpo">
+          <span class="tag">Curso de ejemplo</span>
+          <p class="area-txt">Enfermería legal y forense</p>
+          <h3>Enfermería legal y forense: saber para hacer</h3>
+          <p>Normativa, registro y responsabilidad profesional, con el criterio como eje de la práctica.</p>
+          <a class="btn btn--linea" href="#contacto">Pedir información</a>
+        </div>
+      </article>
+      <article class="curso">
+        <div class="curso__cap"></div>
+        <div class="curso__cuerpo">
+          <span class="tag">Curso de ejemplo</span>
+          <p class="area-txt">Enfermería ocupacional</p>
+          <h3>Enfermería ocupacional en el ámbito laboral</h3>
+          <p>Vigilancia de la salud, prevención de riesgos y trabajo articulado en el entorno de trabajo.</p>
+          <a class="btn btn--linea" href="#contacto">Pedir información</a>
+        </div>
+      </article>
+      <article class="curso">
+        <div class="curso__cap"></div>
+        <div class="curso__cuerpo">
+          <span class="tag">Curso de ejemplo</span>
+          <p class="area-txt">Práctica basada en la evidencia</p>
+          <h3>Criterio clínico y práctica basada en la evidencia</h3>
+          <p>Cómo leer, interpretar y aplicar la evidencia sin reemplazar el juicio profesional.</p>
+          <a class="btn btn--linea" href="#contacto">Pedir información</a>
+        </div>
+      </article>
+    </div>
+
+    <aside class="aula" aria-label="Vista de ejemplo del aula del alumno">
+      <div>
+        <p class="kicker">Campus</p>
+        <h3>Aula del alumno</h3>
+        <p>Cada persona inscrita entra a su aula: avances, materiales, evaluaciones y certificados, en un mismo lugar. Esta vista es una muestra.</p>
+      </div>
+      <div class="aula__panel">
+        <div class="fila"><span>Liderazgo y gestión de equipos</span><span class="prog" aria-hidden="true"><span style="width:72%"></span></span></div>
+        <div class="fila"><span>Calidad asistencial y SDP</span><span class="prog" aria-hidden="true"><span style="width:40%"></span></span></div>
+        <div class="fila"><span>Enfermería legal y forense</span><b>Certificado</b></div>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="consulta sec" id="consultoria">
+  <div class="cont">
+    <p class="kicker">Consultoría</p>
+    <h2 class="tit">Acompañamiento a instituciones y servicios de salud.</h2>
+    <p class="bajada">Asesoramiento para direcciones, supervisiones y equipos que precisan ordenar procesos, fortalecer la seguridad del paciente y sostener la práctica dentro del marco legal vigente.</p>
+    <div class="lista-serv">
+      <article class="serv">
+        <h3>Calidad y seguridad</h3>
+        <p>Revisión de procesos asistenciales, indicadores y cultura de seguridad, con foco en el cuidado cotidiano del servicio.</p>
+      </article>
+      <article class="serv">
+        <h3>Marco legal y registro</h3>
+        <p>Orientación sobre normativa aplicable, documentación clínica y responsabilidad profesional del equipo de enfermería.</p>
+      </article>
+      <article class="serv">
+        <h3>Gestión de equipos</h3>
+        <p>Apoyo al mando medio en la organización del trabajo, la conducción de turnos y la formación interna.</p>
+      </article>
+      <article class="serv">
+        <h3>Formación en la institución</h3>
+        <p>Capacitaciones a medida para instituciones, articuladas con las áreas del campus y las necesidades del servicio.</p>
+      </article>
+    </div>
+    <p style="margin-top:32px"><a class="btn btn--oro" href="#contacto">Consultar una asesoría</a></p>
+  </div>
+</section>
+
+<section class="invest sec" id="investigacion">
+  <div class="cont">
+    <p class="kicker">Investigación y publicaciones</p>
+    <h2 class="tit">Temas que ya circulan en su voz pública.</h2>
+    <p class="bajada">Selección de asuntos que la Prof. Lic. Guerra Giovanetti ha trabajado en publicaciones y espacios de formación abiertos. Las fichas son de carácter ilustrativo para esta demo.</p>
+    <div class="notas">
+      <article class="nota">
+        <p class="tipo">Criterio clínico</p>
+        <h3>Escalas Braden, Norton y EMINA</h3>
+        <p>Identificar el riesgo no es un trámite: las escalas ordenan la mirada, pero el juicio clínico define la acción.</p>
+      </article>
+      <article class="nota">
+        <p class="tipo">Seguridad del paciente</p>
+        <h3>ITU asociada a catéter urinario</h3>
+        <p>Cuidados de enfermería para prevenir infecciones asociadas al uso del catéter, con base en la normativa nacional vigente.</p>
+      </article>
+      <article class="nota">
+        <p class="tipo">Buenas prácticas</p>
+        <h3>Accesos venosos periféricos</h3>
+        <p>El estándar de cuidado en accesos venosos periféricos, a partir de la resolución ministerial que lo consagra en el país.</p>
+      </article>
+      <article class="nota">
+        <p class="tipo">Marco normativo</p>
+        <h3>Incumbencias del Decreto 2497/1993</h3>
+        <p>Qué habilita y qué exige el decreto reglamentario a la hora de ejercer y de fundamentar el quehacer profesional.</p>
+      </article>
+      <article class="nota">
+        <p class="tipo">Normativa sanitaria</p>
+        <h3>Ley 27.797 de calidad y seguridad sanitaria</h3>
+        <p>La Ley Nicolás y su cruce con la seguridad del paciente y los deberes del equipo de salud.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="recursos sec" id="recursos">
+  <div class="cont">
+    <p class="kicker">Recursos</p>
+    <h2 class="tit">Material de apoyo, a modo de <em>ejemplo</em>.</h2>
+    <p class="bajada">En el sitio definitivo estos documentos se podrán descargar. Acá se muestran como muestra de la sección, sin archivo adjunto.</p>
+    <div class="docs">
+      <div class="doc">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 3h7l5 5v13H7V3Z"/><path d="M14 3v5h5"/><path d="M9 13h8M9 17h5"/></svg>
+        <div>
+          <span class="tag">Ejemplo</span>
+          <h3>Guía breve de registro de enfermería</h3>
+          <p>Ficha de orientación para un registro claro, oportuno y defendible.</p>
+        </div>
+      </div>
+      <div class="doc">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 3h7l5 5v13H7V3Z"/><path d="M14 3v5h5"/><path d="M9 13h8M9 17h5"/></svg>
+        <div>
+          <span class="tag">Ejemplo</span>
+          <h3>Checklist de seguridad del paciente</h3>
+          <p>Lista de verificación de apoyo para el cuidado cotidiano en el servicio.</p>
+        </div>
+      </div>
+      <div class="doc">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 3h7l5 5v13H7V3Z"/><path d="M14 3v5h5"/><path d="M9 13h8M9 17h5"/></svg>
+        <div>
+          <span class="tag">Ejemplo</span>
+          <h3>Notas sobre escalas de riesgo</h3>
+          <p>Recordatorio para interpretar Braden, Norton o EMINA sin reducir al paciente a un puntaje.</p>
+        </div>
+      </div>
+      <div class="doc">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M7 3h7l5 5v13H7V3Z"/><path d="M14 3v5h5"/><path d="M9 13h8M9 17h5"/></svg>
+        <div>
+          <span class="tag">Ejemplo</span>
+          <h3>Marco normativo de consulta rápida</h3>
+          <p>Referencias de orientación sobre incumbencias y normativa de calidad y seguridad.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contacto sec" id="contacto">
+  <div class="cont">
+    <p class="kicker">Contacto</p>
+    <h2 class="tit">Hablemos con tiempo, y con claridad.</h2>
+    <p class="bajada">Consultas por formación, consultoría o el campus. Córdoba, Argentina.</p>
+    <div class="contacto__grid">
+      <div>
+        <div class="dato">
+          <h3>WhatsApp</h3>
+          <p><a href="https://wa.me/5493517183325">+54 9 351 718-3325</a></p>
+        </div>
+        <div class="dato">
+          <h3>Correo</h3>
+          <p><a href="mailto:Lic.guerragiovanetti@gmail.com">Lic.guerragiovanetti@gmail.com</a></p>
+        </div>
+        <div class="dato">
+          <h3>Lugar</h3>
+          <p>Córdoba, Argentina</p>
+        </div>
+      </div>
+      <div>
+        <p style="color:var(--plata);margin-bottom:22px">Si te interesa un curso, una asesoría para tu institución o querés conocer el campus, escribinos por el canal que te resulte más cómodo.</p>
+        <div class="acciones">
+          <a class="btn btn--wa" href="https://wa.me/5493517183325">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.5 2 2 6.36 2 11.76c0 1.72.46 3.4 1.34 4.88L2 22l5.5-1.42A10.2 10.2 0 0 0 12.04 21.5C17.6 21.5 22.1 17.14 22.1 11.74 22.1 6.36 17.6 2 12.04 2Zm0 17.9c-1.55 0-3.07-.4-4.4-1.16l-.32-.18-3.27.84.87-3.14-.2-.33A7.9 7.9 0 0 1 4.1 11.76c0-4.26 3.56-7.72 7.94-7.72s7.95 3.46 7.95 7.72c0 4.28-3.57 7.74-7.95 7.74Zm4.36-5.8c-.24-.12-1.4-.69-1.62-.77-.22-.08-.38-.12-.54.12-.16.24-.62.77-.76.93-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.38-1.32-1.62-.14-.24-.02-.36.1-.48.12-.12.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.24 1.02.4 1.38.52.58.18 1.1.16 1.52.1.46-.06 1.4-.57 1.6-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28Z"/></svg>
+            Escribir por WhatsApp
+          </a>
+          <a class="btn btn--linea" href="mailto:Lic.guerragiovanetti@gmail.com">Enviar un correo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="cont pie">
+  <div>
+    <b>Criterio Enfermero</b>
+    <p>Formación · Conocimiento · Innovación en Enfermería. Córdoba, Argentina.</p>
+  </div>
+  <p>Demo de propuesta web. Sitio no publicado.</p>
+</footer>
+
+<a class="wa-flotante" href="https://wa.me/5493517183325" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.5 2 2 6.36 2 11.76c0 1.72.46 3.4 1.34 4.88L2 22l5.5-1.42A10.2 10.2 0 0 0 12.04 21.5C17.6 21.5 22.1 17.14 22.1 11.74 22.1 6.36 17.6 2 12.04 2Zm0 17.9c-1.55 0-3.07-.4-4.4-1.16l-.32-.18-3.27.84.87-3.14-.2-.33A7.9 7.9 0 0 1 4.1 11.76c0-4.26 3.56-7.72 7.94-7.72s7.95 3.46 7.95 7.72c0 4.28-3.57 7.74-7.95 7.74Zm4.36-5.8c-.24-.12-1.4-.69-1.62-.77-.22-.08-.38-.12-.54.12-.16.24-.62.77-.76.93-.14.16-.28.18-.52.06-.24-.12-1-.37-1.9-1.18-.7-.62-1.18-1.38-1.32-1.62-.14-.24-.02-.36.1-.48.12-.12.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.4-.54-.4h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.6 4.12 3.64.58.24 1.02.4 1.38.52.58.18 1.1.16 1.52.1.46-.06 1.4-.57 1.6-1.12.2-.55.2-1.02.14-1.12-.06-.1-.22-.16-.46-.28Z"/></svg>
+</a>
+
+<div class="barra-movil">
+  <nav aria-label="Accesos rápidos">
+    <a href="#formacion">
+      <svg viewBox="0 0 24 24"><path d="M4 20V6a2 2 0 0 1 2-2h5v16H6a2 2 0 0 1-2-2Z"/><path d="M11 4h7a2 2 0 0 1 2 2v14h-9"/></svg>
+      Campus
+    </a>
+    <a href="#contacto">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+      Contacto
+    </a>
+    <a class="wa" href="https://wa.me/5493517183325">
+      <svg viewBox="0 0 24 24" fill="currentColor" stroke="none" aria-hidden="true"><path d="M12.04 2C6.5 2 2 6.36 2 11.76c0 1.72.46 3.4 1.34 4.88L2 22l5.5-1.42A10.2 10.2 0 0 0 12.04 21.5C17.6 21.5 22.1 17.14 22.1 11.74 22.1 6.36 17.6 2 12.04 2Zm0 17.9c-1.55 0-3.07-.4-4.4-1.16l-.32-.18-3.27.84.87-3.14-.2-.33A7.9 7.9 0 0 1 4.1 11.76c0-4.26 3.56-7.72 7.94-7.72s7.95 3.46 7.95 7.72c0 4.28-3.57 7.74-7.95 7.74Z"/></svg>
+      WhatsApp
+    </a>
+  </nav>
+</div>
+
+<script>
+(function(){
+  const enc=document.getElementById("encabezado");
+  const btn=document.querySelector(".hamb");
+  const nav=document.getElementById("menu-principal");
+  const links=nav.querySelectorAll("a");
+  const onScroll=()=>enc.classList.toggle("solido", window.scrollY>12);
+  onScroll();
+  window.addEventListener("scroll", onScroll, {passive:true});
+  const cerrar=()=>{document.body.classList.remove("menu-abierto");btn.setAttribute("aria-expanded","false");btn.setAttribute("aria-label","Abrir menú")};
+  const abrir=()=>{document.body.classList.add("menu-abierto");btn.setAttribute("aria-expanded","true");btn.setAttribute("aria-label","Cerrar menú")};
+  btn.addEventListener("click",()=>document.body.classList.contains("menu-abierto")?cerrar():abrir());
+  links.forEach(a=>a.addEventListener("click",cerrar));
+  document.addEventListener("keydown",e=>{if(e.key==="Escape")cerrar()});
+  const map=[...links].map(a=>({a,id:a.getAttribute("href").slice(1)}));
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(en=>{
+      if(!en.isIntersecting) return;
+      links.forEach(l=>{l.removeAttribute("aria-current");l.classList.remove("activo")});
+      const hit=map.find(m=>m.id===en.target.id);
+      if(hit){hit.a.setAttribute("aria-current","page");hit.a.classList.add("activo")}
+    });
+  },{rootMargin:"-40% 0px -50% 0px",threshold:0});
+  ["inicio","quienes-somos","formacion","consultoria","investigacion","recursos","contacto"].forEach(id=>{
+    const el=document.getElementById(id); if(el) io.observe(el);
+  });
+})();
+</script>
+</body>
+</html>
