@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MSB srl Ascensores · Mantenimiento, reparación y urgencias 24 hs en CABA</title>
+<meta name="description" content="MSB srl Ascensores: más de 35 años en reparación y mantenimiento de ascensores en Capital Federal, con talleres propios y guardia de urgencias las 24 hs.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#122037">
+<meta property="og:title" content="MSB srl Ascensores · CABA">
+<meta property="og:image" content="assets/logo-msb.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"></noscript>
+<link rel="preload" as="image" href="assets/logo-msb.webp">
+<style>
+:root{
+  --navy:#122037; --navy-profundo:#080E18; --navy-card:#1A2C48;
+  --lima:#4BE619; --lima-osc:#2E9A10; --lima-ink:#062006;
+  --rojo:#E10808; --rojo-osc:#A00606;
+  --blanco:#FFFFFF; --papel:#EEF2F6; --tinta:#0E1A2A; --suave:#4A5A6C; --linea:#D3DCE6;
+  --wa:#1F9E4B;
+  --f-tit:"Barlow Condensed",system-ui,sans-serif; --f-txt:"IBM Plex Sans",system-ui,sans-serif;
+  --ease:cubic-bezier(.77,0,.18,1); --enc:80px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--f-txt);color:var(--tinta);background:var(--navy-profundo);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}h1,h2,h3,p,ul,figure{margin:0}ul{padding:0;list-style:none}
+button,input,select,textarea{font:inherit}
+.skip{position:absolute;left:-999px;top:0;background:var(--lima);color:var(--lima-ink);padding:8px 16px;z-index:200}
+.skip:focus{left:12px;top:12px}
+.cont{max-width:1180px;margin-inline:auto;padding-inline:clamp(20px,5vw,48px)}
+.sec{padding-block:clamp(72px,10vw,120px)}
+.sobre{font-family:var(--f-tit);font-size:.85rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--lima-osc);display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.sobre::before{content:"";width:22px;height:2px;background:currentColor}
+.tit{font-family:var(--f-tit);font-weight:800;font-size:clamp(2.3rem,6vw,4.2rem);line-height:.95;letter-spacing:-.01em;text-transform:uppercase;text-wrap:balance}
+.bajada{margin-top:16px;font-size:1.05rem;color:var(--suave);max-width:52ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 22px;border-radius:4px;font-family:var(--f-tit);font-weight:700;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s var(--ease),box-shadow .2s,background .2s,filter .2s;color:inherit;background:none}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(1px)}
+.btn:focus-visible{outline:3px solid var(--lima);outline-offset:3px}
+.btn--lima{background:var(--lima);color:var(--lima-ink);box-shadow:0 0 24px rgba(75,230,25,.25)}
+.btn--lima:hover{filter:brightness(1.08)}
+.btn--rojo{background:var(--rojo);color:#fff;box-shadow:0 0 24px rgba(225,8,8,.35)}
+.btn--rojo:hover{background:var(--rojo-osc)}
+.btn--linea{border-color:rgba(255,255,255,.45);color:#fff}
+.btn--linea:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn--wa{background:var(--wa);color:#fff}
+.btn--wa:hover{filter:brightness(1.08)}
+.btn svg{width:18px;height:18px;flex:0 0 18px}
+/* header */
+.enc{position:fixed;inset:0 0 auto;z-index:80;background:rgba(8,14,24,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(75,230,25,.18)}
+.enc .int{min-height:var(--enc);max-width:1180px;margin-inline:auto;padding:8px 20px;display:flex;align-items:center;gap:16px}
+.marca{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}
+.marca img{width:64px;height:64px;border-radius:8px;flex:0 0 64px}
+.marca span{font-family:var(--f-tit);font-weight:700;font-size:1.15rem;letter-spacing:.08em;text-transform:uppercase;line-height:1}
+.marca small{display:block;font-size:.7rem;letter-spacing:.16em;color:var(--lima);margin-top:4px}
+.menu{margin-left:auto;display:flex;align-items:center;gap:8px}
+.menu a:not(.btn){color:rgba(255,255,255,.8);text-decoration:none;font-family:var(--f-tit);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:.9rem;padding:8px 10px}
+.menu a:not(.btn):hover{color:var(--lima)}
+.menu .btn{min-height:44px;padding:8px 16px}
+@media (max-width:900px){.menu nav,.menu .btn--linea{display:none}.marca span{display:none}}
+/* panel de pisos */
+.panel{position:fixed;left:16px;top:50%;transform:translateY(-50%);z-index:60;display:none;width:72px;background:linear-gradient(#1A2C48,#122037);border:1px solid rgba(75,230,25,.25);border-radius:16px;padding:12px 8px;box-shadow:0 20px 40px rgba(0,0,0,.4)}
+.panel .led{background:#050A12;color:var(--lima);font-family:var(--f-tit);font-weight:800;font-size:1.55rem;letter-spacing:.08em;text-align:center;border-radius:6px;padding:10px 0 4px;margin-bottom:12px;border:1px solid rgba(75,230,25,.35);box-shadow:inset 0 0 10px rgba(75,230,25,.25),0 0 12px rgba(75,230,25,.15);line-height:1}
+.panel .led::after{content:"PISO";display:block;font-size:.55rem;letter-spacing:.18em;color:rgba(75,230,25,.7);font-weight:600;margin-top:2px}
+.panel nav{display:grid;gap:6px}
+.piso-btn{height:36px;border:1px solid rgba(255,255,255,.15);background:#0B1524;color:#fff;font-family:var(--f-tit);font-weight:700;letter-spacing:.06em;border-radius:6px;cursor:pointer;text-decoration:none;display:grid;place-items:center;transition:all .2s}
+.piso-btn:hover{border-color:var(--lima);color:var(--lima)}
+.piso-btn.activo{background:var(--lima);color:var(--lima-ink);border-color:var(--lima);box-shadow:0 0 12px rgba(75,230,25,.45)}
+.piso-btn.alarma{border-color:var(--rojo);color:#fff}
+.piso-btn.alarma.activo,.piso-btn.alarma:hover{background:var(--rojo);border-color:var(--rojo);color:#fff;box-shadow:0 0 12px rgba(225,8,8,.5)}
+@media (min-width:1020px){.panel{display:block}}
+.piso-led{position:fixed;top:calc(var(--enc) + 8px);left:50%;transform:translateX(-50%);z-index:70;display:flex;align-items:center;gap:10px;background:#050A12;color:var(--lima);padding:6px 14px;border-radius:6px;font-family:var(--f-tit);letter-spacing:.14em;text-transform:uppercase;border:1px solid rgba(75,230,25,.35);box-shadow:0 0 20px rgba(75,230,25,.15)}
+.piso-led b{font-size:1.15rem;min-width:1.6ch;text-align:center}
+@media (min-width:1020px){.piso-led{display:none}}
+/* hero */
+.hero{min-height:100svh;display:grid;align-items:center;padding:calc(var(--enc) + 52px) 0 110px;position:relative;overflow:hidden;background:
+  radial-gradient(ellipse 70% 50% at 70% 40%, rgba(75,230,25,.1), transparent 55%),
+  radial-gradient(ellipse 40% 40% at 20% 80%, rgba(225,8,8,.08), transparent 50%),
+  var(--navy-profundo);color:#fff}
+.hero::before{content:"";position:absolute;inset:0;background-image:
+  linear-gradient(rgba(75,230,25,.05) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(75,230,25,.05) 1px, transparent 1px);
+  background-size:48px 48px;mask-image:radial-gradient(ellipse at 60% 40%,#000 20%,transparent 75%);pointer-events:none}
+.hero .cont{position:relative;z-index:1;display:grid;gap:40px;align-items:center}
+@media (min-width:920px){.hero .cont{grid-template-columns:1.15fr .85fr;gap:48px}.hero .marca-hero{display:none}}
+.hero .marca-hero{width:132px;height:132px;border-radius:16px;margin-bottom:18px;box-shadow:0 0 0 1px rgba(75,230,25,.2),0 16px 40px rgba(0,0,0,.45)}
+@media (max-width:919px){
+  .hero{padding-top:calc(var(--enc) + 48px);padding-bottom:118px;min-height:auto}
+  .hero .cont{display:flex;flex-direction:column;gap:14px}
+  .hero .marca-hero{display:none}
+  .shaft{order:-1;width:126px;aspect-ratio:3/3.4;margin:0 auto}
+  .hero .acciones{margin-top:14px}
+  .hero .bajada{margin-top:8px;font-size:.98rem}
+  .cifras{display:none}
+}
+.hero .tit{color:#fff}
+.hero .tit em{font-style:normal;color:var(--lima)}
+.hero .bajada{color:#C5D0DC}
+.hero .acciones{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.cifras{display:flex;gap:28px;margin-top:36px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1)}
+.cifras b{display:block;font-family:var(--f-tit);font-size:2.6rem;line-height:1;color:var(--lima);letter-spacing:-.02em}
+.cifras span{font-size:.82rem;color:#A9B6C6;letter-spacing:.04em}
+@media (max-width:919px){
+  .cifras{display:none}
+  .hero .marca-hero{display:none}
+}
+/* cabina MSB */
+.shaft{position:relative;width:min(320px,100%);margin-inline:auto;aspect-ratio:3/4.2;background:#050A12;border:2px solid rgba(75,230,25,.35);border-radius:8px;box-shadow:0 0 40px rgba(75,230,25,.12),0 30px 60px rgba(0,0,0,.5);overflow:hidden}
+.shaft .head{height:52px;display:grid;place-items:center;background:#0B1524;border-bottom:1px solid rgba(75,230,25,.25)}
+.shaft .display{font-family:var(--f-tit);font-weight:800;color:var(--lima);letter-spacing:.2em;font-size:1.4rem;text-shadow:0 0 12px rgba(75,230,25,.8);min-width:3.2ch;text-align:center}
+.shaft .hueco{position:absolute;inset:52px 14px 14px;background:#0A1220;overflow:hidden;border:1px solid rgba(75,230,25,.2)}
+.shaft .interior{position:absolute;inset:0;background:
+  radial-gradient(ellipse at 50% 0%, rgba(75,230,25,.28), transparent 55%),
+  linear-gradient(180deg,#1A2C48,#0B1524);
+  display:grid;place-items:center}
+.shaft .interior::before{content:"";position:absolute;left:12%;right:12%;top:10%;height:8px;background:var(--lima);opacity:.7;box-shadow:0 0 24px var(--lima);border-radius:99px}
+.shaft .alarma-btn{width:54px;height:54px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#FF5A5A,var(--rojo) 45%,#7A0404);border:3px solid #3A0000;box-shadow:0 0 0 4px #1A0000,0 0 22px rgba(225,8,8,.7);position:relative;z-index:1}
+.shaft .alarma-btn::after{content:"24";position:absolute;inset:0;display:grid;place-items:center;font-family:var(--f-tit);font-weight:800;color:#fff;font-size:.9rem;letter-spacing:.04em}
+.shaft .puerta{position:absolute;top:0;bottom:0;width:50%;z-index:3;transition:transform 1.2s var(--ease);
+  background:
+    linear-gradient(90deg,rgba(75,230,25,.08),transparent 20%,transparent 80%,rgba(0,0,0,.35)),
+    repeating-linear-gradient(90deg,#1A2C48 0 10px,#15243C 10px 12px);
+  box-shadow:inset 0 0 0 1px rgba(75,230,25,.15)}
+.shaft .puerta.izq{left:0;border-right:1px solid #050A12}
+.shaft .puerta.der{right:0;border-left:1px solid #050A12}
+.shaft.abierto .puerta.izq{transform:translateX(-97%)}
+.shaft.abierto .puerta.der{transform:translateX(97%)}
+/* urgencias */
+.urgencia{background:var(--rojo);color:#fff;padding:28px 0;position:relative;overflow:hidden}
+.urgencia .cont{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+.urgencia h2{font-family:var(--f-tit);font-size:clamp(1.8rem,4vw,2.8rem);text-transform:uppercase;letter-spacing:.04em;line-height:1}
+.urgencia p{opacity:.92;max-width:42ch}
+.pulso{width:18px;height:18px;border-radius:50%;background:#fff;box-shadow:0 0 0 0 rgba(255,255,255,.7);animation:pulso 1.6s infinite;display:inline-block;margin-right:8px;vertical-align:middle}
+@keyframes pulso{70%{box-shadow:0 0 0 14px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
+.urgencia .btn{background:#fff;color:var(--rojo)}
+.urgencia .btn:hover{background:#FFD4D4}
+/* servicios */
+.servicios{background:var(--papel);color:var(--tinta)}
+.grid-serv{display:grid;gap:14px;margin-top:40px}
+@media (min-width:700px){.grid-serv{grid-template-columns:1fr 1fr}}
+@media (min-width:1080px){.grid-serv{grid-template-columns:1fr 1fr 1fr}}
+.card{background:#fff;border:1px solid var(--linea);border-radius:8px;padding:22px 20px 20px;position:relative;overflow:hidden;transition:transform .3s var(--ease),box-shadow .3s,border-color .3s}
+.card::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--lima);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease)}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 36px -20px rgba(18,32,55,.5);border-color:rgba(75,230,25,.5)}
+.card:hover::after{transform:scaleX(1)}
+.card h3{font-family:var(--f-tit);font-size:1.45rem;text-transform:uppercase;letter-spacing:.03em;margin:0 0 8px;color:var(--navy)}
+.card p{color:var(--suave);font-size:.95rem}
+.card .tag{display:inline-block;font-family:var(--f-tit);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--lima-ink);background:var(--lima);padding:2px 8px;border-radius:3px;margin-bottom:10px}
+.card .tag-rojo{background:var(--rojo);color:#fff}
+/* empresa */
+.empresa{background:var(--navy);color:#E6EDF4}
+.empresa .tit{color:#fff}
+.empresa .bajada{color:#B7C3D0}
+.bloques{display:grid;gap:16px;margin-top:40px}
+@media (min-width:800px){.bloques{grid-template-columns:1fr 1fr}}
+.bloque{background:var(--navy-card);border:1px solid rgba(75,230,25,.18);border-radius:8px;padding:24px;transition:border-color .3s,transform .3s}
+.bloque:hover{border-color:var(--lima);transform:translateY(-3px)}
+.bloque h3{font-family:var(--f-tit);font-size:1.5rem;text-transform:uppercase;letter-spacing:.04em;color:var(--lima);margin-bottom:8px}
+.bloque p{color:#C5D0DC}
+/* zona */
+.zona{background:var(--papel)}
+.zona-box{display:grid;gap:28px;align-items:center;margin-top:12px}
+@media (min-width:800px){.zona-box{grid-template-columns:1.1fr .9fr}}
+.mapa{min-height:280px;border-radius:8px;border:1px solid var(--linea);background:
+  radial-gradient(circle at 50% 48%, rgba(75,230,25,.18), transparent 40%),
+  repeating-linear-gradient(0deg,transparent,transparent 23px,rgba(18,32,55,.07) 24px),
+  repeating-linear-gradient(90deg,transparent,transparent 23px,rgba(18,32,55,.07) 24px),
+  #fff;position:relative;overflow:hidden}
+.pin{position:absolute;left:50%;top:48%;transform:translate(-50%,-100%);text-align:center}
+.pin .punto{width:16px;height:16px;background:var(--rojo);border-radius:50%;box-shadow:0 0 0 8px rgba(225,8,8,.2),0 0 20px var(--rojo);margin:0 auto 8px;animation:ping 2s ease-out infinite}
+@keyframes ping{70%{box-shadow:0 0 0 18px rgba(225,8,8,0)}100%{box-shadow:0 0 0 0 rgba(225,8,8,0)}}
+.pin b{font-family:var(--f-tit);letter-spacing:.1em;text-transform:uppercase;color:var(--navy);font-size:1.1rem}
+.zona h3{font-family:var(--f-tit);font-size:1.7rem;text-transform:uppercase;margin:16px 0 6px;color:var(--navy)}
+.zona a{color:var(--navy);font-weight:600;text-decoration:none}
+.zona a:hover{color:var(--lima-osc);text-decoration:underline}
+/* form */
+.presupuesto{background:var(--navy-profundo);color:#fff}
+.presupuesto .sobre{color:var(--lima)}
+.presupuesto .tit{color:#fff}
+.presupuesto .bajada{color:#B7C3D0}
+.formu{margin-top:36px;display:grid;gap:14px;background:#0E1A2C;padding:clamp(20px,4vw,36px);border-radius:8px;border:1px solid rgba(75,230,25,.2)}
+.formu label{display:grid;gap:6px;font-family:var(--f-tit);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:#A9B6C6}
+.formu input,.formu select,.formu textarea{width:100%;border:1px solid rgba(255,255,255,.16);background:#122037;color:#fff;border-radius:4px;padding:12px 14px;min-height:48px}
+.formu textarea{min-height:110px;resize:vertical}
+.formu input:focus,.formu select,.formu textarea:focus,.formu select:focus{outline:2px solid var(--lima);outline-offset:1px}
+.formu input::placeholder,.formu textarea::placeholder{color:#6A7A8C}
+.formu select option{color:#0E1A2A}
+.fila2{display:grid;gap:14px}
+@media (min-width:640px){.fila2{grid-template-columns:1fr 1fr}}
+.formu .acciones{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.aviso{font-size:.85rem;color:#8A98A8}
+/* pie */
+.pie{background:#050A12;color:#8A98A8;padding:56px 0 120px;font-size:.92rem}
+.pie .cont{display:grid;gap:24px}
+.pie b{font-family:var(--f-tit);font-size:1.5rem;color:#fff;letter-spacing:.06em;text-transform:uppercase}
+.pie a{color:#fff;text-decoration:none}
+.pie a:hover{color:var(--lima)}
+.credito{margin-top:8px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);color:#667484;font-size:.85rem}
+@media (min-width:760px){.pie .cont{grid-template-columns:1.2fr 1fr}.credito{grid-column:1/-1}}
+.barra-movil{position:fixed;left:12px;right:12px;bottom:12px;z-index:90;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:8px;background:rgba(8,14,24,.95);backdrop-filter:blur(12px);border-radius:8px;border:1px solid rgba(75,230,25,.25);box-shadow:0 12px 40px rgba(0,0,0,.45)}
+.barra-movil a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:4px;font-family:var(--f-tit);font-weight:700;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+.barra-movil .bm-p{background:var(--lima);color:var(--lima-ink)}
+.barra-movil .bm-u{background:var(--rojo);color:#fff}
+@media (min-width:901px){.barra-movil{display:none}.pie{padding-bottom:56px}}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.rev.visto{opacity:1;transform:none}
+@media (max-width:919px){
+  .shaft{width:132px;max-width:42vw;aspect-ratio:3/3.4;order:-1;margin:0 auto}
+  .hero{padding-bottom:136px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .shaft .puerta,.rev,.btn,.card,.bloque,.pulso,.pin .punto{transition:none!important;animation:none!important}
+  .shaft .puerta.izq{transform:translateX(-97%)}.shaft .puerta.der{transform:translateX(97%)}
+  .rev{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Ir al contenido</a>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="ico-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41-.08-.13-.28-.2-.57-.35M12.05 21.79a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88a9.88 9.88 0 0 1 9.88 9.89c0 5.45-4.43 9.88-9.88 9.88M20.46 3.49A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.42"/></symbol>
+</svg>
+
+<header class="enc" id="enc">
+  <div class="int">
+    <a class="marca" href="#inicio">
+      <img src="assets/logo-msb.webp" width="64" height="64" alt="Logo de MSB srl Ascensores">
+      <span>MSB srl<small>Ascensores</small></span>
+    </a>
+    <div class="menu">
+      <nav aria-label="Secciones">
+        <a href="#servicios">Servicios</a>
+        <a href="#urgencia">Urgencias</a>
+        <a href="#cobertura">Zona</a>
+        <a href="#presupuesto">Presupuesto</a>
+      </nav>
+      <a class="btn btn--linea" href="#presupuesto">Pedir presupuesto</a>
+      <a class="btn btn--rojo" href="tel:+541149978473">Urgencias 24 hs</a>
+    </div>
+  </div>
+</header>
+
+<div class="piso-led" aria-live="polite"><span>Piso</span> <b id="led-movil">PB</b> <span id="led-movil-nom">Inicio</span></div>
+
+<aside class="panel" aria-label="Panel de pisos">
+  <div class="led" id="led-panel">PB</div>
+  <nav>
+    <a class="piso-btn activo" href="#inicio" data-piso="inicio">PB</a>
+    <a class="piso-btn" href="#servicios" data-piso="servicios">1</a>
+    <a class="piso-btn alarma" href="#urgencia" data-piso="urgencia">24</a>
+    <a class="piso-btn" href="#empresa" data-piso="empresa">2</a>
+    <a class="piso-btn" href="#cobertura" data-piso="cobertura">3</a>
+    <a class="piso-btn" href="#presupuesto" data-piso="presupuesto">4</a>
+  </nav>
+</aside>
+
+<main id="contenido">
+<section class="hero" id="inicio">
+  <div class="cont">
+    <div>
+      <img class="marca-hero" src="assets/logo-msb.webp" width="132" height="132" alt="MSB srl Ascensores">
+      <p class="sobre">Capital Federal</p>
+      <h1 class="tit">Más de 35 años cuidando los ascensores de <em>CABA</em>.</h1>
+      <p class="bajada">Reparación y mantenimiento de ascensores de edificio y residenciales, hidráulicos, montacargas, montavehículos y bombas de agua. Empresa familiar, con talleres propios y guardia de urgencias las 24 hs.</p>
+      <div class="acciones">
+        <a class="btn btn--rojo" href="tel:+541149978473">Urgencias 24 hs</a>
+        <a class="btn btn--lima" href="#presupuesto">Pedir presupuesto</a>
+        <a class="btn btn--linea" href="https://wa.me/5491149978473?text=Hola%2C%20MSB%20Ascensores.%20Quiero%20pedir%20un%20presupuesto." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ico-wa"/></svg>WhatsApp</a>
+      </div>
+      <div class="cifras">
+        <div><b>+35</b><span>años en el gremio</span></div>
+        <div><b>24 hs</b><span>guardia de urgencias</span></div>
+        <div><b>5,0</b><span>en Google, 8 reseñas</span></div>
+      </div>
+    </div>
+    <div class="shaft" id="shaft" aria-hidden="true">
+      <div class="head"><div class="display" id="display-hero">PB</div></div>
+      <div class="hueco">
+        <div class="interior"><div class="alarma-btn"></div></div>
+        <div class="puerta izq"></div>
+        <div class="puerta der"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="urgencia" id="urgencia">
+  <div class="cont">
+    <div>
+      <h2><span class="pulso" aria-hidden="true"></span>Guardia de urgencias las 24 hs</h2>
+      <p>Si el ascensor quedó parado, llamá al número de urgencias. Atención directa, todos los días.</p>
+    </div>
+    <div class="acciones" style="display:flex;flex-wrap:wrap;gap:10px">
+      <a class="btn" href="tel:+541149978473">Llamar (011) 4997-8473</a>
+      <a class="btn btn--wa" href="https://wa.me/5491149978473?text=Hola%2C%20MSB%20Ascensores.%20Necesito%20una%20urgencia." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#ico-wa"/></svg>WhatsApp urgencias</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec servicios" id="servicios">
+  <div class="cont">
+    <p class="sobre rev">Nuestros servicios</p>
+    <h2 class="tit rev">Del mantenimiento mensual a la modernización.</h2>
+    <p class="bajada rev">Todo esto lo hacen con personal propio, talleres propios y una flota de vehículos con herramientas y repuestos para trabajar en el momento.</p>
+    <div class="grid-serv">
+      <article class="card rev"><span class="tag">Mensual</span><h3>Mantenimiento</h3><p>Mantenimiento mensual y preventivo según la ordenanza municipal, con personal capacitado para firmar el libro digital.</p></article>
+      <article class="card rev"><span class="tag tag-rojo">24 hs</span><h3>Urgencias</h3><p>Guardia de urgencias las 24 hs, todos los días, para cuando el ascensor no puede esperar al día siguiente.</p></article>
+      <article class="card rev"><h3>Reparación de máquina</h3><p>Reparación de máquinas de ascensores electromecánicos e hidráulicos, montavehículos y escaleras mecánicas.</p></article>
+      <article class="card rev"><h3>Modernizaciones</h3><p>Mejoras en el funcionamiento del ascensor, con instalación de tablero de maniobra de última generación.</p></article>
+      <article class="card rev"><h3>Puertas reglamentarias</h3><p>Fabrican en su taller puertas reglamentarias según la ley de la Ciudad de Buenos Aires, en chapa de acero con pintura epoxi, mirillas y adaptación a la cabina.</p></article>
+      <article class="card rev"><h3>Revestimiento de cabina</h3><p>Revestimientos en acero inoxidable esmerilado y antivandalismo, laminados y lacas, con opción de espejos y pisos de granito.</p></article>
+      <article class="card rev"><h3>Controles</h3><p>Fabricación de controles con microcontroladores: memorizan los llamados y los atienden de forma selectiva para achicar el tiempo de espera.</p></article>
+      <article class="card rev"><h3>Talleres propios</h3><p>Tornería, prensa hidráulica de 50 toneladas, fabricación y reparación de puertas, rebobinado de motores y reparación de bombas de agua de todo amperaje.</p></article>
+      <article class="card rev"><h3>Bombas de agua</h3><p>También trabajan en bombas de agua, con técnicos idóneos en ascensores y en este servicio.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec empresa" id="empresa">
+  <div class="cont">
+    <p class="sobre rev">La empresa</p>
+    <h2 class="tit rev">Familiar, con talleres propios y atención de sus dueños.</h2>
+    <p class="bajada rev">MSB srl es una empresa familiar. El personal incluye ingenieros y técnicos electromecánicos y electrónicos, idóneos en ascensores y bombas de agua, y especialización en diseño y revestimiento de cabinas.</p>
+    <div class="bloques">
+      <div class="bloque rev"><h3>Atendido por sus dueños</h3><p>Podés hablar directo con ellos las 24 hs. Conservan el trato cercano de una empresa familiar.</p></div>
+      <div class="bloque rev"><h3>Movilidad propia</h3><p>Tienen una flota de vehículos propios, cada uno con las herramientas y los repuestos para resolver en el lugar.</p></div>
+      <div class="bloque rev"><h3>Cotizaciones</h3><p>Arman presupuestos con plazos de pago, apoyados en la capacidad de sus talleres propios.</p></div>
+      <div class="bloque rev"><h3>Av. Boedo 722</h3><p>Administración y ventas: (011) 2878-2472. Urgencias: (011) 4997-8473. msbascensores@hotmail.com.ar</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec zona" id="cobertura">
+  <div class="cont zona-box">
+    <div class="rev">
+      <p class="sobre">Zona de cobertura</p>
+      <h2 class="tit">Trabajamos en Capital Federal.</h2>
+      <h3>Av. Boedo 722, CABA</h3>
+      <p>Administración y ventas: <a href="tel:+541128782472">(011) 2878-2472</a></p>
+      <p>Urgencias: <a href="tel:+541149978473">(011) 4997-8473</a></p>
+      <p><a href="https://wa.me/5491149978473" target="_blank" rel="noopener">WhatsApp +54 9 11 4997-8473</a></p>
+      <p><a href="mailto:msbascensores@hotmail.com.ar">msbascensores@hotmail.com.ar</a></p>
+      <p><a href="https://facebook.com/122096454992006351" target="_blank" rel="noopener">Facebook</a></p>
+    </div>
+    <div class="mapa rev" aria-hidden="true"><div class="pin"><div class="punto"></div><b>CABA</b></div></div>
+  </div>
+</section>
+
+<section class="sec presupuesto" id="presupuesto">
+  <div class="cont">
+    <p class="sobre rev">Para consorcios</p>
+    <h2 class="tit rev">Pedí un presupuesto.</h2>
+    <p class="bajada rev">Completá los datos del edificio y te armamos el mensaje para mandarlo por WhatsApp o por mail.</p>
+    <form class="formu rev" id="formu" novalidate>
+      <div class="fila2">
+        <label>Tu nombre<input type="text" name="nombre" required placeholder="Nombre y apellido" autocomplete="name"></label>
+        <label>Teléfono<input type="tel" name="telefono" required placeholder="Ej.: 11 4997-0000" autocomplete="tel"></label>
+      </div>
+      <div class="fila2">
+        <label>Consorcio o edificio<input type="text" name="consorcio" required placeholder="Nombre o administración"></label>
+        <label>Dirección del edificio<input type="text" name="direccion" placeholder="Calle y altura, CABA" autocomplete="street-address"></label>
+      </div>
+      <label>Tipo de consulta
+        <select name="tipo">
+          <option value="Mantenimiento mensual">Mantenimiento mensual</option>
+          <option value="Reparación">Reparación</option>
+          <option value="Urgencia">Urgencia</option>
+          <option value="Modernización">Modernización</option>
+          <option value="Puertas o revestimiento">Puertas o revestimiento</option>
+          <option value="Presupuesto general">Presupuesto general</option>
+        </select>
+      </label>
+      <label>Mensaje<textarea name="mensaje" placeholder="Contanos qué necesita el edificio: cantidad de ascensores, paradas u otro detalle."></textarea></label>
+      <div class="acciones">
+        <button type="submit" class="btn btn--wa" data-via="wa"><svg aria-hidden="true"><use href="#ico-wa"/></svg>Enviar por WhatsApp</button>
+        <button type="submit" class="btn btn--lima" data-via="mail">Enviar por mail</button>
+      </div>
+      <p class="aviso">El mensaje se abre en tu WhatsApp o en tu correo, listo para enviar. No se publica solo.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="pie">
+  <div class="cont">
+    <div>
+      <b>MSB srl Ascensores</b>
+      <p>Ascensores y bombas de agua. Av. Boedo 722, CABA.</p>
+    </div>
+    <div>
+      <p>Administración y ventas: <a href="tel:+541128782472">(011) 2878-2472</a></p>
+      <p>Urgencias: <a href="tel:+541149978473">(011) 4997-8473</a></p>
+      <p><a href="mailto:msbascensores@hotmail.com.ar">msbascensores@hotmail.com.ar</a></p>
+    </div>
+    <p class="credito">Demo realizada por Luna Nueva Creativa</p>
+  </div>
+</footer>
+
+<nav class="barra-movil" aria-label="Acciones rápidas">
+  <a class="bm-p" href="#presupuesto">Presupuesto</a>
+  <a class="bm-u" href="tel:+541149978473">Urgencias 24 hs</a>
+</nav>
+
+<script>
+(function(){
+  var WA='5491149978473';
+  var MAIL='msbascensores@hotmail.com.ar';
+  var pisos=['inicio','servicios','urgencia','empresa','cobertura','presupuesto'];
+  var nombres={inicio:'Inicio',servicios:'Servicios',urgencia:'Urgencias',empresa:'La empresa',cobertura:'Zona',presupuesto:'Presupuesto'};
+  var leds={inicio:'PB',servicios:'1',urgencia:'24',empresa:'2',cobertura:'3',presupuesto:'4'};
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var shaft=document.getElementById('shaft');
+  var display=document.getElementById('display-hero');
+  if(shaft){
+    if(reduce) shaft.classList.add('abierto');
+    else {
+      var seq=['1','2','3','PB'];
+      var i=0;
+      var tick=setInterval(function(){
+        if(display) display.textContent=seq[i];
+        i++;
+        if(i>=seq.length){ clearInterval(tick); setTimeout(function(){ shaft.classList.add('abierto'); }, 180); }
+      }, 220);
+    }
+  }
+  document.querySelectorAll('.rev').forEach(function(el){
+    if(reduce){ el.classList.add('visto'); return; }
+    var io=new IntersectionObserver(function(ents){
+      ents.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('visto'); io.unobserve(e.target); } });
+    },{threshold:.16, rootMargin:'0px 0px -8% 0px'});
+    io.observe(el);
+  });
+
+  var btns=[].slice.call(document.querySelectorAll('.piso-btn'));
+  var ledN=document.getElementById('led-movil');
+  var ledNom=document.getElementById('led-movil-nom');
+  var ledP=document.getElementById('led-panel');
+  var actual='inicio';
+  function irA(id){
+    if(actual===id) return;
+    actual=id;
+    btns.forEach(function(b){ b.classList.toggle('activo', b.getAttribute('data-piso')===id); });
+    var n=leds[id]||'PB';
+    if(ledN) ledN.textContent=n;
+    if(ledNom) ledNom.textContent=nombres[id]||'';
+    if(ledP) ledP.textContent=n;
+    if(display) display.textContent=n;
+  }
+  if('IntersectionObserver' in window){
+    var io2=new IntersectionObserver(function(ents){
+      var vis=ents.filter(function(e){return e.isIntersecting;}).sort(function(a,b){return b.intersectionRatio-a.intersectionRatio;})[0];
+      if(vis) irA(vis.target.id);
+    },{threshold:[.25,.45,.6], rootMargin:'-20% 0px -40% 0px'});
+    pisos.forEach(function(id){ var el=document.getElementById(id); if(el) io2.observe(el); });
+  }
+
+  var form=document.getElementById('formu');
+  var via='wa';
+  form.querySelectorAll('[data-via]').forEach(function(b){
+    b.addEventListener('click', function(){ via=this.getAttribute('data-via'); });
+  });
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!form.reportValidity()) return;
+    var d=new FormData(form);
+    var lineas=[
+      'Hola, MSB Ascensores. Quiero pedir un presupuesto para el consorcio.',
+      '',
+      'Nombre: '+(d.get('nombre')||''),
+      'Consorcio o edificio: '+(d.get('consorcio')||''),
+      'Dirección: '+(d.get('direccion')||'—'),
+      'Teléfono: '+(d.get('telefono')||''),
+      'Consulta: '+(d.get('tipo')||''),
+      'Mensaje: '+(d.get('mensaje')||'—')
+    ];
+    var msg=lineas.join('\n');
+    if(via==='mail'){
+      var as='Presupuesto para consorcio'+(d.get('consorcio')?' — '+d.get('consorcio'):'');
+      window.location.href='mailto:'+MAIL+'?subject='+encodeURIComponent(as)+'&body='+encodeURIComponent(msg);
+    } else {
+      window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(msg),'_blank','noopener');
+    }
+  });
+})();
+</script>
+</body>
+</html>
