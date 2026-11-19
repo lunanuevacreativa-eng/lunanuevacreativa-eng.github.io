@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>N M Mecánica Integral · Taller en Cofico, Córdoba</title>
+<meta name="description" content="N M Mecánica Integral, taller en N. Rodríguez Peña 1336, Cofico, Córdoba. Inyección electrónica, frenos, diagnóstico computarizado, aire acondicionado y más. 5,0 en Google con 137 reseñas.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#000000">
+<meta property="og:title" content="N M Mecánica Integral · Cofico, Córdoba">
+<meta property="og:image" content="assets/logo-nm.webp">
+<link rel="icon" href="assets/logo-nm.webp" type="image/webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Teko:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Teko:wght@500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Teko:wght@500;600;700&display=swap"></noscript>
+<link rel="preload" as="image" href="assets/logo-nm.webp">
+<style>
+:root{
+  --negro:#000; --asfalto:#0A0A0A; --card:#141414; --oro:#F8C018; --oro-prof:#F8B818;
+  --blanco:#FFFFFF; --suave:#B8B3A6; --linea:#2A2A2A; --wa:#1F9E4B;
+  --enc:80px;
+  --f-tit:"Teko",system-ui,sans-serif; --f-txt:"Manrope",system-ui,sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--f-txt);color:var(--blanco);background:var(--negro);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}h1,h2,h3,p,ul,figure{margin:0}ul{padding:0;list-style:none}
+button,input,select,textarea{font:inherit}
+.skip{position:absolute;left:-999px;top:0;background:var(--oro);color:#000;padding:8px 16px;z-index:200}
+.skip:focus{left:12px;top:12px}
+.cont{max-width:1180px;margin-inline:auto;padding-inline:clamp(20px,5vw,48px)}
+.sec{padding-block:clamp(72px,10vw,120px)}
+.sobre{font-family:var(--f-tit);font-size:.95rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--oro);display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.sobre::before{content:"";width:22px;height:2px;background:currentColor}
+.tit{font-family:var(--f-tit);font-weight:700;font-size:clamp(2.6rem,7vw,5rem);line-height:.9;letter-spacing:.01em;text-transform:uppercase;text-wrap:balance}
+.bajada{margin-top:16px;font-size:1.05rem;color:var(--suave);max-width:54ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 22px;border-radius:2px;font-family:var(--f-tit);font-weight:600;font-size:1.05rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s var(--ease),box-shadow .2s,background .2s,filter .2s,border-color .2s;color:inherit;background:none}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(1px)}
+.btn:focus-visible{outline:3px solid var(--oro);outline-offset:3px}
+.btn--oro{background:var(--oro);color:#000;box-shadow:0 0 28px rgba(248,192,24,.28)}
+.btn--oro:hover{filter:brightness(1.08)}
+.btn--linea{border-color:var(--oro);color:var(--oro)}
+.btn--linea:hover{background:rgba(248,192,24,.1)}
+.btn--wa{background:var(--wa);color:#fff;border-color:var(--wa)}
+.btn svg{width:18px;height:18px;flex:0 0 18px}
+
+.enc{position:fixed;inset:0 0 auto;z-index:80;background:rgba(0,0,0,.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(248,192,24,.22)}
+.enc .int{min-height:var(--enc);max-width:1180px;margin-inline:auto;padding:8px 20px;display:flex;align-items:center;gap:16px}
+.marca{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.marca img{height:52px;width:auto;max-width:160px;flex:0 0 auto}
+.menu{margin-left:auto;display:flex;align-items:center;gap:6px}
+.menu a:not(.btn){color:rgba(255,255,255,.78);text-decoration:none;font-family:var(--f-tit);font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:1.05rem;padding:8px 10px}
+.menu a:not(.btn):hover{color:var(--oro)}
+.menu .btn{min-height:44px;padding:8px 16px}
+@media (max-width:860px){.menu nav{display:none}.marca img{height:44px;max-width:130px}}
+
+.hero{min-height:100svh;display:grid;align-items:center;padding:calc(var(--enc) + 40px) 0 120px;position:relative;overflow:hidden;background:
+  radial-gradient(ellipse 50% 40% at 80% 30%, rgba(248,192,24,.12), transparent 60%),
+  #000}
+.hero::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(-18deg, rgba(248,192,24,.07) 0 8px, transparent 8px 28px);mask-image:linear-gradient(90deg,transparent 40%,#000 80%);pointer-events:none}
+.carril{position:absolute;left:0;right:0;bottom:18%;height:2px;background:repeating-linear-gradient(90deg, var(--oro) 0 28px, transparent 28px 48px);opacity:.35;animation:carril 1.1s linear infinite}
+@keyframes carril{to{background-position:48px 0}}
+.hero .cont{position:relative;z-index:1;display:grid;gap:36px;align-items:center}
+@media (min-width:960px){.hero .cont{grid-template-columns:1.05fr .95fr}}
+.hero .tit em{font-style:normal;color:var(--oro)}
+.hero .acciones{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero .dato{display:flex;flex-wrap:wrap;gap:22px;margin-top:28px;padding-top:22px;border-top:1px solid rgba(248,192,24,.2);font-size:.92rem;color:var(--suave)}
+.hero .dato b{display:block;font-family:var(--f-tit);font-size:1.7rem;color:var(--oro);line-height:1;margin-bottom:2px}
+
+.lanzamiento{position:relative;min-height:340px;height:clamp(320px,46vw,500px)}
+.palio-caja{position:absolute;left:0;bottom:18%;width:min(82%,440px);z-index:3;cursor:pointer; transform-origin:30% 80%; animation:lanzamiento 6.8s var(--ease) .5s both}
+.palio-caja:focus-visible{outline:2px solid var(--oro);outline-offset:8px}
+.palio{width:100%;height:auto;overflow:visible;filter:drop-shadow(0 0 16px rgba(248,192,24,.35))}
+.palio .estela{opacity:0;animation:estelaN 6.8s var(--ease) .5s both}
+.palio .glow{opacity:.2;animation:glowN 6.8s var(--ease) .5s both}
+.replay{position:absolute;right:8px;bottom:8px;z-index:4;background:#000;color:var(--oro);border:1px solid var(--oro);border-radius:2px;padding:6px 10px;font-family:var(--f-tit);letter-spacing:.14em;text-transform:uppercase;font-size:.85rem;cursor:pointer}
+.replay:hover{background:var(--oro);color:#000}
+@keyframes lanzamiento{
+  0%{transform:translate(0,8%) rotate(0) scale(1)}
+  14%{transform:translate(2%,14%) rotate(0) scale(.97); filter:brightness(1.2)}
+  22%{transform:translate(18%,-10%) rotate(-12deg) scale(1)}
+  48%{transform:translate(58%,-72%) rotate(-6deg) scale(.9)}
+  75%{transform:translate(86%,-48%) rotate(4deg) scale(.86)}
+  100%{transform:translate(92%,-30%) rotate(-1deg) scale(.88)}
+}
+@keyframes estelaN{0%,12%{opacity:0} 22%{opacity:1} 80%{opacity:.4} 100%{opacity:.12}}
+@keyframes glowN{0%,10%{opacity:.15} 16%{opacity:1} 100%{opacity:.7}}
+@media (max-width:959px){
+  .hero{min-height:auto;padding-top:calc(var(--enc) + 20px);padding-bottom:140px}
+  .lanzamiento{min-height:200px;height:210px;order:-1}
+  .hero .acciones{margin-top:12px;margin-bottom:4px;display:grid;grid-template-columns:1fr 1fr;width:100%}
+  .hero .acciones .btn{width:100%;min-height:48px}
+  .hero .bajada{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .hero .dato{display:none}
+  .palio-caja{animation-name:lanzamiento-m}
+}
+@keyframes lanzamiento-m{
+  0%{transform:translate(0,8%) rotate(0) scale(.9)}
+  14%{transform:translate(2%,14%) rotate(0) scale(.88)}
+  22%{transform:translate(10%,-8%) rotate(-12deg) scale(.9)}
+  55%{transform:translate(28%,-42%) rotate(-6deg) scale(.82)}
+  100%{transform:translate(34%,-22%) rotate(-1deg) scale(.84)}
+}
+
+
+.nosotros{background:var(--asfalto);border-top:1px solid var(--linea)}
+.serv{background:#000}
+.rejilla{display:grid;gap:12px;margin-top:40px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.carta{background:var(--card);border:1px solid var(--linea);border-radius:2px;padding:22px 18px 20px;position:relative;overflow:hidden;transition:transform .3s var(--ease),border-color .3s,box-shadow .3s}
+.carta::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--oro);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+.carta:hover{transform:translateY(-4px);border-color:rgba(248,192,24,.5);box-shadow:0 16px 32px -20px rgba(248,192,24,.35)}
+.carta:hover::after{transform:scaleX(1)}
+.carta h3{font-family:var(--f-tit);font-size:1.55rem;letter-spacing:.04em;text-transform:uppercase;color:var(--oro);margin:0}
+
+.puntaje{background:var(--oro);color:#000}
+.puntaje .sobre{color:#000}
+.puntaje .cont{display:grid;gap:28px;align-items:center}
+@media (min-width:800px){.puntaje .cont{grid-template-columns:.85fr 1.15fr}}
+.nota{font-family:var(--f-tit);font-size:clamp(5rem,16vw,8.5rem);line-height:.8}
+.estrellas{letter-spacing:6px;font-size:1.4rem;margin:10px 0 8px}
+.puntaje .bajada{color:#3A2E08}
+.puntaje .btn--linea{border-color:#000;color:#000}
+.puntaje .btn--linea:hover{background:#000;color:var(--oro)}
+
+.ubi{background:var(--asfalto)}
+.ubi .caja{display:grid;gap:28px;margin-top:36px}
+@media (min-width:880px){.ubi .caja{grid-template-columns:1fr 1fr}}
+.mapa{min-height:320px;border:1px solid var(--linea);overflow:hidden;background:#111;border-radius:2px}
+.mapa img{width:100%;height:100%;min-height:320px;object-fit:cover;filter:grayscale(.85) contrast(1.1) sepia(.35) saturate(.7)}
+.horas{margin-top:16px;display:grid}
+.horas li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--linea);padding:9px 0;font-size:.95rem;color:var(--suave)}
+.horas li.hoy{color:#fff;background:rgba(248,192,24,.08);padding-inline:8px;font-weight:700}
+.horas li.hoy .tag{font-family:var(--f-tit);letter-spacing:.12em;text-transform:uppercase;color:var(--oro);margin-left:8px;font-size:.9rem}
+.ubi h3{font-family:var(--f-tit);font-size:2rem;text-transform:uppercase;margin:0 0 8px;color:var(--oro)}
+.ubi address{font-style:normal;margin:16px 0;font-size:1.12rem}
+
+.turno{background:#000;border-top:1px solid var(--linea)}
+.formu{margin-top:36px;display:grid;gap:14px;background:var(--card);padding:clamp(20px,4vw,36px);border-radius:2px;border:1px solid rgba(248,192,24,.2)}
+.formu label{display:grid;gap:6px;font-family:var(--f-tit);font-size:.95rem;letter-spacing:.12em;text-transform:uppercase;color:var(--oro)}
+.formu input,.formu select,.formu textarea{width:100%;border:1px solid var(--linea);background:#0A0A0A;color:#fff;border-radius:2px;padding:12px 14px;min-height:48px}
+.formu textarea{min-height:110px;resize:vertical}
+.formu input:focus,.formu select:focus,.formu textarea:focus{outline:2px solid var(--oro);outline-offset:1px}
+.formu input::placeholder,.formu textarea::placeholder{color:#6A6558}
+.formu .fila{display:grid;gap:14px}
+@media (min-width:700px){.formu .fila{grid-template-columns:1fr 1fr}}
+.formu .acciones{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+
+.pie{background:#000;color:var(--suave);padding:48px 0 112px;border-top:1px solid var(--linea)}
+.pie b{font-family:var(--f-tit);font-size:1.8rem;color:var(--oro);letter-spacing:.08em;text-transform:uppercase}
+.pie .credito{margin-top:20px;padding-top:16px;border-top:1px solid var(--linea);font-size:.85rem}
+.barra-movil{display:none;position:fixed;inset:auto 0 0;z-index:90;background:rgba(0,0,0,.94);backdrop-filter:blur(10px);padding:10px 14px calc(10px + env(safe-area-inset-bottom));border-top:1px solid rgba(248,192,24,.25);gap:8px}
+.barra-movil a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:48px;border-radius:2px;font-family:var(--f-tit);font-weight:600;font-size:1.05rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;flex:1}
+.barra-movil .turno-btn{background:var(--oro);color:#000}
+.barra-movil .wa{background:var(--wa);color:#fff}
+@media (max-width:860px){.barra-movil{display:flex}.pie{padding-bottom:128px}}
+.rev{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.rev.visto{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .rev{opacity:1;transform:none}
+  .palio-caja,.palio .estela,.palio .glow,.palio .rueda,.carril{animation:none}
+  .palio-caja{transform:translate(30%,-20%)}
+  .btn:hover{transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="enc">
+  <div class="int">
+    <a class="marca" href="#inicio">
+      <img src="assets/logo-nm.webp" width="160" height="90" alt="Logo de N M Mecánica Integral">
+    </a>
+    <div class="menu">
+      <nav aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#puntaje">Puntaje</a>
+        <a href="#ubicacion">Ubicación</a>
+      </nav>
+      <a class="btn btn--oro" href="#turno">Pedir turno</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="carril" aria-hidden="true"></div>
+  <div class="cont">
+    <div>
+      <p class="sobre">Cofico, Córdoba</p>
+      <h1 class="tit">De la inyección al detailing, en un mismo taller.<br><em>5,0 en Google.</em></h1>
+      <p class="bajada">N M Mecánica Integral atiende en N. Rodríguez Peña 1336. Somos una empresa joven, con más de 10 años de capacitaciones y experiencia, y un servicio pensado para resolver y mantener el auto.</p>
+      <div class="acciones">
+        <a class="btn btn--oro" href="#turno">Pedir turno</a>
+        <a class="btn btn--linea" href="https://www.google.com/maps/search/?api=1&query=N+M+Mec%C3%A1nica+Integral+Rodr%C3%ADguez+Pe%C3%B1a+1336+C%C3%B3rdoba" target="_blank" rel="noopener">Cómo llegar</a>
+      </div>
+      <div class="dato">
+        <div><b>5,0</b> 137 reseñas en Google</div>
+        <div><b>8 a 18</b> Lunes a viernes</div>
+        <div><b>Cofico</b> Rodríguez Peña 1336</div>
+      </div>
+    </div>
+    <div class="lanzamiento" aria-hidden="true">
+      <div class="palio-caja" id="palio" title="Un Palio que despega como un Tesla" tabindex="0">
+        <svg class="palio" viewBox="0 0 360 160" role="img">
+          <defs>
+            <linearGradient id="estelaN" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#F8C018" stop-opacity="0"/>
+              <stop offset=".7" stop-color="#F8C018" stop-opacity=".95"/>
+              <stop offset="1" stop-color="#F8C018" stop-opacity="0"/>
+            </linearGradient>
+            <radialGradient id="glowN" cx="50%" cy="50%" r="50%">
+              <stop offset="0" stop-color="#F8C018" stop-opacity=".9"/>
+              <stop offset="1" stop-color="#F8C018" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <path class="estela" d="M8 120 C 70 120, 100 72, 175 58" fill="none" stroke="url(#estelaN)" stroke-width="5" stroke-linecap="round"/>
+          <ellipse class="glow" cx="188" cy="128" rx="120" ry="14" fill="url(#glowN)"/>
+          <path fill="#0A0A0A" stroke="#F8C018" stroke-width="2.4" d="M54 104 C52 96 56 90 68 86 L80 70 C98 46 122 38 148 38 L214 38 C236 38 250 50 268 68 L296 86 L314 88 C326 90 328 100 322 108 L300 112 C296 90 262 90 258 112 L118 112 C114 90 80 90 76 112 L54 108 Z"/>
+          <path fill="#1A1608" d="M150 44 L208 44 C224 44 236 54 248 66 L208 70 L150 70 Z"/>
+          <path fill="#1A1608" d="M118 48 L142 44 L142 70 L108 70 C110 60 114 52 118 48 Z"/>
+          <rect x="300" y="88" width="14" height="7" rx="2" fill="#F8C018"/>
+          <rect x="62" y="86" width="10" height="6" rx="1" fill="#F8C018"/>
+          <g class="rueda" style="transform-origin:95px 112px">
+            <circle cx="95" cy="112" r="18" fill="#000" stroke="#F8C018" stroke-width="2"/>
+            <circle cx="95" cy="112" r="7" fill="#F8C018"/>
+          </g>
+          <g class="rueda" style="transform-origin:240px 112px">
+            <circle cx="240" cy="112" r="18" fill="#000" stroke="#F8C018" stroke-width="2"/>
+            <circle cx="240" cy="112" r="7" fill="#F8C018"/>
+          </g>
+        </svg>
+      </div>
+      <button class="replay" type="button" id="replay">Ver despegue</button>
+    </div>
+  </div>
+</section>
+
+<main id="contenido">
+<section class="nosotros sec" id="nosotros">
+  <div class="cont rev">
+    <p class="sobre">El taller</p>
+    <h2 class="tit">Calidad para resolver y mantener el auto</h2>
+    <p class="bajada">Somos una empresa joven. Con más de 10 años de capacitaciones y experiencia, ofrecemos un servicio de calidad para solucionar los problemas del vehículo y hacerle el mantenimiento correcto.</p>
+  </div>
+</section>
+
+<section class="serv sec" id="servicios">
+  <div class="cont">
+    <p class="sobre">Servicios</p>
+    <h2 class="tit">Los servicios del taller</h2>
+    <p class="bajada">Inyección electrónica, frenos, diagnóstico computarizado, detailing y el resto del trabajo que ofrecen.</p>
+    <ul class="rejilla">
+      <li class="carta rev"><h3>Inyección electrónica</h3></li>
+      <li class="carta rev"><h3>Distribuciones</h3></li>
+      <li class="carta rev"><h3>Frenos</h3></li>
+      <li class="carta rev"><h3>Embragues</h3></li>
+      <li class="carta rev"><h3>Mantenimiento preventivo</h3></li>
+      <li class="carta rev"><h3>Lavado de motor</h3></li>
+      <li class="carta rev"><h3>Diagnóstico computarizado</h3></li>
+      <li class="carta rev"><h3>Control y recarga de aire acondicionado</h3></li>
+      <li class="carta rev"><h3>Control total para ITV</h3></li>
+      <li class="carta rev"><h3>Chequeo general para viajes</h3></li>
+      <li class="carta rev"><h3>Diagnóstico para compra-venta</h3></li>
+      <li class="carta rev"><h3>Detailing</h3></li>
+    </ul>
+  </div>
+</section>
+
+<section class="puntaje sec" id="puntaje">
+  <div class="cont">
+    <div class="rev">
+      <p class="sobre">Google</p>
+      <div class="nota">5,0</div>
+      <div class="estrellas" aria-hidden="true">★★★★★</div>
+      <p>Sobre 137 reseñas en Google.</p>
+    </div>
+    <div class="rev">
+      <h2 class="tit">Cinco puntos, 137 reseñas.</h2>
+      <p class="bajada">El puntaje está en Google. Desde acá podés leer las opiniones y armar la ruta hasta Rodríguez Peña 1336.</p>
+      <a class="btn btn--linea" href="https://www.google.com/maps/search/?api=1&query=N+M+Mec%C3%A1nica+Integral+Rodr%C3%ADguez+Pe%C3%B1a+1336+C%C3%B3rdoba" target="_blank" rel="noopener" style="margin-top:18px">Ver en Google Maps</a>
+    </div>
+  </div>
+</section>
+
+<section class="ubi sec" id="ubicacion">
+  <div class="cont">
+    <p class="sobre">Ubicación</p>
+    <h2 class="tit">N. Rodríguez Peña 1336</h2>
+    <div class="caja">
+      <div class="mapa rev">
+        <a href="https://www.google.com/maps/search/?api=1&query=N+M+Mec%C3%A1nica+Integral+Rodr%C3%ADguez+Pe%C3%B1a+1336+C%C3%B3rdoba" target="_blank" rel="noopener">
+          <img src="assets/mapa.webp" width="800" height="520" alt="Mapa de N M Mecánica Integral en N. Rodríguez Peña 1336, Cofico">
+        </a>
+      </div>
+      <div class="rev">
+        <h3>Cofico, Córdoba</h3>
+        <address>N. Rodríguez Peña 1336<br>Cofico, Córdoba</address>
+        <p>WhatsApp: <a href="https://wa.me/5493515991630">+54 9 351 599-1630</a></p>
+        <ul class="horas" id="horas">
+          <li data-d="1"><span>Lunes</span><span>8 a 18</span></li>
+          <li data-d="2"><span>Martes</span><span>8 a 18</span></li>
+          <li data-d="3"><span>Miércoles</span><span>8 a 18</span></li>
+          <li data-d="4"><span>Jueves</span><span>8 a 18</span></li>
+          <li data-d="5"><span>Viernes</span><span>8 a 18</span></li>
+          <li data-d="6"><span>Sábado</span><span>Cerrado</span></li>
+          <li data-d="0"><span>Domingo</span><span>Cerrado</span></li>
+        </ul>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px">
+          <a class="btn btn--oro" href="https://www.google.com/maps/search/?api=1&query=N+M+Mec%C3%A1nica+Integral+Rodr%C3%ADguez+Pe%C3%B1a+1336+C%C3%B3rdoba" target="_blank" rel="noopener">Abrir en Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="turno sec" id="turno">
+  <div class="cont">
+    <p class="sobre">Turno</p>
+    <h2 class="tit">Pedí tu turno por WhatsApp</h2>
+    <p class="bajada">Completá los datos y te armamos el mensaje. Se abre WhatsApp con todo escrito, listo para enviar al taller.</p>
+    <form class="formu rev" id="formu" novalidate>
+      <div class="fila">
+        <label>Nombre <input name="nombre" required autocomplete="name" placeholder="Tu nombre"></label>
+        <label>Teléfono <input name="telefono" required type="tel" autocomplete="tel" placeholder="351…"></label>
+      </div>
+      <div class="fila">
+        <label>Auto <input name="auto" placeholder="Marca, modelo y año, si querés"></label>
+        <label>Día preferido
+          <select name="dia">
+            <option value="Lo antes posible">Lo antes posible</option>
+            <option>Lunes</option><option>Martes</option><option>Miércoles</option><option>Jueves</option><option>Viernes</option>
+          </select>
+        </label>
+      </div>
+      <label>Qué necesita el auto
+        <select name="servicio">
+          <option value="">Elegí un servicio, si querés</option>
+          <option>Inyección electrónica</option>
+          <option>Distribuciones</option>
+          <option>Frenos</option>
+          <option>Embragues</option>
+          <option>Mantenimiento preventivo</option>
+          <option>Lavado de motor</option>
+          <option>Diagnóstico computarizado</option>
+          <option>Control y recarga de aire acondicionado</option>
+          <option>Control total para ITV</option>
+          <option>Chequeo general para viajes</option>
+          <option>Diagnóstico para compra-venta</option>
+          <option>Detailing</option>
+          <option>Otro</option>
+        </select>
+      </label>
+      <label>Comentario
+        <textarea name="motivo" placeholder="Contanos, en pocas palabras, qué hay que revisar o reparar."></textarea>
+      </label>
+      <div class="acciones">
+        <button class="btn btn--wa" type="submit">Enviar por WhatsApp</button>
+        <a class="btn btn--linea" href="https://wa.me/5493515991630">Abrir WhatsApp</a>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="pie">
+  <div class="cont">
+    <b>N M Mecánica Integral</b>
+    <p>N. Rodríguez Peña 1336, Cofico, Córdoba</p>
+    <p><a href="https://wa.me/5493515991630">+54 9 351 599-1630</a></p>
+    <p class="credito">Demo realizada por Luna Nueva Creativa</p>
+  </div>
+</footer>
+
+<div class="barra-movil">
+  <a class="turno-btn" href="#turno">Pedir turno</a>
+  <a class="wa" href="https://wa.me/5493515991630">WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  var palio=document.getElementById('palio');
+  function relanzar(){
+    palio.classList.remove('listo');
+    palio.style.animation='none';
+    void palio.offsetWidth;
+    palio.style.animation='';
+    palio.querySelectorAll('.estela,.glow').forEach(function(el){el.style.animation='none'; void el.offsetWidth; el.style.animation='';});
+  }
+  palio.addEventListener('animationend', function(){ palio.classList.add('listo'); });
+  palio.addEventListener('click', relanzar);
+  palio.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); relanzar(); }});
+  document.getElementById('replay').addEventListener('click', relanzar);
+
+  var io=new IntersectionObserver(function(ents){
+    ents.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('visto'); io.unobserve(en.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.rev').forEach(function(el){ io.observe(el); });
+
+  var day=new Date().getDay();
+  try{
+    var v=new Intl.DateTimeFormat('en-US',{timeZone:'America/Argentina/Cordoba',weekday:'short'}).format(new Date());
+    day={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[v] ?? day;
+  }catch(e){}
+  var hoy=document.querySelector('#horas li[data-d="'+day+'"]');
+  if(hoy){ hoy.classList.add('hoy'); var tag=document.createElement('span'); tag.className='tag'; tag.textContent='Hoy'; hoy.querySelector('span').appendChild(tag); }
+
+  var form=document.getElementById('formu');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!form.reportValidity()) return;
+    var d=new FormData(form);
+    var lineas=['Hola, quiero pedir un turno en N M Mecánica Integral.'];
+    lineas.push('Nombre: '+(d.get('nombre')||'').trim());
+    lineas.push('Teléfono: '+(d.get('telefono')||'').trim());
+    if((d.get('auto')||'').trim()) lineas.push('Auto: '+d.get('auto').trim());
+    if((d.get('servicio')||'').trim()) lineas.push('Servicio: '+d.get('servicio').trim());
+    if((d.get('motivo')||'').trim()) lineas.push('Comentario: '+d.get('motivo').trim());
+    lineas.push('Día preferido: '+(d.get('dia')||'').trim());
+    window.location.href='https://wa.me/5493515991630?text='+encodeURIComponent(lineas.join('\n'));
+  });
+})();
+</script>
+</body>
+</html>
