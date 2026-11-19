@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taller Mecánico Pedraza · Mecánica integral y electricidad automotriz en Córdoba</title>
+<meta name="description" content="Taller Mecánico Pedraza: mecánica integral, electricidad automotriz y diagnóstico en Adeodato Gondra 2821, Córdoba. 4,9 en Google. Teléfono +54 351 456-6241.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#121417">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23121417'/%3E%3Ctext x='32' y='45' font-family='Arial Black,Arial' font-weight='900' font-size='38' fill='%23E8731F' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&display=swap">
+<style>
+:root{
+  --grafito:#121417; --acero:#1C2025; --acero2:#262B32; --linea-osc:rgba(255,255,255,.09);
+  --naranja:#E8731F; --naranja2:#FF8A33; --hueso:#F3F1EC; --tinta:#14161A; --suave:#5D636B; --linea:#DEDAD2;
+  --enc:74px;
+  --f-tit:"Barlow Condensed",system-ui,sans-serif; --f-txt:"Barlow",system-ui,sans-serif;
+  --ease:cubic-bezier(.7,0,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--f-txt);color:var(--tinta);background:var(--grafito);line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}h1,h2,h3,p,ul,figure{margin:0}ul{padding:0;list-style:none}
+button,input,select,textarea{font:inherit}
+.skip{position:absolute;left:-999px;top:0;background:#fff;color:var(--grafito);padding:8px 16px;z-index:200}
+.skip:focus{left:12px;top:12px}
+.cont{max-width:1180px;margin-inline:auto;padding-inline:clamp(20px,5vw,48px)}
+.sec{padding-block:clamp(72px,10vw,120px)}
+.sobre{font-family:var(--f-tit);font-size:.9rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--naranja);display:flex;gap:12px;align-items:center;margin-bottom:14px}
+.sobre::before{content:"";width:26px;height:2px;background:currentColor}
+.tit{font-family:var(--f-tit);font-weight:800;font-size:clamp(2.6rem,6.6vw,4.8rem);line-height:.9;letter-spacing:.005em;text-transform:uppercase;text-wrap:balance}
+.bajada{margin-top:18px;font-size:1.1rem;color:var(--suave);max-width:54ch}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 24px;border-radius:999px;font-family:var(--f-tit);font-weight:700;font-size:1.02rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s var(--ease),box-shadow .2s,background .2s,border-color .2s;color:inherit;background:none}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.btn--naranja{background:var(--naranja);color:#fff;box-shadow:0 14px 30px -14px rgba(232,115,31,.8)}
+.btn--naranja:hover{background:var(--naranja2)}
+.btn--linea{border-color:rgba(255,255,255,.55);color:#fff}
+.btn--linea:hover{border-color:#fff;background:rgba(255,255,255,.07)}
+.btn--osc{background:var(--grafito);color:#fff}
+.btn svg{width:18px;height:18px;flex:0 0 18px}
+
+/* encabezado */
+.enc{position:fixed;inset:0 0 auto;z-index:80;background:rgba(18,20,23,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--linea-osc)}
+.enc .int{min-height:var(--enc);max-width:1180px;margin-inline:auto;padding:8px 20px;display:flex;align-items:center;gap:16px}
+.marca{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+.marca .sello{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;border:2px solid var(--naranja);font-family:var(--f-tit);font-weight:800;font-size:1.5rem;color:var(--naranja);flex:0 0 46px}
+.marca span{font-family:var(--f-tit);font-weight:800;font-size:1.5rem;letter-spacing:.12em;text-transform:uppercase;line-height:.9}
+.marca small{display:block;font-family:var(--f-tit);font-weight:500;font-size:.78rem;letter-spacing:.3em;color:rgba(255,255,255,.6);margin-top:3px}
+.menu{margin-left:auto;display:flex;align-items:center;gap:6px}
+.menu a:not(.btn){color:rgba(255,255,255,.78);text-decoration:none;font-family:var(--f-tit);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.95rem;padding:8px 12px}
+.menu a:not(.btn):hover{color:#fff}
+.menu .btn{min-height:44px;padding:8px 18px;font-size:.92rem}
+@media (max-width:860px){.menu nav{display:none}.menu .btn{display:none}}
+
+/* hero */
+.hero{min-height:100svh;display:grid;align-items:center;padding:calc(var(--enc) + 40px) 0 110px;position:relative;overflow:hidden;color:#fff;background:
+  radial-gradient(ellipse 55% 55% at 75% 45%, rgba(232,115,31,.16), transparent 62%),
+  linear-gradient(160deg,#181B1F 0%,var(--grafito) 60%,#0B0C0E 100%)}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 70% 70% at 60% 50%,#000 30%,transparent 80%);pointer-events:none}
+.hero .cont{position:relative;z-index:2;display:grid;gap:40px;align-items:center}
+@media (min-width:960px){.hero .cont{grid-template-columns:1.08fr .92fr}}
+.hero .tit{font-size:clamp(3rem,7.4vw,6rem)}
+.hero .tit em{font-style:normal;color:var(--naranja)}
+.hero .bajada{color:#B9BEC5}
+.acciones{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.datos{display:flex;flex-wrap:wrap;gap:28px;margin-top:34px;padding-top:24px;border-top:1px solid var(--linea-osc);color:#AEB3BA;font-size:.92rem}
+.datos b{display:block;font-family:var(--f-tit);font-weight:800;font-size:1.7rem;color:#fff;letter-spacing:.04em;line-height:1;margin-bottom:4px}
+.datos b i{font-style:normal;color:var(--naranja)}
+
+/* tablero */
+.tablero{position:relative;aspect-ratio:1/1;max-width:500px;width:100%;justify-self:center}
+.tablero svg{width:100%;height:100%;overflow:visible}
+.aguja{transform-origin:250px 250px;animation:barrido 4.2s var(--ease) .4s both}
+.arco-activo{stroke-dasharray:820;stroke-dashoffset:820;animation:carga 4.2s var(--ease) .4s both}
+.lectura{position:absolute;left:0;right:0;bottom:16%;text-align:center;font-family:var(--f-tit);text-transform:uppercase;letter-spacing:.3em;font-size:.9rem;color:#AEB3BA}
+.lectura b{display:block;font-size:2.6rem;letter-spacing:.06em;color:#fff;font-weight:800;line-height:1}
+@keyframes barrido{0%{transform:rotate(-120deg)}55%{transform:rotate(95deg)}75%{transform:rotate(62deg)}100%{transform:rotate(70deg)}}
+@keyframes carga{0%{stroke-dashoffset:820}55%{stroke-dashoffset:60}100%{stroke-dashoffset:140}}
+@media (max-width:959px){.hero{min-height:auto;padding-bottom:120px}.tablero{max-width:230px;order:-1}}
+
+/* servicios */
+.servicios{background:var(--hueso)}
+.cabecera{display:grid;gap:12px}
+@media (min-width:900px){.cabecera{grid-template-columns:1fr 1fr;align-items:end}}
+.rejilla{display:grid;gap:18px;margin-top:48px}
+@media (min-width:860px){.rejilla{grid-template-columns:repeat(3,1fr)}}
+.serv{position:relative;background:#fff;border:1px solid var(--linea);border-radius:18px;padding:34px 28px 30px;overflow:hidden;transition:transform .35s var(--ease),box-shadow .35s}
+.serv::after{content:"";position:absolute;left:0;top:0;height:4px;width:0;background:var(--naranja);transition:width .5s var(--ease)}
+.serv:hover{transform:translateY(-6px);box-shadow:0 26px 44px -30px rgba(18,20,23,.55)}
+.serv:hover::after{width:100%}
+.serv .num{font-family:var(--f-tit);font-weight:800;font-size:1rem;letter-spacing:.2em;color:var(--naranja)}
+.serv svg{width:54px;height:54px;margin:18px 0 18px;color:var(--grafito)}
+.serv h3{font-family:var(--f-tit);font-weight:800;font-size:2rem;text-transform:uppercase;line-height:.95;margin-bottom:10px}
+.serv p{color:var(--suave)}
+
+/* familia */
+.familia{background:var(--acero);color:#fff;position:relative;overflow:hidden}
+.familia::after{content:"P";position:absolute;right:-2%;bottom:-28%;font-family:var(--f-tit);font-weight:800;font-size:clamp(18rem,40vw,34rem);line-height:1;color:rgba(255,255,255,.03);pointer-events:none}
+.familia .cont{position:relative;z-index:1;display:grid;gap:40px;align-items:center}
+@media (min-width:900px){.familia .cont{grid-template-columns:1fr 1fr}}
+.familia .bajada{color:#B9BEC5}
+.nota{display:flex;align-items:flex-end;gap:18px}
+.nota b{font-family:var(--f-tit);font-weight:800;font-size:clamp(6rem,16vw,10rem);line-height:.78;color:#fff}
+.nota .est{color:var(--naranja);font-size:1.5rem;letter-spacing:6px}
+.nota small{display:block;color:#AEB3BA;font-size:.95rem;margin-top:6px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chips li{border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:8px 16px;font-family:var(--f-tit);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.88rem;color:#DDE0E4}
+
+/* ubicacion */
+.ubi{background:#fff}
+.ubi .caja{display:grid;gap:28px;margin-top:40px}
+@media (min-width:880px){.ubi .caja{grid-template-columns:1.15fr .85fr;align-items:stretch}}
+.mapa{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--linea);min-height:320px;background:#e9e6df}
+.mapa img{width:100%;height:100%;min-height:320px;object-fit:cover;filter:grayscale(.85) contrast(1.05)}
+.mapa .osm{position:absolute;right:8px;bottom:6px;font-size:.72rem;background:rgba(255,255,255,.85);padding:2px 6px;border-radius:4px}
+.ficha{background:var(--hueso);border-radius:18px;padding:32px 28px;display:flex;flex-direction:column;gap:14px}
+.ficha h3{font-family:var(--f-tit);font-weight:800;font-size:2rem;text-transform:uppercase;line-height:.95}
+.ficha address{font-style:normal;font-size:1.15rem}
+.ficha p{color:var(--suave)}
+.ficha .acciones{margin-top:auto}
+.btn--borde{border-color:var(--grafito);color:var(--grafito)}
+
+/* turno */
+.turno{background:var(--grafito);color:#fff}
+.formu{margin-top:40px;display:grid;gap:14px;background:var(--acero);padding:clamp(22px,4vw,40px);border-radius:22px;border:1px solid var(--linea-osc)}
+.formu label{display:grid;gap:6px;font-family:var(--f-tit);font-weight:600;font-size:.9rem;letter-spacing:.14em;text-transform:uppercase;color:#AEB3BA}
+.formu input,.formu select,.formu textarea{width:100%;border:1px solid rgba(255,255,255,.14);background:#14171B;color:#fff;border-radius:12px;padding:12px 14px;min-height:50px}
+.formu textarea{min-height:110px;resize:vertical}
+.formu input:focus,.formu select:focus,.formu textarea:focus{outline:2px solid var(--naranja);outline-offset:1px}
+.formu .fila{display:grid;gap:14px}
+@media (min-width:700px){.formu .fila{grid-template-columns:1fr 1fr}}
+.aviso{font-size:.92rem;color:#AEB3BA}
+.armado{display:none;margin-top:6px;padding:16px;border-radius:12px;background:#0E1013;border:1px solid rgba(255,255,255,.12)}
+.armado.visto{display:block}
+.armado pre{white-space:pre-wrap;font-family:var(--f-txt);margin:8px 0 12px}
+
+.pie{background:#0B0C0E;color:#AEB3BA;padding:52px 0 120px}
+.pie .cont{display:grid;gap:12px}
+.pie b{font-family:var(--f-tit);font-weight:800;font-size:1.8rem;color:#fff;letter-spacing:.12em;text-transform:uppercase}
+.pie a{text-decoration:none}
+.pie .credito{margin-top:18px;padding-top:16px;border-top:1px solid var(--linea-osc);font-size:.85rem}
+
+/* flotante + barra */
+.flotante{position:fixed;right:22px;bottom:22px;z-index:95;display:flex;align-items:center;gap:10px;background:var(--naranja);color:#fff;text-decoration:none;border-radius:999px;padding:14px 20px 14px 16px;font-family:var(--f-tit);font-weight:700;letter-spacing:.12em;text-transform:uppercase;box-shadow:0 18px 36px -14px rgba(232,115,31,.9);transition:transform .2s}
+.flotante:hover{transform:translateY(-3px)}
+.flotante svg{width:22px;height:22px}
+.flotante::before{content:"";position:absolute;inset:0;border-radius:inherit;border:2px solid var(--naranja);animation:pulso 2.4s infinite}
+@keyframes pulso{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.35);opacity:0}}
+.barra-movil{display:none;position:fixed;inset:auto 0 0;z-index:90;background:rgba(18,20,23,.95);backdrop-filter:blur(10px);padding:10px 14px calc(10px + env(safe-area-inset-bottom));border-top:1px solid var(--linea-osc);gap:8px}
+.barra-movil a{flex:1;display:flex;align-items:center;justify-content:center;gap:8px;min-height:50px;border-radius:999px;font-family:var(--f-tit);font-weight:700;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
+.barra-movil .a1{background:var(--naranja);color:#fff}
+.barra-movil .a2{border:1px solid rgba(255,255,255,.3);color:#fff}
+.barra-movil svg{width:18px;height:18px}
+@media (max-width:860px){.barra-movil{display:flex}.flotante{display:none}}
+
+.rev{opacity:0;transform:translateY(24px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.rev.visto{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rev{opacity:1;transform:none}.aguja,.arco-activo,.flotante::before{animation:none}.aguja{transform:rotate(70deg)}.arco-activo{stroke-dashoffset:140}}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="enc">
+  <div class="int">
+    <a class="marca" href="#inicio" aria-label="Taller Mecánico Pedraza, inicio">
+      <span class="sello" aria-hidden="true">P</span>
+      <span>Pedraza<small>Taller mecánico</small></span>
+    </a>
+    <div class="menu">
+      <nav aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#taller">El taller</a>
+        <a href="#ubicacion">Ubicación</a>
+      </nav>
+      <a class="btn btn--naranja" href="#turno">Pedir turno</a>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+<section class="hero" id="inicio">
+  <div class="cont">
+    <div>
+      <p class="sobre">Adeodato Gondra 2821 · Córdoba</p>
+      <h1 class="tit">Tu auto, en manos de <em>un taller familiar</em></h1>
+      <p class="bajada">Mecánica integral, electricidad automotriz y diagnóstico. Taller Mecánico Pedraza tiene 4,9 estrellas en Google y te atiende con nombre y apellido.</p>
+      <div class="acciones">
+        <a class="btn btn--naranja" href="#turno">Pedir turno</a>
+        <a class="btn btn--linea" href="tel:+543514566241">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          351 456-6241</a>
+      </div>
+      <div class="datos">
+        <div><b>4,9<i>★</i></b>Puntaje en Google</div>
+        <div><b>3</b>Especialidades</div>
+        <div><b>X5000</b>Córdoba Capital</div>
+      </div>
+    </div>
+    <div class="tablero" aria-hidden="true">
+      <svg viewBox="0 0 500 500">
+        <defs>
+          <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#E8731F" stop-opacity=".25"/><stop offset="1" stop-color="#FF8A33"/></linearGradient>
+          <radialGradient id="g2"><stop offset="0" stop-color="#262B32"/><stop offset="1" stop-color="#121417"/></radialGradient>
+        </defs>
+        <circle cx="250" cy="250" r="236" fill="url(#g2)" stroke="rgba(255,255,255,.08)" stroke-width="2"/>
+        <circle cx="250" cy="250" r="214" fill="none" stroke="rgba(255,255,255,.05)" stroke-width="1"/>
+        <path d="M 99.6 376.2 A 196 196 0 1 1 400.4 376.2" fill="none" stroke="rgba(255,255,255,.08)" stroke-width="14" stroke-linecap="round"/>
+        <path class="arco-activo" d="M 99.6 376.2 A 196 196 0 1 1 400.4 376.2" fill="none" stroke="url(#g1)" stroke-width="14" stroke-linecap="round"/>
+        <g stroke="rgba(255,255,255,.55)" stroke-width="3" id="marcas"></g>
+        <g font-family="Barlow Condensed,Arial" font-weight="700" font-size="22" fill="#AEB3BA" text-anchor="middle" id="nums"></g>
+        <g class="aguja">
+          <path d="M250 250 L250 78" stroke="#FF8A33" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="250" cy="250" r="20" fill="#121417" stroke="#E8731F" stroke-width="5"/>
+        </g>
+      </svg>
+      <p class="lectura"><b>OK</b>Diagnóstico</p>
+    </div>
+  </div>
+</section>
+
+<section class="servicios sec" id="servicios">
+  <div class="cont">
+    <div class="cabecera">
+      <div><p class="sobre">Servicios</p><h2 class="tit">Lo que hacemos en el taller</h2></div>
+      <p class="bajada">Desde el ruido que no sabés de dónde viene hasta la falla eléctrica que aparece y desaparece: primero se diagnostica, después se repara.</p>
+    </div>
+    <div class="rejilla">
+      <article class="serv rev">
+        <span class="num">01</span>
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M30 8a10 10 0 0 0-9.5 13.1L8 33.6a3.4 3.4 0 0 0 4.8 4.8L25.3 26A10 10 0 0 0 38.4 14l-5.6 5.6-5-1.4-1.4-5L32 7.6A10 10 0 0 0 30 8z"/></svg>
+        <h3>Mecánica integral</h3>
+        <p>Atención completa del auto en un solo lugar, para que no tengas que andar de taller en taller.</p>
+      </article>
+      <article class="serv rev">
+        <span class="num">02</span>
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M27 4 10 27h13l-2 17 17-23H25z"/></svg>
+        <h3>Electricidad automotriz</h3>
+        <p>Fallas eléctricas, arranque, carga y luces: se buscan con método, no a prueba y error.</p>
+      </article>
+      <article class="serv rev">
+        <span class="num">03</span>
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 30a18 18 0 1 1 36 0"/><path d="M24 30l9-10"/><circle cx="24" cy="30" r="3"/><path d="M6 38h36"/></svg>
+        <h3>Diagnóstico</h3>
+        <p>Antes de tocar nada, se revisa el vehículo y se te explica qué tiene y qué conviene hacer.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="familia sec" id="taller">
+  <div class="cont">
+    <div class="rev">
+      <p class="sobre">El taller</p>
+      <h2 class="tit">Atendido por sus dueños</h2>
+      <p class="bajada">Taller Mecánico Pedraza es un taller familiar: lo atienden Adrián y su hijo. Cuando llevás el auto, sabés quién lo va a revisar y con quién hablar.</p>
+      <ul class="chips"><li>Mecánica integral</li><li>Electricidad</li><li>Diagnóstico</li></ul>
+    </div>
+    <div class="rev">
+      <div class="nota"><b>4,9</b><div><span class="est" aria-label="Cinco estrellas">★★★★★</span><small>Puntaje en Google Maps</small></div></div>
+      <p class="bajada" style="margin-top:22px">Lo que dicen los clientes en Google, a un clic.</p>
+      <div class="acciones"><a class="btn btn--linea" href="https://www.google.com/maps/search/?api=1&query=Taller+mec%C3%A1nico+Pedraza+Adeodato+Gondra+2821+C%C3%B3rdoba" target="_blank" rel="noopener">Ver reseñas en Google</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="ubi sec" id="ubicacion">
+  <div class="cont">
+    <p class="sobre">Ubicación</p>
+    <h2 class="tit">Adeodato Gondra 2821</h2>
+    <div class="caja">
+      <div class="mapa rev">
+        <img src="assets/mapa.webp" width="1000" height="650" alt="Mapa con la ubicación de Taller Mecánico Pedraza en Adeodato Gondra 2821, Córdoba">
+        <span class="osm">© colaboradores de OpenStreetMap</span>
+      </div>
+      <div class="ficha rev">
+        <h3>Taller Mecánico Pedraza</h3>
+        <address>Adeodato Gondra 2821<br>X5000 Córdoba, Argentina</address>
+        <p>Teléfono: <a href="tel:+543514566241">+54 351 456-6241</a></p>
+        <p>Llamá antes de venir para coordinar el día y el horario.</p>
+        <div class="acciones">
+          <a class="btn btn--osc" href="https://www.google.com/maps/dir/?api=1&destination=Adeodato+Gondra+2821+C%C3%B3rdoba" target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn--borde" href="tel:+543514566241">Llamar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="turno sec" id="turno">
+  <div class="cont">
+    <p class="sobre">Turnos</p>
+    <h2 class="tit">Pedí tu turno</h2>
+    <p class="bajada" style="color:#B9BEC5">Completá los datos, armamos el pedido y te comunicás con el taller por teléfono con todo a mano.</p>
+    <form class="formu" id="formu" novalidate>
+      <div class="fila">
+        <label>Nombre<input name="nombre" required autocomplete="name" placeholder="Tu nombre"></label>
+        <label>Teléfono<input name="telefono" required type="tel" autocomplete="tel" placeholder="351 ..."></label>
+      </div>
+      <div class="fila">
+        <label>Auto<input name="auto" placeholder="Marca, modelo y año"></label>
+        <label>Servicio<select name="servicio"><option>Mecánica integral</option><option>Electricidad automotriz</option><option>Diagnóstico</option><option>Otro</option></select></label>
+      </div>
+      <label>¿Qué le pasa al auto?<textarea name="motivo" placeholder="Contanos qué notás"></textarea></label>
+      <div class="acciones" style="margin-top:6px">
+        <button class="btn btn--naranja" type="submit">Armar pedido y llamar</button>
+      </div>
+      <p class="aviso">Demo: el pedido se arma en pantalla y abre la llamada al taller.</p>
+      <div class="armado" id="armado"><b>Tu pedido</b><pre id="texto"></pre><button class="btn btn--linea" type="button" id="copiar">Copiar texto</button></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="pie">
+  <div class="cont">
+    <b>Pedraza</b>
+    <p>Taller mecánico · Mecánica integral, electricidad automotriz y diagnóstico</p>
+    <p>Adeodato Gondra 2821, Córdoba · <a href="tel:+543514566241">+54 351 456-6241</a></p>
+    <p class="credito">Propuesta de sitio web diseñada por Luna Nueva Creativa</p>
+  </div>
+</footer>
+
+<a class="flotante" href="tel:+543514566241" aria-label="Llamar a Taller Mecánico Pedraza">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+  Llamar
+</a>
+<nav class="barra-movil" aria-label="Acciones rápidas">
+  <a class="a1" href="tel:+543514566241"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Llamar</a>
+  <a class="a2" href="#turno">Pedir turno</a>
+</nav>
+
+<script>
+(function(){
+  var NS='http://www.w3.org/2000/svg', m=document.getElementById('marcas'), n=document.getElementById('nums');
+  for(var i=0;i<=8;i++){
+    var a=(-120+i*30)*Math.PI/180, r1=170, r2=i%2?182:188;
+    var l=document.createElementNS(NS,'line');
+    l.setAttribute('x1',250+r1*Math.sin(a));l.setAttribute('y1',250-r1*Math.cos(a));
+    l.setAttribute('x2',250+r2*Math.sin(a));l.setAttribute('y2',250-r2*Math.cos(a));m.appendChild(l);
+    if(i%2===0){var t=document.createElementNS(NS,'text');t.setAttribute('x',250+142*Math.sin(a));t.setAttribute('y',258-142*Math.cos(a));t.textContent=i;n.appendChild(t);}
+  }
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('visto');io.unobserve(e.target);}})},{threshold:.15});
+  document.querySelectorAll('.rev').forEach(function(el){io.observe(el)});
+  var f=document.getElementById('formu');
+  f.addEventListener('submit',function(e){
+    e.preventDefault(); if(!f.reportValidity()) return;
+    var d=new FormData(f), L=['Hola, quiero pedir un turno en Taller Mecánico Pedraza.','Nombre: '+d.get('nombre').trim(),'Teléfono: '+d.get('telefono').trim()];
+    if(d.get('auto').trim()) L.push('Auto: '+d.get('auto').trim());
+    L.push('Servicio: '+d.get('servicio'));
+    if(d.get('motivo').trim()) L.push('Qué le pasa: '+d.get('motivo').trim());
+    document.getElementById('texto').textContent=L.join('\n');
+    document.getElementById('armado').classList.add('visto');
+    window.location.href='tel:+543514566241';
+  });
+  document.getElementById('copiar').addEventListener('click',function(){if(navigator.clipboard)navigator.clipboard.writeText(document.getElementById('texto').textContent)});
+})();
+</script>
+</body>
+</html>
