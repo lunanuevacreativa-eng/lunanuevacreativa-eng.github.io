@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ferpozzi · Odontología Integral y Estética · Poeta Lugones, Córdoba</title>
+<meta name="description" content="Ferpozzi Odontología Integral y Estética. Salud bucal y estética en Gabino Ezeiza 4207, Poeta Lugones, Córdoba. Turnos al 351 202-4222.">
+<meta name="theme-color" content="#053B7B">
+<link rel="icon" href="assets/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#053B7B;--navy-d:#032a59;--gray:#707070;--mist:#EEF2F7;--line:#D9E1EB;--ink:#1B2433;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Jost,system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1160px,92%);margin:auto}
+.serif{font-family:"Cormorant Garamond",Georgia,serif}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:.3s}
+header.scrolled{border-color:var(--line);box-shadow:0 6px 30px -18px rgba(5,59,123,.35)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;align-items:center;gap:.8rem}
+.brand img{width:54px;height:54px}
+.brand b{font-family:"Cormorant Garamond",serif;font-size:1.55rem;font-weight:600;color:var(--navy);letter-spacing:.02em;line-height:1}
+.brand small{display:block;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gray);margin-top:.25rem}
+.menu{display:flex;gap:2rem;font-size:.92rem;letter-spacing:.04em}
+.menu a{position:relative;color:#3c4656}
+.menu a:after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1.5px;background:var(--navy);transition:.3s}
+.menu a:hover:after{width:100%}
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.85rem 1.5rem;border-radius:999px;font-weight:500;font-size:.95rem;letter-spacing:.02em;transition:.25s;border:1.5px solid var(--navy)}
+.btn svg{width:18px;height:18px}
+.btn-solid{background:var(--navy);color:#fff}
+.btn-solid:hover{background:var(--navy-d);transform:translateY(-2px);box-shadow:0 12px 26px -12px rgba(5,59,123,.7)}
+.btn-ghost{color:var(--navy);background:transparent}
+.btn-ghost:hover{background:var(--mist)}
+.burger{display:none;background:none;border:0;width:42px;height:42px;cursor:pointer}
+.burger span{display:block;width:24px;height:2px;background:var(--navy);margin:5px auto;transition:.3s}
+/* hero */
+.hero{position:relative;overflow:hidden;padding:5.5rem 0 6.5rem;background:radial-gradient(1200px 600px at 85% 20%,#e3ebf5 0%,transparent 60%),linear-gradient(180deg,#fff 0%,#f6f8fb 100%)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:4rem;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:.6rem;font-size:.74rem;letter-spacing:.28em;text-transform:uppercase;color:var(--navy);font-weight:500}
+.eyebrow:before{content:"";width:34px;height:1.5px;background:var(--navy)}
+.hero h1{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(2.7rem,5.6vw,4.7rem);line-height:1.02;color:var(--navy-d);margin:1.3rem 0 1.4rem;letter-spacing:-.01em}
+.hero h1 em{color:var(--gray);font-style:italic}
+.hero p.lead{font-size:1.14rem;color:#4a5566;max-width:34rem;font-weight:300}
+.cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.2rem}
+.trust{display:flex;gap:2.2rem;margin-top:2.8rem;padding-top:1.8rem;border-top:1px solid var(--line);flex-wrap:wrap}
+.trust div b{display:block;font-family:"Cormorant Garamond",serif;font-size:2.1rem;color:var(--navy);line-height:1;font-weight:600}
+.trust div span{font-size:.82rem;color:var(--gray);letter-spacing:.04em}
+.stars{color:#E2A93B;letter-spacing:2px;font-size:.95rem}
+.hero-art{position:relative;aspect-ratio:1;display:grid;place-items:center}
+.ring{position:absolute;border-radius:50%;border:1px solid rgba(5,59,123,.16)}
+.ring.r1{inset:0;animation:spin 60s linear infinite;border-style:dashed}
+.ring.r2{inset:9%;border-color:rgba(5,59,123,.1)}
+.ring.r3{inset:18%;background:#fff;box-shadow:0 40px 80px -40px rgba(5,59,123,.45),inset 0 0 0 1px var(--line)}
+.hero-art img{position:relative;width:58%;mix-blend-mode:multiply}
+.chip{position:absolute;background:#fff;border:1px solid var(--line);border-radius:14px;padding:.7rem 1rem;font-size:.82rem;box-shadow:0 18px 40px -22px rgba(5,59,123,.5);display:flex;gap:.6rem;align-items:center}
+.chip i{width:34px;height:34px;border-radius:50%;background:var(--mist);display:grid;place-items:center;color:var(--navy);font-style:normal}
+.chip.c1{left:-6%;bottom:6%}.chip.c2{right:-6%;top:2%}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* sections */
+section{padding:6rem 0}
+.head{max-width:40rem;margin-bottom:3.2rem}
+.head h2{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(2.1rem,4vw,3.2rem);line-height:1.08;color:var(--navy-d);margin-top:.8rem}
+.head p{color:#556073;margin-top:1rem;font-weight:300;font-size:1.06rem}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.svc{position:relative;padding:2.2rem 2rem;border:1px solid var(--line);border-radius:22px;background:#fff;transition:.35s;overflow:hidden}
+.svc:before{content:"";position:absolute;inset:auto -40% -60% auto;width:220px;height:220px;border-radius:50%;background:var(--mist);transition:.5s;z-index:0}
+.svc:hover{transform:translateY(-6px);box-shadow:0 30px 60px -35px rgba(5,59,123,.45);border-color:#c4d1e2}
+.svc:hover:before{transform:scale(1.5)}
+.svc>*{position:relative;z-index:1}
+.svc .ic{width:56px;height:56px;border-radius:16px;background:var(--navy);color:#fff;display:grid;place-items:center;margin-bottom:1.4rem}
+.svc .ic svg{width:28px;height:28px}
+.svc h3{font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-weight:600;color:var(--navy-d);line-height:1.15}
+.svc p{color:#556073;font-size:.97rem;margin-top:.6rem;font-weight:300}
+.band{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.band:after{content:"";position:absolute;right:-180px;top:-180px;width:520px;height:520px;border-radius:50%;border:1px solid rgba(255,255,255,.12);box-shadow:0 0 0 70px rgba(255,255,255,.03),0 0 0 140px rgba(255,255,255,.02)}
+.band .head h2{color:#fff}.band .head p{color:#c9d6e8}.band .eyebrow{color:#c9d6e8}.band .eyebrow:before{background:#c9d6e8}
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;position:relative;z-index:1}
+.why div{padding:1.8rem;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);transition:.3s}
+.why div:hover{background:rgba(255,255,255,.1)}
+.why b{font-family:"Cormorant Garamond",serif;font-size:3rem;line-height:1;font-weight:500;color:#fff;display:block}
+.why h4{font-size:1.05rem;font-weight:500;margin:.8rem 0 .4rem}
+.why p{font-size:.92rem;color:#c9d6e8;font-weight:300}
+.ig{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.post{border-radius:22px;overflow:hidden;border:1px solid var(--line);background:#fff;display:flex;flex-direction:column;transition:.35s}
+.post:hover{transform:translateY(-5px);box-shadow:0 30px 60px -35px rgba(5,59,123,.45)}
+.post .art{aspect-ratio:4/3;display:grid;place-items:center;position:relative;overflow:hidden}
+.post .art svg{width:38%;height:auto;position:relative;z-index:1}
+.post .art.a1{background:linear-gradient(135deg,#053B7B,#0b5bb5)}
+.post .art.a2{background:linear-gradient(135deg,#eef2f7,#d7e2ef)}
+.post .art.a3{background:linear-gradient(135deg,#707070,#9a9a9a)}
+.post .art:after{content:"";position:absolute;width:150%;aspect-ratio:1;border-radius:50%;border:1px solid rgba(255,255,255,.25);left:-25%;top:35%}
+.post .body{padding:1.5rem 1.6rem 1.8rem}
+.post small{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gray)}
+.post h3{font-family:"Cormorant Garamond",serif;font-size:1.45rem;color:var(--navy-d);margin:.4rem 0 .5rem;line-height:1.2;font-weight:600}
+.post p{font-size:.94rem;color:#556073;font-weight:300}
+.note{font-size:.8rem;color:var(--gray);margin-top:1.4rem}
+.rating{display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:center;background:var(--mist);border-radius:28px;padding:3rem 3.4rem}
+.rating .big{font-family:"Cormorant Garamond",serif;font-size:6.5rem;line-height:.9;color:var(--navy);font-weight:500}
+.rating .stars{font-size:1.5rem}
+.rating h3{font-family:"Cormorant Garamond",serif;font-size:2rem;color:var(--navy-d);font-weight:500;line-height:1.15}
+.rating p{color:#556073;margin-top:.6rem;font-weight:300}
+.visit{display:grid;grid-template-columns:1fr 1.2fr;gap:2rem;align-items:stretch}
+.card{border:1px solid var(--line);border-radius:24px;padding:2.4rem;background:#fff}
+.card h3{font-family:"Cormorant Garamond",serif;font-size:1.9rem;color:var(--navy-d);font-weight:500;margin-bottom:1.2rem}
+.row{display:flex;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+.row:last-of-type{border:0}
+.row svg{width:22px;height:22px;color:var(--navy);flex:none;margin-top:3px}
+.row b{display:block;font-weight:500}
+.row span{color:#556073;font-size:.95rem}
+.hours{width:100%;border-collapse:collapse;font-size:.95rem;margin-top:.3rem}
+.hours td{padding:.35rem 0;color:#556073}.hours td:last-child{text-align:right;color:var(--ink);font-weight:500}
+.map{border-radius:24px;overflow:hidden;border:1px solid var(--line);min-height:420px;background:var(--mist)}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;filter:saturate(.85)}
+.final{text-align:center;background:linear-gradient(135deg,var(--navy-d),var(--navy));color:#fff;border-radius:32px;padding:4.5rem 2rem;position:relative;overflow:hidden}
+.final h2{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:clamp(2.2rem,4.4vw,3.4rem);line-height:1.1}
+.final p{color:#c9d6e8;margin:1rem auto 2rem;max-width:34rem;font-weight:300}
+.final .btn-solid{background:#fff;color:var(--navy);border-color:#fff}
+.final .btn-ghost{color:#fff;border-color:rgba(255,255,255,.5)}
+.final .btn-ghost:hover{background:rgba(255,255,255,.1)}
+footer{padding:3rem 0 6rem;color:var(--gray);font-size:.86rem}
+.foot{display:flex;justify-content:space-between;gap:1.5rem;flex-wrap:wrap;align-items:center;border-top:1px solid var(--line);padding-top:2rem}
+.foot .brand img{width:42px;height:42px}
+.sticky{display:none}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+@media (max-width:980px){
+ .hero-grid,.visit{grid-template-columns:1fr}
+ .hero-art{max-width:420px;margin:auto;width:100%}
+ .services,.ig{grid-template-columns:1fr 1fr}
+ .why{grid-template-columns:1fr 1fr}
+ .rating{grid-template-columns:1fr;text-align:center;padding:2.4rem}
+}
+@media (max-width:760px){
+ .menu,.nav .btn{display:none}
+ .burger{display:block}
+ .menu.open{display:flex;flex-direction:column;position:absolute;top:78px;left:0;right:0;background:#fff;padding:1.5rem 4%;gap:1.2rem;border-bottom:1px solid var(--line)}
+ .services,.ig,.why{grid-template-columns:1fr}
+ section{padding:4.2rem 0}
+ .hero{padding:3.2rem 0 4rem}
+ .chip{display:none}
+ .sticky{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;gap:.6rem;padding:.7rem 4%;background:rgba(255,255,255,.96);border-top:1px solid var(--line);backdrop-filter:blur(8px)}
+ .sticky .btn{flex:1;justify-content:center;padding:.8rem .5rem}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header id="top">
+ <div class="wrap nav">
+  <a href="#top" class="brand" aria-label="Ferpozzi, inicio"><img src="assets/logo-ferpozzi.webp" alt="Logo Odontología Ferpozzi" width="54" height="54"><span><b>Ferpozzi</b><small>Odontología integral y estética</small></span></a>
+  <nav class="menu" id="menu"><a href="#servicios">Servicios</a><a href="#por-que">Por qué elegirnos</a><a href="#novedades">Novedades</a><a href="#visitanos">Visitanos</a></nav>
+  <a class="btn btn-solid" href="tel:+543512024222"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Pedir turno</a>
+  <button class="burger" aria-label="Abrir menú" onclick="document.getElementById('menu').classList.toggle('open')"><span></span><span></span><span></span></button>
+ </div>
+</header>
+
+<main>
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div class="reveal">
+   <span class="eyebrow">Poeta Lugones · Córdoba</span>
+   <h1>Tu salud bucal y tu estética, <em>en un mismo lugar.</em></h1>
+   <p class="lead">En Ferpozzi cuidamos tus dientes y también la forma en la que te mirás al espejo. Odontología integral y estética facial, con turnos de lunes a sábado.</p>
+   <div class="cta">
+    <a class="btn btn-solid" href="tel:+543512024222"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Llamar al 351 202-4222</a>
+    <a class="btn btn-ghost" href="https://ig.me/m/ferpozziodontologia" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>Escribinos por Instagram</a>
+   </div>
+   <div class="trust">
+    <div><b>5,0</b><span class="stars">★★★★★</span><br><span>28 reseñas en Google</span></div>
+    <div><b>L a S</b><span>Atención de lunes a sábado</span></div>
+    <div><b>2 en 1</b><span>Odontología y estética</span></div>
+   </div>
+  </div>
+  <div class="hero-art reveal" aria-hidden="true">
+   <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+   <img src="assets/logo-ferpozzi.webp" alt="" width="520" height="520">
+   <div class="chip c1"><i>★</i><span><b>5,0 en Google</b><br>28 reseñas</span></div>
+   <div class="chip c2"><i>✓</i><span><b>Turnos</b><br>por teléfono o MD</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="servicios">
+ <div class="wrap">
+  <div class="head reveal"><span class="eyebrow">Servicios</span><h2>Una sonrisa sana, auténtica y en armonía con tu rostro</h2><p>Combinamos el cuidado clínico de todos los días con tratamientos estéticos sutiles y naturales.</p></div>
+  <div class="services">
+   <article class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 3c-2.5 0-4 2-4 4.5 0 3 1.3 5 2 8 .5 2.3 1 5.5 2.5 5.5s1.6-3.5 2.5-5.5c.4-.9 1.6-.9 2 0 .9 2 1 5.5 2.5 5.5s2-3.2 2.5-5.5c.7-3 2-5 2-8C21 5 19.5 3 17 3c-2 0-3 1.2-5 1.2S9 3 7 3z"/></svg></div><h3>Odontología integral</h3><p>Consultas, diagnóstico y tratamientos para mantener tu boca sana y funcional en el tiempo.</p></article>
+   <article class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3l1.8 4.6L18 9l-4.2 1.4L12 15l-1.8-4.6L6 9l4.2-1.4z"/><path d="M19 15l.8 2 2 .8-2 .8L19 21l-.8-2.4-2-.8 2-.8z"/></svg></div><h3>Estética dental</h3><p>Tratamientos pensados para devolverle el brillo a tu sonrisa y potenciar tu confianza.</p></article>
+   <article class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12c3-4 6-5 9-3 3-2 6-1 9 3-3 4-6 5.5-9 5.5S6 16 3 12z"/><path d="M3 12h18"/></svg></div><h3>Labios con ácido hialurónico</h3><p>Definición del contorno, hidratación y volumen a medida, respetando la naturalidad de tu rostro.</p></article>
+   <article class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20l7-7"/><path d="M14 4l6 6-6 6-6-6z"/></svg></div><h3>Limpieza profesional</h3><p>El sarro no se va solo: una limpieza periódica evita inflamación y sangrado de encías y protege tus dientes.</p></article>
+   <article class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg></div><h3>Controles y prevención</h3><p>Controles periódicos para detectar a tiempo y no tener que ir solo ante una urgencia.</p></article>
+   <article class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div><h3>Estética facial</h3><p>Le damos a tu rostro la atención que merece, con cambios sutiles y resultados armónicos.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="band" id="por-que">
+ <div class="wrap">
+  <div class="head reveal"><span class="eyebrow">Por qué elegirnos</span><h2>Un consultorio de barrio con estándar de excelencia</h2><p>Lo que dicen los números y lo que nos importa a la hora de atenderte.</p></div>
+  <div class="why">
+   <div class="reveal"><b>5,0</b><h4>Puntaje perfecto en Google</h4><p>Con 28 reseñas de pacientes.</p></div>
+   <div class="reveal"><b>2</b><h4>Especialidades, un solo lugar</h4><p>Odontología integral y estética facial sin cambiar de consultorio.</p></div>
+   <div class="reveal"><b>6</b><h4>Días de atención</h4><p>De lunes a viernes de 8 a 20 y sábados por la mañana.</p></div>
+   <div class="reveal"><b>1</b><h4>Mensaje y listo</h4><p>Pedí tu turno por teléfono o por mensaje directo en Instagram.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="novedades">
+ <div class="wrap">
+  <div class="head reveal"><span class="eyebrow">Desde nuestro Instagram</span><h2>Consejos y novedades del consultorio</h2><p>Lo último que compartimos en @ferpozziodontologia.</p></div>
+  <div class="ig">
+   <a class="post reveal" href="https://www.instagram.com/ferpozziodontologia/" target="_blank" rel="noopener"><div class="art a1"><svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="2.4"><path d="M20 10c-6 0-10 5-10 11 0 8 3.5 13 5 21 1.2 6 2.5 12 6 12s4-8 6-12c1-2 4-2 5 0 2 4 2.5 12 6 12s4.8-6 6-12c1.5-8 5-13 5-21 0-6-4-11-10-11-5 0-7 3-12 3s-7-3-12-3z"/></svg></div><div class="body"><small>Limpieza</small><h3>El sarro no se va solo</h3><p>Por qué una limpieza profesional periódica es clave para tus encías y tus dientes.</p></div></a>
+   <a class="post reveal" href="https://www.instagram.com/ferpozziodontologia/" target="_blank" rel="noopener"><div class="art a2"><svg viewBox="0 0 64 64" fill="none" stroke="#053B7B" stroke-width="2.4"><path d="M6 32c8-10 16-13 26-7 10-6 18-3 26 7-8 10-16 14-26 14S14 42 6 32z"/><path d="M6 32h52"/></svg></div><div class="body"><small>Estética facial</small><h3>Labios con definición natural</h3><p>Rellenos de ácido hialurónico: contorno, hidratación y volumen a medida.</p></div></a>
+   <a class="post reveal" href="https://www.instagram.com/ferpozziodontologia/" target="_blank" rel="noopener"><div class="art a3"><svg viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="2.4"><circle cx="32" cy="32" r="10"/><path d="M32 6v8M32 50v8M6 32h8M50 32h8M13.6 13.6l5.7 5.7M44.7 44.7l5.7 5.7M13.6 50.4l5.7-5.7M44.7 19.3l5.7-5.7"/></svg></div><div class="body"><small>Primavera</small><h3>Una sonrisa radiante</h3><p>Arrancá la temporada con tu sonrisa impecable. Pedí tu turno por mensaje.</p></div></a>
+  </div>
+  <p class="note">Las ilustraciones son de referencia. En el sitio final se reemplazan por las fotos del consultorio.</p>
+ </div>
+</section>
+
+<section style="padding-top:0">
+ <div class="wrap">
+  <div class="rating reveal">
+   <div><div class="big">5,0</div><div class="stars">★★★★★</div></div>
+   <div><h3>Calificación perfecta de nuestros pacientes en Google</h3><p>28 reseñas con puntaje promedio de 5 estrellas. Gracias por la confianza de cada día.</p><a class="btn btn-ghost" style="margin-top:1.3rem" href="https://www.google.com/maps/search/?api=1&query=Ferpozzi+Odontolog%C3%ADa+Integral+y+Est%C3%A9tica+Gabino+Ezeiza+4207+C%C3%B3rdoba" target="_blank" rel="noopener">Ver reseñas en Google</a></div>
+  </div>
+ </div>
+</section>
+
+<section id="visitanos" style="padding-top:0">
+ <div class="wrap">
+  <div class="head reveal"><span class="eyebrow">Visitanos</span><h2>Te esperamos en Poeta Lugones</h2></div>
+  <div class="visit">
+   <div class="card reveal">
+    <h3>Datos del consultorio</h3>
+    <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s7-6.3 7-12a7 7 0 0 0-14 0c0 5.7 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><div><b>Gabino Ezeiza 4207</b><span>B° Poeta Lugones, Córdoba</span></div></div>
+    <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><div><b><a href="tel:+543512024222">351 202-4222</a></b><span>Turnos y consultas</span></div></div>
+    <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg><div><b><a href="https://www.instagram.com/ferpozziodontologia/" target="_blank" rel="noopener">@ferpozziodontologia</a></b><span>Mensajes directos</span></div></div>
+    <div class="row"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div style="flex:1"><b>Horarios</b>
+     <table class="hours"><tr><td>Lunes a viernes</td><td>8:00 a 20:00</td></tr><tr><td>Sábados</td><td>10:00 a 13:00</td></tr><tr><td>Domingos</td><td>Cerrado</td></tr></table></div></div>
+    <a class="btn btn-ghost" style="margin-top:1.2rem" href="https://www.google.com/maps/dir/?api=1&destination=Gabino+Ezeiza+4207+C%C3%B3rdoba" target="_blank" rel="noopener">Cómo llegar</a>
+   </div>
+   <div class="map reveal"><iframe title="Mapa: Gabino Ezeiza 4207, Córdoba" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Gabino%20Ezeiza%204207%2C%20C%C3%B3rdoba%2C%20Argentina&hl=es&z=16&output=embed"></iframe></div>
+  </div>
+ </div>
+</section>
+
+<section style="padding-top:0">
+ <div class="wrap">
+  <div class="final reveal">
+   <h2>Tu seguridad empieza por una sonrisa saludable</h2>
+   <p>Coordiná tu consulta con un llamado o un mensaje.</p>
+   <div class="cta" style="justify-content:center">
+    <a class="btn btn-solid" href="tel:+543512024222">Llamar ahora</a>
+    <a class="btn btn-ghost" href="https://ig.me/m/ferpozziodontologia" target="_blank" rel="noopener">Mensaje por Instagram</a>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap foot">
+  <div class="brand"><img src="assets/logo-ferpozzi.webp" alt="Logo Odontología Ferpozzi" width="42" height="42"><span><b>Ferpozzi</b><small>Odontología integral y estética</small></span></div>
+  <span>Gabino Ezeiza 4207, Poeta Lugones, Córdoba · <a href="tel:+543512024222">351 202-4222</a></span>
+  <span>Propuesta de sitio web diseñada por Luna Nueva Creativa</span>
+ </div>
+</footer>
+
+<div class="sticky">
+ <a class="btn btn-solid" href="tel:+543512024222">Llamar</a>
+ <a class="btn btn-ghost" href="https://ig.me/m/ferpozziodontologia" target="_blank" rel="noopener">Instagram</a>
+</div>
+
+<script>
+const h=document.querySelector('header');addEventListener('scroll',()=>h.classList.toggle('scrolled',scrollY>10),{passive:true});
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
+document.querySelectorAll('#menu a').forEach(a=>a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open')));
+</script>
+</body>
+</html>
