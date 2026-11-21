@@ -20,14 +20,15 @@
   tg.addEventListener('click',function(){var o=tg.getAttribute('aria-expanded')==='true';tg.setAttribute('aria-expanded',String(!o));mm.hidden=o;nav.classList.add('is-solid')});
   $$('a',mm).forEach(function(a){a.addEventListener('click',function(){tg.setAttribute('aria-expanded','false');mm.hidden=true})});
 
-  /* reveal */
-  var els=$$('[data-anim]');
-  if('IntersectionObserver' in window&&!reduce){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -6% 0px',threshold:.06});
-    els.forEach(function(el){
-      var sib=el.parentElement?[].indexOf.call(el.parentElement.children,el):0;
-      el.style.transitionDelay=Math.min(sib,5)*90+'ms';io.observe(el)});
-  } else els.forEach(function(el){el.classList.add('in')});
+  /* reveal: chequeo por posición (robusto con clip-path, saltos de ancla y scroll rápido) */
+  var pend=$$('[data-anim]');
+  if(!reduce){
+    pend.forEach(function(el){var sib=el.parentElement?[].indexOf.call(el.parentElement.children,el):0;el.style.transitionDelay=Math.min(sib,5)*90+'ms'});
+    var rq=false;
+    function reveal(){rq=false;var lim=window.innerHeight*.94;pend=pend.filter(function(el){if(el.getBoundingClientRect().top<lim){el.classList.add('in');return false}return true});if(!pend.length){window.removeEventListener('scroll',onRv);window.removeEventListener('resize',onRv)}}
+    function onRv(){if(!rq){rq=true;requestAnimationFrame(reveal)}}
+    window.addEventListener('scroll',onRv,{passive:true});window.addEventListener('resize',onRv);window.addEventListener('load',onRv);reveal();
+  } else pend.forEach(function(el){el.classList.add('in')});
 
   /* parallax */
   var px=$$('[data-speed]');
@@ -93,70 +94,39 @@
   window.addEventListener('storage',function(e){if(e.key===PDLC.KEY){loadCarta();toast('La carta se actualizó en vivo.')}});
   loadCarta();
 
-  /* cava 360 */
+  /* cava: carril de bodegas (robusto, sin 3D) */
   var cavaBuilt=false;
+  function money(p){return p?'$ '+String(p).replace(/\B(?=(\d{3})+(?!\d))/g,'.'):''}
   function buildCava(bodegas){
-    if(cavaBuilt||!bodegas.length)return;cavaBuilt=true;
-    var ring=$('#cava-ring'),stage=$('#cava-stage'),detail=$('#cava-detail');
-    var panels=[];
-    var photos=[{img:'assets/img/cava-real.webp',cap:'Nuestra cava'},{img:'assets/img/botellas.webp',cap:'Selección de la casa'}];
-    bodegas.forEach(function(b,i){
-      if(i===0)panels.push({photo:photos[0]});
-      if(i===6)panels.push({photo:photos[1]});
-      panels.push({b:b});
-    });
-    var n=panels.length,step=360/n,W,R;
-    panels.forEach(function(p,i){
-      var el=document.createElement('button');el.type='button';el.className='cv'+(p.photo?' cv--photo':'');
-      if(p.photo){el.innerHTML='<img src="'+p.photo.img+'" alt="'+esc(p.photo.cap)+'" loading="lazy"><span class="cv__cap">'+esc(p.photo.cap)+'</span>';el.setAttribute('aria-label',p.photo.cap)}
-      else{
-        var v=p.b.vinos||[];
-        el.innerHTML='<span class="cv__frame"><span class="cv__k">'+(p.b.bodega==='Champaña'?'Selección':'Bodega')+'</span><span class="cv__orn">✦</span><span class="cv__name">'+esc(p.b.bodega)+'</span><span class="cv__rule"></span><span class="cv__list">'+v.slice(0,3).map(function(w){return '<span>'+esc(w.nombre)+'</span>'}).join('')+'</span><span class="cv__count">'+v.length+' etiquetas</span></span>';
-        el.setAttribute('aria-label','Ver etiquetas de '+p.b.bodega);
-      }
-      el.addEventListener('click',function(){if(moved)return;goTo(i)});
-      ring.appendChild(el);p.el=el;
-    });
-    function layout(){
-      W=window.innerWidth<700?168:250;
-      R=Math.round((W/2)/Math.tan(Math.PI/n)*1.18);
-      panels.forEach(function(p,i){p.el.style.width=W+'px';p.el.style.height=Math.round(W*1.5)+'px';p.el.style.marginLeft=(-W/2)+'px';p.el.style.marginTop=(-W*.75)+'px';p.el.style.transform='rotateY('+(i*step)+'deg) translateZ('+R+'px)'});
-      stage.style.height=Math.round(W*1.5+(window.innerWidth<700?90:150))+'px';
-    }
-    layout();window.addEventListener('resize',layout);
-    var angle=0,vel=0,dragging=false,moved=false,lastX=0,target=null,hover=false,front=-1,auto=!reduce;
-    function frontIndex(){var a=((-angle%360)+360)%360;return Math.round(a/step)%n}
-    function showDetail(i){
-      var p=panels[i];if(!p.b){return}
-      var v=p.b.vinos||[];
+    if(cavaBuilt||!bodegas||!bodegas.length)return;cavaBuilt=true;
+    var rail=$('#cava-rail'),detail=$('#cava-detail'),bar=$('#cava-bar'),sel=-1;
+    rail.innerHTML=bodegas.map(function(b,i){var v=b.vinos||[];var ch=b.bodega==='Champaña';
+      return '<button type="button" class="cvc" role="option" aria-selected="false" data-i="'+i+'"><span class="cvc__in"><span class="cvc__k">'+(ch?'Selección':'Bodega')+'</span><span class="cvc__orn">✦</span><span class="cvc__name">'+esc(b.bodega)+'</span><span class="cvc__rule"></span><span class="cvc__list">'+v.slice(0,3).map(function(w){return '<span>'+esc(w.nombre)+'</span>'}).join('')+'</span><span class="cvc__count">'+v.length+' etiquetas</span></span></button>'}).join('');
+    var cards=$$('.cvc',rail);
+    function select(i,scroll){
+      i=(i+cards.length)%cards.length;if(i===sel&&!scroll)return;sel=i;
+      cards.forEach(function(c,j){c.classList.toggle('is-on',j===i);c.setAttribute('aria-selected',j===i?'true':'false')});
+      var b=bodegas[i],v=b.vinos||[];
       detail.classList.remove('is-in');void detail.offsetWidth;
-      detail.innerHTML='<div class="cd__head"><span class="cd__k">'+(p.b.bodega==='Champaña'?'Champañas y espumantes':'Bodega')+'</span><h3>'+esc(p.b.bodega)+'</h3></div><ul class="cd__list">'+v.map(function(w){return '<li><span class="cd__n">'+esc(w.nombre)+'</span>'+(w.varietal?'<span class="cd__v">'+esc(w.varietal)+'</span>':'')+'</li>'}).join('')+'</ul>';
+      detail.innerHTML='<div class="cd__head"><span class="cd__k">'+(b.bodega==='Champaña'?'Champañas y espumantes':'Bodega')+'</span><h3>'+esc(b.bodega)+'</h3><span class="cd__c">'+v.length+' etiquetas</span></div>'+PDLC.acc('Ver etiquetas y precios',0,'<ul class="cd__list">'+v.map(function(w){return '<li><span class="cd__n">'+esc(w.nombre)+(w.varietal?'<small>'+esc(w.varietal)+'</small>':'')+'</span><span class="cd__p">'+money(w.precio)+'</span></li>'}).join('')+'</ul>');
       detail.classList.add('is-in');
+      if(scroll){var c=cards[i];rail.scrollTo({left:c.offsetLeft-(rail.clientWidth-c.offsetWidth)/2,behavior:reduce?'auto':'smooth'})}
     }
-    function goTo(i){var cur=-angle/step;var d=i-cur;d=((d%n)+n+n/2)%n-n/2;target=-(cur+d)*step;auto=false;clearTimeout(resumeT);resumeT=setTimeout(function(){auto=!reduce},9000)}
-    var resumeT;
-    function frame(){
-      if(!dragging){
-        if(target!==null){angle+=(target-angle)*.12;if(Math.abs(target-angle)<.05){angle=target;target=null}}
-        else if(Math.abs(vel)>.02){angle+=vel;vel*=.9;if(Math.abs(vel)<=.05){vel=0;var fi=frontIndex();goTo(fi)}}
-        else if(auto&&!hover){angle-=.06}
-      }
-      ring.style.transform='translateZ('+(-R)+'px) rotateX(-5deg) rotateY('+angle+'deg)';
-      var fi=frontIndex();
-      panels.forEach(function(p,i){var d=((i*step+angle)%360+360)%360;var c=Math.cos(d*Math.PI/180);p.el.style.opacity=(0.18+0.82*Math.max(0,c)).toFixed(2);p.el.classList.toggle('is-front',i===fi)});
-      if(fi!==front){front=fi;if(panels[fi].b)showDetail(fi)}
-      requestAnimationFrame(frame);
-    }
-    stage.addEventListener('pointerdown',function(e){dragging=true;moved=false;lastX=e.clientX;vel=0;target=null;auto=false;stage.classList.add('grab');clearTimeout(resumeT)});
-    window.addEventListener('pointermove',function(e){if(!dragging)return;var dx=e.clientX-lastX;if(Math.abs(dx)>2)moved=true;lastX=e.clientX;var d=dx*.25;angle+=d;vel=d});
-    window.addEventListener('pointerup',function(){if(!dragging)return;dragging=false;stage.classList.remove('grab');resumeT=setTimeout(function(){auto=!reduce},9000);setTimeout(function(){moved=false},50);if(Math.abs(vel)<.3){goTo(frontIndex())}});
-    stage.addEventListener('mouseenter',function(){hover=true});stage.addEventListener('mouseleave',function(){hover=false});
-    stage.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){e.preventDefault();goTo((frontIndex()+1)%n)}if(e.key==='ArrowLeft'){e.preventDefault();goTo((frontIndex()-1+n)%n)}});
-    $('#cava-next').addEventListener('click',function(){goTo((frontIndex()+1)%n)});
-    $('#cava-prev').addEventListener('click',function(){goTo((frontIndex()-1+n)%n)});
-    showDetail(1);goTo(1);angle=target;target=null;clearTimeout(resumeT);auto=!reduce;
-    requestAnimationFrame(frame);
+    function prog(){var m=rail.scrollWidth-rail.clientWidth;bar.style.width=(m>0?Math.max(8,rail.scrollLeft/m*100):100)+'%'}
+    rail.addEventListener('scroll',prog,{passive:true});window.addEventListener('resize',prog);
+    /* arrastre con mouse; el dedo usa el scroll nativo */
+    var down=false,sx=0,sl=0,moved=false;
+    rail.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;down=true;moved=false;sx=e.clientX;sl=rail.scrollLeft;rail.classList.add('grab')});
+    window.addEventListener('pointermove',function(e){if(!down)return;var dx=e.clientX-sx;if(Math.abs(dx)>4)moved=true;rail.scrollLeft=sl-dx});
+    window.addEventListener('pointerup',function(){if(!down)return;down=false;rail.classList.remove('grab');setTimeout(function(){moved=false},30)});
+    rail.addEventListener('dragstart',function(e){e.preventDefault()});
+    cards.forEach(function(c,i){c.addEventListener('click',function(e){if(moved){e.preventDefault();return}select(i,true)})});
+    rail.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){e.preventDefault();select(sel+1,true);cards[sel].focus({preventScroll:true})}if(e.key==='ArrowLeft'){e.preventDefault();select(sel-1,true);cards[sel].focus({preventScroll:true})}});
+    $('#cava-next').addEventListener('click',function(){select(sel+1,true)});
+    $('#cava-prev').addEventListener('click',function(){select(sel-1,true)});
+    select(0,false);prog();
   }
+  if(window.PDLC_FALLBACK&&window.PDLC_FALLBACK.cava)buildCava(window.PDLC_FALLBACK.cava);
 
   /* gift card */
   var gf=$('#gift-form'),gc=$('#gcard');

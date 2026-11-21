@@ -1,6 +1,6 @@
 {
  "actualizada": "Carta de agosto 2026",
- "nota": "Los precios vigentes figuran en la carta completa (PDF). Efectivo, débito y/o transferencia.",
+ "nota": "Precios de la carta de agosto 2026, expresados en efectivo, débito y/o transferencia. Sujetos a cambios.",
  "secciones": [
   {
    "id": "parrilla",
@@ -10,7 +10,8 @@
      "nombre": "Parrilla Diente Libre",
      "detalle": "Con guarnición libre y una empanada criolla de entrada. Individual, 10 cortes. No incluye molleja ni bife de chorizo.",
      "visible": true,
-     "destacado": true
+     "destacado": true,
+     "precio": 47000
     },
     {
      "nombre": "Cabrito",
@@ -21,72 +22,86 @@
     {
      "nombre": "Bife de Chorizo",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 36000
     },
     {
      "nombre": "Entrecotte",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 29000
     },
     {
      "nombre": "Churrasco de Cuadril",
      "detalle": "2 unidades",
-     "visible": true
+     "visible": true,
+     "precio": 29000
     },
     {
      "nombre": "Porción de Tira",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 30000
     },
     {
      "nombre": "Porción de Matambre",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 32000
     },
     {
      "nombre": "Porción de Vacío",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 30000
     },
     {
      "nombre": "Porción de Tira de Cerdo",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 28000
     },
     {
      "nombre": "Costeletas de Cerdo",
      "detalle": "2 unidades",
-     "visible": true
+     "visible": true,
+     "precio": 27000
     },
     {
      "nombre": "Porción de Molleja",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 32000
     },
     {
      "nombre": "Porción de Riñón o de Chinchulín",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 25000
     },
     {
      "nombre": "Chorizo · Morcilla",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 6000
     },
     {
      "nombre": "1/2 Deshuesado",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 24000
     },
     {
      "nombre": "1/4 Deshuesado",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 17000
     },
     {
      "nombre": "Menú Infantil",
      "detalle": "Parrilla, bebida y postre. Hasta los 9 años.",
-     "visible": true
+     "visible": true,
+     "precio": 19500
     }
    ]
   },
@@ -97,12 +112,14 @@
     {
      "nombre": "Empanadas Criollas",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 2500
     },
     {
      "nombre": "Fiambres de la Colonia",
      "detalle": "Salame, bondiola, jamón crudo, etc.",
-     "visible": true
+     "visible": true,
+     "precio": 16000
     }
    ]
   },
@@ -113,52 +130,62 @@
     {
      "nombre": "Ensalada de la Casa",
      "detalle": "Rúcula, lechuga, tomates secos, queso parmesano y aceitunas negras",
-     "visible": true
+     "visible": true,
+     "precio": 9500
     },
     {
      "nombre": "Ensalada Mixta",
      "detalle": "Lechuga, tomate, cebolla, zanahoria",
-     "visible": true
+     "visible": true,
+     "precio": 5000
     },
     {
      "nombre": "Ensalada Completa",
      "detalle": "Lechuga, tomate, cebolla, zanahoria, huevo, remolacha",
-     "visible": true
+     "visible": true,
+     "precio": 7000
     },
     {
      "nombre": "Achicoria con Queso",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 7000
     },
     {
      "nombre": "Rúcula con Queso",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 7000
     },
     {
      "nombre": "Papas Fritas",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 6000
     },
     {
      "nombre": "Papas Fritas con Huevo",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 7000
     },
     {
      "nombre": "Papas al Natural",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 6000
     },
     {
      "nombre": "Puré de Papas",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 7000
     },
     {
      "nombre": "Revuelto Gramajo",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 12000
     }
    ]
   },
@@ -169,32 +196,38 @@
     {
      "nombre": "Milanesa de Ternera",
      "detalle": "Con guarnición",
-     "visible": true
+     "visible": true,
+     "precio": 19000
     },
     {
      "nombre": "Milanesa Napolitana",
      "detalle": "Con guarnición",
-     "visible": true
+     "visible": true,
+     "precio": 24000
     },
     {
      "nombre": "Suprema de Pollo",
      "detalle": "Con guarnición",
-     "visible": true
+     "visible": true,
+     "precio": 19000
     },
     {
      "nombre": "Suprema de Pollo Napolitana",
      "detalle": "Con guarnición",
-     "visible": true
+     "visible": true,
+     "precio": 24000
     },
     {
      "nombre": "Tortilla de Papas",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 9500
     },
     {
      "nombre": "Omelette Mixto",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 8500
     }
    ]
   },
@@ -205,27 +238,32 @@
     {
      "nombre": "Tallarines al Huevo",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 16000
     },
     {
      "nombre": "Ravioles",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 19000
     },
     {
      "nombre": "Canelones",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 19000
     },
     {
      "nombre": "Sorrentinos",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 19000
     },
     {
      "nombre": "Ñoquis",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 16000
     }
    ]
   },
@@ -236,67 +274,80 @@
     {
      "nombre": "Flan Casero",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 6000
     },
     {
      "nombre": "Budín de Pan",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 6000
     },
     {
      "nombre": "Queso y Dulce",
      "detalle": "Membrillo o batata",
-     "visible": true
+     "visible": true,
+     "precio": 6000
     },
     {
      "nombre": "Zapallo, Batatas e Higos en Almíbar",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 7500
     },
     {
      "nombre": "Frutas en Almíbar con Queso",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 9000
     },
     {
      "nombre": "Ensalada de Frutas",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 5000
     },
     {
      "nombre": "Macedonia",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 7000
     },
     {
      "nombre": "Bombón Suizo",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 6000
     },
     {
      "nombre": "Bombón Escocés",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 6000
     },
     {
      "nombre": "Almendrado",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 6000
     },
     {
      "nombre": "Arco Iris",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 6000
     },
     {
      "nombre": "Postre Helado Tiramisú",
      "detalle": "",
-     "visible": true
+     "visible": true,
+     "precio": 6000
     },
     {
      "nombre": "Copa Helada",
      "detalle": "Helado, ensalada de frutas, cremas, salsa",
-     "visible": true
+     "visible": true,
+     "precio": 9000
     }
    ]
   }
@@ -307,39 +358,48 @@
    "vinos": [
     {
      "nombre": "Las Perdices Clásico",
-     "varietal": ""
+     "varietal": "",
+     "precio": 16000
     },
     {
      "nombre": "Las Perdices Reserva",
-     "varietal": ""
+     "varietal": "",
+     "precio": 24000
     },
     {
      "nombre": "Ala Colorada",
-     "varietal": "Cabernet Franc"
+     "varietal": "Cabernet Franc",
+     "precio": 32000
     },
     {
      "nombre": "Exploración Altamira",
-     "varietal": "Malbec"
+     "varietal": "Malbec",
+     "precio": 36000
     },
     {
      "nombre": "Reserva Don Juan",
-     "varietal": ""
+     "varietal": "",
+     "precio": 46000
     },
     {
      "nombre": "Tinamu",
-     "varietal": "Malbec"
+     "varietal": "Malbec",
+     "precio": 88000
     },
     {
      "nombre": "Alae",
-     "varietal": "Malbec"
+     "varietal": "Malbec",
+     "precio": 132000
     },
     {
      "nombre": "Espumante Extra Brut",
-     "varietal": ""
+     "varietal": "",
+     "precio": 22000
     },
     {
      "nombre": "Espumante Brut Nature",
-     "varietal": ""
+     "varietal": "",
+     "precio": 28000
     }
    ]
   },
@@ -348,31 +408,38 @@
    "vinos": [
     {
      "nombre": "Primus",
-     "varietal": "Malbec"
+     "varietal": "Malbec",
+     "precio": 78000
     },
     {
      "nombre": "Numina",
-     "varietal": "Malbec"
+     "varietal": "Malbec",
+     "precio": 24000
     },
     {
      "nombre": "Numina",
-     "varietal": "Cab. Franc / Cab. Sauvignon"
+     "varietal": "Cab. Franc / Cab. Sauvignon",
+     "precio": 28000
     },
     {
      "nombre": "Salentein Reserve",
-     "varietal": "Malbec / Cab. Sauvignon / Sauvignon Blanc"
+     "varietal": "Malbec / Cab. Sauvignon / Sauvignon Blanc",
+     "precio": 18000
     },
     {
      "nombre": "Portillo",
-     "varietal": "Malbec"
+     "varietal": "Malbec",
+     "precio": 9000
     },
     {
      "nombre": "Portillo",
-     "varietal": "Sauvignon Blanc"
+     "varietal": "Sauvignon Blanc",
+     "precio": 9000
     },
     {
      "nombre": "Contracara",
-     "varietal": "Malbec"
+     "varietal": "Malbec",
+     "precio": 11000
     }
    ]
   },
@@ -381,15 +448,18 @@
    "vinos": [
     {
      "nombre": "El Gran Enemigo",
-     "varietal": ""
+     "varietal": "",
+     "precio": 78000
     },
     {
      "nombre": "El Gran Enemigo Cepillo",
-     "varietal": ""
+     "varietal": "",
+     "precio": 78000
     },
     {
      "nombre": "El Enemigo",
-     "varietal": "Malbec"
+     "varietal": "Malbec",
+     "precio": 35000
     }
    ]
   },
@@ -398,23 +468,28 @@
    "vinos": [
     {
      "nombre": "Angélica Zapata",
-     "varietal": ""
+     "varietal": "",
+     "precio": 48000
     },
     {
      "nombre": "DV Catena",
-     "varietal": "Cabernet – Malbec"
+     "varietal": "Cabernet – Malbec",
+     "precio": 26000
     },
     {
      "nombre": "DV Catena",
-     "varietal": "Malbec – Malbec"
+     "varietal": "Malbec – Malbec",
+     "precio": 36000
     },
     {
      "nombre": "Saint Felicien",
-     "varietal": "Malbec"
+     "varietal": "Malbec",
+     "precio": 18000
     },
     {
      "nombre": "Saint Felicien",
-     "varietal": "Cabernet Sauvignon"
+     "varietal": "Cabernet Sauvignon",
+     "precio": 18000
     }
    ]
   },
@@ -423,11 +498,13 @@
    "vinos": [
     {
      "nombre": "Luigi Bosca Varietales",
-     "varietal": "Cabernet Sauvignon, Malbec, Syrah, Chardonnay"
+     "varietal": "Cabernet Sauvignon, Malbec, Syrah, Chardonnay",
+     "precio": 24000
     },
     {
      "nombre": "Finca La Linda Varietales",
-     "varietal": "Cabernet Sauvignon, Malbec, Chardonnay"
+     "varietal": "Cabernet Sauvignon, Malbec, Chardonnay",
+     "precio": 16000
     }
    ]
   },
@@ -436,15 +513,18 @@
    "vinos": [
     {
      "nombre": "Rutini",
-     "varietal": "Cabernet – Malbec"
+     "varietal": "Cabernet – Malbec",
+     "precio": 24500
     },
     {
      "nombre": "Rutini",
-     "varietal": "Sauvignon Blanc"
+     "varietal": "Sauvignon Blanc",
+     "precio": 24500
     },
     {
      "nombre": "Trumpeter Varietales",
-     "varietal": ""
+     "varietal": "",
+     "precio": 16000
     }
    ]
   },
@@ -453,19 +533,23 @@
    "vinos": [
     {
      "nombre": "Santa Julia",
-     "varietal": ""
+     "varietal": "",
+     "precio": 10000
     },
     {
      "nombre": "Santa Julia Chenin Dulce",
-     "varietal": ""
+     "varietal": "",
+     "precio": 14000
     },
     {
      "nombre": "Santa Julia Reserva",
-     "varietal": ""
+     "varietal": "",
+     "precio": 14000
     },
     {
      "nombre": "Alambrado",
-     "varietal": ""
+     "varietal": "",
+     "precio": 14000
     }
    ]
   },
@@ -474,15 +558,18 @@
    "vinos": [
     {
      "nombre": "Escorihuela Gascón",
-     "varietal": "Malbec – Cabernet"
+     "varietal": "Malbec – Cabernet",
+     "precio": 19000
     },
     {
      "nombre": "Gascón Roble",
-     "varietal": "Malbec – Cabernet – Chardonnay"
+     "varietal": "Malbec – Cabernet – Chardonnay",
+     "precio": 15000
     },
     {
      "nombre": "Familia Gascón",
-     "varietal": ""
+     "varietal": "",
+     "precio": 13000
     }
    ]
   },
@@ -491,15 +578,18 @@
    "vinos": [
     {
      "nombre": "Chateau Vieux Tinto",
-     "varietal": ""
+     "varietal": "",
+     "precio": 22000
     },
     {
      "nombre": "Rincón Famoso Tinto",
-     "varietal": ""
+     "varietal": "",
+     "precio": 13000
     },
     {
      "nombre": "López",
-     "varietal": "Malbec, Cabernet Sauvignon"
+     "varietal": "Malbec, Cabernet Sauvignon",
+     "precio": 9000
     }
    ]
   },
@@ -508,23 +598,28 @@
    "vinos": [
     {
      "nombre": "Terroir de Altura",
-     "varietal": ""
+     "varietal": "",
+     "precio": 19000
     },
     {
      "nombre": "Cafayate Varietales",
-     "varietal": "Cabernet, Malbec, Torrontés"
+     "varietal": "Cabernet, Malbec, Torrontés",
+     "precio": 9000
     },
     {
      "nombre": "Cafayate Malbec Rosado",
-     "varietal": ""
+     "varietal": "",
+     "precio": 9000
     },
     {
      "nombre": "Cafayate Reserva",
-     "varietal": ""
+     "varietal": "",
+     "precio": 14000
     },
     {
      "nombre": "Etchart Privado",
-     "varietal": "Torrontés"
+     "varietal": "Torrontés",
+     "precio": 9000
     }
    ]
   },
@@ -533,11 +628,13 @@
    "vinos": [
     {
      "nombre": "Aduentus",
-     "varietal": "Cabernet Franc, Petit Blend, Malbec"
+     "varietal": "Cabernet Franc, Petit Blend, Malbec",
+     "precio": 34000
     },
     {
      "nombre": "Uno",
-     "varietal": "Red Blend, Malbec, Cabernet Sauvignon, Sauvignon Blanc"
+     "varietal": "Red Blend, Malbec, Cabernet Sauvignon, Sauvignon Blanc",
+     "precio": 22000
     }
    ]
   },
@@ -546,23 +643,28 @@
    "vinos": [
     {
      "nombre": "Chandon Extra Brut",
-     "varietal": ""
+     "varietal": "",
+     "precio": 39000
     },
     {
      "nombre": "Finca La Linda Extra Brut",
-     "varietal": ""
+     "varietal": "",
+     "precio": 24000
     },
     {
      "nombre": "Mumm",
-     "varietal": ""
+     "varietal": "",
+     "precio": 19000
     },
     {
      "nombre": "Baron B",
-     "varietal": ""
+     "varietal": "",
+     "precio": 76000
     },
     {
      "nombre": "Salentein Brut Rosé",
-     "varietal": ""
+     "varietal": "",
+     "precio": 22000
     }
    ]
   }
