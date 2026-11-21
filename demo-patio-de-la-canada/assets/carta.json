@@ -1,0 +1,570 @@
+{
+ "actualizada": "Carta de agosto 2026",
+ "nota": "Los precios vigentes figuran en la carta completa (PDF). Efectivo, débito y/o transferencia.",
+ "secciones": [
+  {
+   "id": "parrilla",
+   "titulo": "Parrilla",
+   "items": [
+    {
+     "nombre": "Parrilla Diente Libre",
+     "detalle": "Con guarnición libre y una empanada criolla de entrada. Individual, 10 cortes. No incluye molleja ni bife de chorizo.",
+     "visible": true,
+     "destacado": true
+    },
+    {
+     "nombre": "Cabrito",
+     "detalle": "A pedido",
+     "visible": true,
+     "destacado": true
+    },
+    {
+     "nombre": "Bife de Chorizo",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Entrecotte",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Churrasco de Cuadril",
+     "detalle": "2 unidades",
+     "visible": true
+    },
+    {
+     "nombre": "Porción de Tira",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Porción de Matambre",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Porción de Vacío",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Porción de Tira de Cerdo",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Costeletas de Cerdo",
+     "detalle": "2 unidades",
+     "visible": true
+    },
+    {
+     "nombre": "Porción de Molleja",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Porción de Riñón o de Chinchulín",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Chorizo · Morcilla",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "1/2 Deshuesado",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "1/4 Deshuesado",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Menú Infantil",
+     "detalle": "Parrilla, bebida y postre. Hasta los 9 años.",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": "entradas",
+   "titulo": "Entradas",
+   "items": [
+    {
+     "nombre": "Empanadas Criollas",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Fiambres de la Colonia",
+     "detalle": "Salame, bondiola, jamón crudo, etc.",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": "guarniciones",
+   "titulo": "Guarniciones",
+   "items": [
+    {
+     "nombre": "Ensalada de la Casa",
+     "detalle": "Rúcula, lechuga, tomates secos, queso parmesano y aceitunas negras",
+     "visible": true
+    },
+    {
+     "nombre": "Ensalada Mixta",
+     "detalle": "Lechuga, tomate, cebolla, zanahoria",
+     "visible": true
+    },
+    {
+     "nombre": "Ensalada Completa",
+     "detalle": "Lechuga, tomate, cebolla, zanahoria, huevo, remolacha",
+     "visible": true
+    },
+    {
+     "nombre": "Achicoria con Queso",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Rúcula con Queso",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Papas Fritas",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Papas Fritas con Huevo",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Papas al Natural",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Puré de Papas",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Revuelto Gramajo",
+     "detalle": "",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": "minutas",
+   "titulo": "Minutas",
+   "items": [
+    {
+     "nombre": "Milanesa de Ternera",
+     "detalle": "Con guarnición",
+     "visible": true
+    },
+    {
+     "nombre": "Milanesa Napolitana",
+     "detalle": "Con guarnición",
+     "visible": true
+    },
+    {
+     "nombre": "Suprema de Pollo",
+     "detalle": "Con guarnición",
+     "visible": true
+    },
+    {
+     "nombre": "Suprema de Pollo Napolitana",
+     "detalle": "Con guarnición",
+     "visible": true
+    },
+    {
+     "nombre": "Tortilla de Papas",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Omelette Mixto",
+     "detalle": "",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": "pastas",
+   "titulo": "Pastas",
+   "items": [
+    {
+     "nombre": "Tallarines al Huevo",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Ravioles",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Canelones",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Sorrentinos",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Ñoquis",
+     "detalle": "",
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": "postres",
+   "titulo": "Postres",
+   "items": [
+    {
+     "nombre": "Flan Casero",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Budín de Pan",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Queso y Dulce",
+     "detalle": "Membrillo o batata",
+     "visible": true
+    },
+    {
+     "nombre": "Zapallo, Batatas e Higos en Almíbar",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Frutas en Almíbar con Queso",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Ensalada de Frutas",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Macedonia",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Bombón Suizo",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Bombón Escocés",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Almendrado",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Arco Iris",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Postre Helado Tiramisú",
+     "detalle": "",
+     "visible": true
+    },
+    {
+     "nombre": "Copa Helada",
+     "detalle": "Helado, ensalada de frutas, cremas, salsa",
+     "visible": true
+    }
+   ]
+  }
+ ],
+ "cava": [
+  {
+   "bodega": "Viñas Las Perdices",
+   "vinos": [
+    {
+     "nombre": "Las Perdices Clásico",
+     "varietal": ""
+    },
+    {
+     "nombre": "Las Perdices Reserva",
+     "varietal": ""
+    },
+    {
+     "nombre": "Ala Colorada",
+     "varietal": "Cabernet Franc"
+    },
+    {
+     "nombre": "Exploración Altamira",
+     "varietal": "Malbec"
+    },
+    {
+     "nombre": "Reserva Don Juan",
+     "varietal": ""
+    },
+    {
+     "nombre": "Tinamu",
+     "varietal": "Malbec"
+    },
+    {
+     "nombre": "Alae",
+     "varietal": "Malbec"
+    },
+    {
+     "nombre": "Espumante Extra Brut",
+     "varietal": ""
+    },
+    {
+     "nombre": "Espumante Brut Nature",
+     "varietal": ""
+    }
+   ]
+  },
+  {
+   "bodega": "Salentein",
+   "vinos": [
+    {
+     "nombre": "Primus",
+     "varietal": "Malbec"
+    },
+    {
+     "nombre": "Numina",
+     "varietal": "Malbec"
+    },
+    {
+     "nombre": "Numina",
+     "varietal": "Cab. Franc / Cab. Sauvignon"
+    },
+    {
+     "nombre": "Salentein Reserve",
+     "varietal": "Malbec / Cab. Sauvignon / Sauvignon Blanc"
+    },
+    {
+     "nombre": "Portillo",
+     "varietal": "Malbec"
+    },
+    {
+     "nombre": "Portillo",
+     "varietal": "Sauvignon Blanc"
+    },
+    {
+     "nombre": "Contracara",
+     "varietal": "Malbec"
+    }
+   ]
+  },
+  {
+   "bodega": "Aleanna",
+   "vinos": [
+    {
+     "nombre": "El Gran Enemigo",
+     "varietal": ""
+    },
+    {
+     "nombre": "El Gran Enemigo Cepillo",
+     "varietal": ""
+    },
+    {
+     "nombre": "El Enemigo",
+     "varietal": "Malbec"
+    }
+   ]
+  },
+  {
+   "bodega": "Catena Zapata",
+   "vinos": [
+    {
+     "nombre": "Angélica Zapata",
+     "varietal": ""
+    },
+    {
+     "nombre": "DV Catena",
+     "varietal": "Cabernet – Malbec"
+    },
+    {
+     "nombre": "DV Catena",
+     "varietal": "Malbec – Malbec"
+    },
+    {
+     "nombre": "Saint Felicien",
+     "varietal": "Malbec"
+    },
+    {
+     "nombre": "Saint Felicien",
+     "varietal": "Cabernet Sauvignon"
+    }
+   ]
+  },
+  {
+   "bodega": "Luigi Bosca",
+   "vinos": [
+    {
+     "nombre": "Luigi Bosca Varietales",
+     "varietal": "Cabernet Sauvignon, Malbec, Syrah, Chardonnay"
+    },
+    {
+     "nombre": "Finca La Linda Varietales",
+     "varietal": "Cabernet Sauvignon, Malbec, Chardonnay"
+    }
+   ]
+  },
+  {
+   "bodega": "La Rural",
+   "vinos": [
+    {
+     "nombre": "Rutini",
+     "varietal": "Cabernet – Malbec"
+    },
+    {
+     "nombre": "Rutini",
+     "varietal": "Sauvignon Blanc"
+    },
+    {
+     "nombre": "Trumpeter Varietales",
+     "varietal": ""
+    }
+   ]
+  },
+  {
+   "bodega": "Familia Zuccardi",
+   "vinos": [
+    {
+     "nombre": "Santa Julia",
+     "varietal": ""
+    },
+    {
+     "nombre": "Santa Julia Chenin Dulce",
+     "varietal": ""
+    },
+    {
+     "nombre": "Santa Julia Reserva",
+     "varietal": ""
+    },
+    {
+     "nombre": "Alambrado",
+     "varietal": ""
+    }
+   ]
+  },
+  {
+   "bodega": "Escorihuela Gascón",
+   "vinos": [
+    {
+     "nombre": "Escorihuela Gascón",
+     "varietal": "Malbec – Cabernet"
+    },
+    {
+     "nombre": "Gascón Roble",
+     "varietal": "Malbec – Cabernet – Chardonnay"
+    },
+    {
+     "nombre": "Familia Gascón",
+     "varietal": ""
+    }
+   ]
+  },
+  {
+   "bodega": "López",
+   "vinos": [
+    {
+     "nombre": "Chateau Vieux Tinto",
+     "varietal": ""
+    },
+    {
+     "nombre": "Rincón Famoso Tinto",
+     "varietal": ""
+    },
+    {
+     "nombre": "López",
+     "varietal": "Malbec, Cabernet Sauvignon"
+    }
+   ]
+  },
+  {
+   "bodega": "Etchart",
+   "vinos": [
+    {
+     "nombre": "Terroir de Altura",
+     "varietal": ""
+    },
+    {
+     "nombre": "Cafayate Varietales",
+     "varietal": "Cabernet, Malbec, Torrontés"
+    },
+    {
+     "nombre": "Cafayate Malbec Rosado",
+     "varietal": ""
+    },
+    {
+     "nombre": "Cafayate Reserva",
+     "varietal": ""
+    },
+    {
+     "nombre": "Etchart Privado",
+     "varietal": "Torrontés"
+    }
+   ]
+  },
+  {
+   "bodega": "Antigal",
+   "vinos": [
+    {
+     "nombre": "Aduentus",
+     "varietal": "Cabernet Franc, Petit Blend, Malbec"
+    },
+    {
+     "nombre": "Uno",
+     "varietal": "Red Blend, Malbec, Cabernet Sauvignon, Sauvignon Blanc"
+    }
+   ]
+  },
+  {
+   "bodega": "Champaña",
+   "vinos": [
+    {
+     "nombre": "Chandon Extra Brut",
+     "varietal": ""
+    },
+    {
+     "nombre": "Finca La Linda Extra Brut",
+     "varietal": ""
+    },
+    {
+     "nombre": "Mumm",
+     "varietal": ""
+    },
+    {
+     "nombre": "Baron B",
+     "varietal": ""
+    },
+    {
+     "nombre": "Salentein Brut Rosé",
+     "varietal": ""
+    }
+   ]
+  }
+ ]
+}
