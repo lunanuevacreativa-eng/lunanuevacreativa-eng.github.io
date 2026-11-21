@@ -245,17 +245,16 @@
     <div class="head" data-anim>
       <p class="eyebrow">La carta</p>
       <h2>Carta <em>siempre actualizada</em></h2>
-      <p class="head__lead">Nuestra carta, sección por sección. El restaurante la actualiza al instante desde su panel.</p>
+      <p class="head__lead">Elegí una sección. La carta se actualiza al instante desde el panel del restaurante.</p>
     </div>
     <div class="menu-card" data-anim>
-      <img class="menu-card__seal" src="assets/logo-madera.png" alt="" aria-hidden="true" width="96" height="96" loading="lazy">
       <div class="menu-card__tabs" role="tablist" aria-label="Secciones de la carta" id="carta-tabs"></div>
       <div class="menu-card__body" id="carta-body" aria-live="polite">
         <p class="menu-card__loading">Cargando la carta…</p>
       </div>
       <div class="menu-card__foot">
         <p id="carta-nota">Los precios vigentes figuran en la carta completa (PDF). Efectivo, débito y/o transferencia.</p>
-        <a class="btn btn--line btn--sm" href="assets/carta-patio-de-la-canada.pdf" target="_blank" rel="noopener">Carta completa (PDF)</a>
+        <a class="btn btn--gold btn--sm" href="assets/carta-patio-de-la-canada.pdf" target="_blank" rel="noopener">Ver carta completa (PDF)</a>
       </div>
     </div>
     <p class="demo-flag" id="carta-demo-flag" hidden>Estás viendo la carta editada en el panel de demostración. <button type="button" id="carta-reset">Volver a la carta original</button></p>
@@ -292,27 +291,27 @@
 </section>
 
 <section class="cava dark" id="cava" aria-labelledby="cava-t">
-  <div class="cava__bg" data-speed="0.18" aria-hidden="true"></div>
-  <div class="wrap">
-    <div class="head" data-anim>
-      <p class="eyebrow">La cava · 360º</p>
+  <div class="wrap cava__top">
+    <figure class="cava__photo" data-reveal>
+      <img src="assets/img/cava-real.webp" alt="La cava de Patio de La Cañada, con botellas de Santa Julia, López y Cafayate en estantes de madera" width="720" height="1150" loading="lazy" decoding="async">
+      <figcaption>Nuestra cava · foto real del salón</figcaption>
+    </figure>
+    <div class="cava__intro">
+      <p class="eyebrow">La cava</p>
       <h2 id="cava-t">Recorrido por <em>nuestra cava</em></h2>
-      <p class="head__lead">Once bodegas y una selección de champañas, de Las Perdices a Catena Zapata. Arrastrá para girar y tocá una bodega para ver sus etiquetas.</p>
+      <p class="cava__lead">Once bodegas argentinas y una selección de champañas, de Las Perdices a Catena Zapata. Deslizá las bodegas y elegí una para ver sus etiquetas.</p>
+      <div class="cava__detail" id="cava-detail" aria-live="polite"></div>
     </div>
   </div>
-  <div class="cava__stage" id="cava-stage" tabindex="0" aria-label="Recorrido circular por la cava. Usá las flechas para girar.">
-    <div class="cava__ring" id="cava-ring"></div>
-    <div class="cava__floor" aria-hidden="true"></div>
+  <div class="cava__railwrap">
+    <div class="cava__rail" id="cava-rail" role="listbox" aria-label="Bodegas de la cava" tabindex="0"></div>
   </div>
-  <div class="cava__ctrl">
-    <button class="cava__btn" id="cava-prev" aria-label="Girar a la izquierda">‹</button>
-    <span class="cava__hint"><i></i> Arrastrá · 360º</span>
-    <button class="cava__btn" id="cava-next" aria-label="Girar a la derecha">›</button>
+  <div class="wrap cava__ctrl">
+    <button class="cava__btn" id="cava-prev" type="button" aria-label="Bodega anterior">‹</button>
+    <div class="cava__prog" aria-hidden="true"><i id="cava-bar"></i></div>
+    <button class="cava__btn" id="cava-next" type="button" aria-label="Bodega siguiente">›</button>
   </div>
-  <div class="wrap">
-    <div class="cava__detail" id="cava-detail" aria-live="polite"></div>
-    <p class="cava__note">Recorrido ilustrativo armado con la carta de vinos vigente y fotos reales de nuestra cava. Consultá disponibilidad en el salón.</p>
-  </div>
+  <p class="cava__note wrap">Recorrido armado con la carta de vinos vigente. Consultá disponibilidad en el salón.</p>
 </section>
 
 <!-- GALERIA -->
@@ -327,14 +326,10 @@
     <a class="gal__item gal__item--tall" href="assets/img/hero-parrilla.webp" data-cap="La parrilla en plena marcha"><img src="assets/thumb/hero-parrilla.webp" alt="Parrilla con chorizos, morcillas y cortes" loading="lazy"></a>
     <a class="gal__item" href="assets/img/chinchulines.webp" data-cap="Chinchulines con limón"><img src="assets/thumb/chinchulines.webp" alt="Chinchulines a la parrilla con limón" loading="lazy"></a>
     <a class="gal__item" href="assets/img/salon-mimbre.webp" data-cap="El salón"><img src="assets/thumb/salon-mimbre.webp" alt="Salón con lámparas de mimbre" loading="lazy"></a>
-    <a class="gal__item" href="assets/img/empanada-abierta.webp" data-cap="Empanadas criollas"><img src="assets/thumb/empanada-abierta.webp" alt="Empanada criolla abierta mostrando el relleno" loading="lazy"></a>
     <a class="gal__item gal__item--tall" href="assets/img/vinos.webp" data-cap="Nuestra cava"><img src="assets/thumb/vinos.webp" alt="Estantería de madera con botellas de vino" loading="lazy"></a>
     <a class="gal__item" href="assets/img/costeletas.webp" data-cap="De la parrilla a la mesa"><img src="assets/thumb/costeletas.webp" alt="Cortes a la parrilla con limón" loading="lazy"></a>
-    <a class="gal__item" href="assets/img/picada.webp" data-cap="Fiambres"><img src="assets/thumb/picada.webp" alt="Tabla de fiambres y quesos" loading="lazy"></a>
-    <a class="gal__item" href="assets/img/empanadas-fritas.webp" data-cap="Empanadas"><img src="assets/thumb/empanadas-fritas.webp" alt="Empanadas sobre tabla de madera" loading="lazy"></a>
     <a class="gal__item gal__item--tall" href="assets/img/empanadas-cerveza.webp" data-cap="Empanadas y una cerveza bien fría"><img src="assets/thumb/empanadas-cerveza.webp" alt="Empanadas con cervezas" loading="lazy"></a>
     <a class="gal__item" href="assets/img/brindis.webp" data-cap="Un brindis en el Patio"><img src="assets/thumb/brindis.webp" alt="Brindis con cervezas y empanadas" loading="lazy"></a>
-    <a class="gal__item" href="assets/img/salame.webp" data-cap="Salame y pan"><img src="assets/thumb/salame.webp" alt="Salame en rodajas con pan" loading="lazy"></a>
     <a class="gal__item" href="assets/img/bife-chorizo.webp" data-cap="Bife con papas fritas"><img src="assets/thumb/bife-chorizo.webp" alt="Bife con papas fritas y salsa criolla" loading="lazy"></a>
     <a class="gal__item" href="assets/img/copa-helada.webp" data-cap="Copa helada"><img src="assets/thumb/copa-helada.webp" alt="Copa helada con frutillas y crema" loading="lazy"></a>
   </div>

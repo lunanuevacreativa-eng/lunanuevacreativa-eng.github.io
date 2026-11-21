@@ -101,7 +101,7 @@ body{background:var(--bg)}
   function toast(m){toastEl.textContent=m;toastEl.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toastEl.classList.remove('show')},3600)}
   function setDirty(v){dirty=v;st.textContent=v?'Cambios sin publicar':'Todo publicado';st.classList.toggle('dirty',v)}
   var pv=null;
-  function preview(){pv=PDLC.render(data,document.getElementById('pv-tabs'),document.getElementById('pv-body'),{index:pvIndex,onChange:function(i){pvIndex=i}})}
+  function preview(){pv=PDLC.render(data,document.getElementById('pv-tabs'),document.getElementById('pv-body'),{noWines:true,index:pvIndex,onChange:function(i){pvIndex=i}})}
   function draw(){
     ed.innerHTML=data.secciones.map(function(s,si){
       return '<div class="sec" data-si="'+si+'"><div class="sec__head"><input aria-label="Nombre de la sección" data-f="titulo" value="'+esc(s.titulo)+'"><span class="sec__count">'+s.items.length+' platos</span>'+
