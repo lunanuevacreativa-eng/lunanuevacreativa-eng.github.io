@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panel de carta · Patio de La Cañada (demo)</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+body{background:var(--bg)}
+.adm-top{position:sticky;top:0;z-index:50;background:rgba(42,33,26,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.adm-top__in{max-width:1500px;margin:0 auto;padding:14px 28px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.adm-brand{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.adm-brand img{width:52px;height:52px;border-radius:4px}
+.adm-brand b{display:block;font-family:var(--serif);font-weight:400;font-size:1.3rem;color:var(--head);line-height:1.1}
+.adm-brand small{font-family:var(--caps);font-size:.56rem;letter-spacing:.3em;color:var(--accent);text-transform:uppercase}
+.adm-banner{color:var(--crema)!important;background:linear-gradient(90deg,#761012,#5A1A10);border-bottom:1px solid var(--line);text-align:center;padding:10px 20px;font-size:.85rem;color:var(--head)}
+.adm-banner strong{color:var(--w-hi);letter-spacing:.06em}
+.adm{max-width:1500px;margin:0 auto;padding:34px 28px 80px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:32px;align-items:start}
+.adm h1{font-size:2.6rem;font-weight:300;font-style:italic;margin-bottom:6px}
+.adm-sub{color:var(--muted);font-size:.92rem;margin-bottom:26px}
+.sec{border:1px solid var(--line);background:var(--card);margin-bottom:14px}
+.sec__head{display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line-soft)}
+.sec__head input{flex:1;background:transparent;border:0;border-bottom:1px solid transparent;color:var(--head);font-family:var(--serif);font-size:1.5rem;padding:4px 2px}
+.sec__head input:focus{outline:0;border-color:var(--accent)}
+.sec__count{font-family:var(--caps);font-size:.56rem;letter-spacing:.24em;color:var(--muted);text-transform:uppercase;white-space:nowrap}
+.sec__toggle{background:none;border:1px solid var(--line);color:var(--accent);width:34px;height:34px;cursor:pointer}
+.sec__body{padding:6px 16px 16px}
+.sec.collapsed .sec__body{display:none}
+.row{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.3fr) auto;gap:10px;align-items:center;padding:8px 0;border-bottom:1px dashed var(--line-soft)}
+.row input[type=text]{width:100%;background:var(--field);border:1px solid var(--line);color:var(--head);padding:9px 10px;font-family:var(--sans);font-size:.9rem}
+.row input[type=text]:focus{outline:0;border-color:var(--accent)}
+.row input.n{font-weight:500}
+.row.hidden-item input{opacity:.45;text-decoration:line-through}
+.tools{display:flex;gap:4px}
+.tb{background:var(--field);border:1px solid var(--line);color:var(--muted);height:34px;min-width:34px;padding:0 8px;cursor:pointer;font-size:.78rem;white-space:nowrap}
+.tb:hover{color:var(--head);border-color:var(--accent)}
+.tb[aria-pressed=true]{color:var(--ink);background:var(--grad);border-color:transparent}
+.tb--del:hover{border-color:#B3261E;color:#B3261E}
+.addbtn{margin-top:12px;background:none;border:1px dashed var(--line);color:var(--accent);padding:10px 14px;cursor:pointer;width:100%;font-family:var(--caps);font-size:.62rem;letter-spacing:.24em;text-transform:uppercase}
+.addbtn:hover{border-color:var(--accent);background:rgba(213,165,128,.15)}
+.adm-actions{display:flex;gap:10px;flex-wrap:wrap}
+.pv{position:sticky;top:96px}
+.pv__lbl{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.pv__lbl span{font-family:var(--caps);font-size:.62rem;letter-spacing:.3em;color:var(--accent);text-transform:uppercase}
+.pv__live{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;color:var(--muted)}
+.pv__live i{width:8px;height:8px;border-radius:50%;background:#6FCF97;box-shadow:0 0 0 0 rgba(111,207,151,.6);animation:pulse 1.8s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 8px rgba(111,207,151,0)}100%{box-shadow:0 0 0 0 rgba(111,207,151,0)}}
+.pv .menu-card{padding:36px 34px 30px;box-shadow:0 30px 60px -40px rgba(62,38,22,.5);max-height:calc(100vh - 150px);overflow:auto}
+.pv .mc-list{columns:1}
+.pv .mc-title{font-size:2.1rem}
+.status{font-size:.82rem;color:var(--muted)}
+.status.dirty{color:var(--w-hi)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:.78rem;color:var(--muted);margin:-10px 0 20px}
+@media (max-width:1000px){.adm{grid-template-columns:1fr}.pv{position:static}.pv .menu-card{max-height:none}}
+@media (max-width:640px){.adm{padding:24px 16px 60px}.adm-top__in{padding:12px 16px}.row{grid-template-columns:1fr}.tools{justify-content:flex-end}.adm h1{font-size:2.1rem}}
+</style>
+</head>
+<body>
+<header class="adm-top dark">
+  <div class="adm-top__in">
+    <a class="adm-brand" href="index.html"><img src="assets/logo-madera.png" alt="Logo de Patio de La Cañada" width="42" height="42"><span><b>Panel de carta</b><small>Patio de La Cañada</small></span></a>
+    <span class="status" id="status">Sin cambios</span>
+    <div class="adm-actions">
+      <button class="btn btn--ghost btn--sm" type="button" id="reset">Restablecer original</button>
+      <a class="btn btn--line btn--sm" href="index.html#carta" target="_blank" rel="noopener">Ver la web</a>
+      <button class="btn btn--gold btn--sm" type="button" id="publish">Publicar cambios</button>
+    </div>
+  </div>
+  <div class="adm-banner"><strong>MODO DEMO</strong> · Los cambios se guardan solo en este navegador (localStorage). Con la web contratada, el restaurante edita su carta online y se publica para todos.</div>
+</header>
+
+<main class="adm">
+  <section aria-labelledby="ed-t">
+    <h1 id="ed-t">Editá la carta</h1>
+    <p class="adm-sub">Cambiá nombres y descripciones, ocultá un plato agotado, marcá sugerencias, reordená o sumá secciones. A la derecha ves el resultado en vivo.</p>
+    <div class="legend"><span>👁 Visible / oculto</span><span>★ Sugerencia de la casa</span><span>↑ ↓ Ordenar</span><span>✕ Eliminar</span></div>
+    <div id="editor"><p class="status">Cargando…</p></div>
+    <button class="addbtn" type="button" id="add-sec">+ Agregar sección</button>
+  </section>
+  <aside class="pv" aria-label="Vista previa en vivo">
+    <div class="pv__lbl"><span>Vista previa</span><span class="pv__live"><i></i> En vivo</span></div>
+    <div class="menu-card">
+      <div class="menu-card__tabs" role="tablist" id="pv-tabs"></div>
+      <div class="menu-card__body" id="pv-body"></div>
+    </div>
+  </aside>
+</main>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="assets/carta-data.js"></script>
+<script src="assets/carta.js"></script>
+<script>
+(function(){
+  var esc=PDLC.esc,data=null,base=null,pvIndex=0,dirty=false;
+  var ed=document.getElementById('editor'),st=document.getElementById('status'),toastEl=document.getElementById('toast'),tt;
+  function toast(m){toastEl.textContent=m;toastEl.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toastEl.classList.remove('show')},3600)}
+  function setDirty(v){dirty=v;st.textContent=v?'Cambios sin publicar':'Todo publicado';st.classList.toggle('dirty',v)}
+  var pv=null;
+  function preview(){pv=PDLC.render(data,document.getElementById('pv-tabs'),document.getElementById('pv-body'),{index:pvIndex,onChange:function(i){pvIndex=i}})}
+  function draw(){
+    ed.innerHTML=data.secciones.map(function(s,si){
+      return '<div class="sec" data-si="'+si+'"><div class="sec__head"><input aria-label="Nombre de la sección" data-f="titulo" value="'+esc(s.titulo)+'"><span class="sec__count">'+s.items.length+' platos</span>'+
+      '<button class="tb" data-a="sup" title="Subir sección" aria-label="Subir sección">↑</button><button class="tb" data-a="sdown" title="Bajar sección" aria-label="Bajar sección">↓</button><button class="tb tb--del" data-a="sdel" title="Eliminar sección" aria-label="Eliminar sección">✕</button><button class="sec__toggle" data-a="col" aria-label="Mostrar u ocultar platos">▾</button></div>'+
+      '<div class="sec__body">'+s.items.map(function(it,ii){
+        return '<div class="row'+(it.visible===false?' hidden-item':'')+'" data-ii="'+ii+'"><input type="text" class="n" data-f="nombre" aria-label="Nombre del plato" value="'+esc(it.nombre)+'" placeholder="Nombre del plato"><input type="text" data-f="detalle" aria-label="Descripción" value="'+esc(it.detalle||'')+'" placeholder="Descripción (opcional)">'+
+        '<div class="tools"><button class="tb" data-a="vis" aria-pressed="'+(it.visible!==false)+'" title="Visible en la web" aria-label="Visible">👁</button><button class="tb" data-a="dest" aria-pressed="'+(!!it.destacado)+'" title="Sugerencia de la casa" aria-label="Sugerencia">★</button><button class="tb" data-a="up" aria-label="Subir">↑</button><button class="tb" data-a="down" aria-label="Bajar">↓</button><button class="tb tb--del" data-a="del" aria-label="Eliminar">✕</button></div></div>'}).join('')+
+      '<button class="addbtn" data-a="add">+ Agregar plato</button></div></div>'}).join('');
+  }
+  function sec(el){return +el.closest('.sec').dataset.si}
+  function row(el){var r=el.closest('.row');return r?+r.dataset.ii:-1}
+  ed.addEventListener('input',function(e){
+    var f=e.target.dataset.f;if(!f)return;var si=sec(e.target),ii=row(e.target);
+    if(f==='titulo')data.secciones[si].titulo=e.target.value;else data.secciones[si].items[ii][f]=e.target.value;
+    pvIndex=si;preview();setDirty(true);
+  });
+  ed.addEventListener('click',function(e){
+    var b=e.target.closest('[data-a]');if(!b)return;var a=b.dataset.a,si=sec(b),ii=row(b),S=data.secciones,items=S[si].items;
+    function sw(arr,i,j){if(j<0||j>=arr.length)return;var t=arr[i];arr[i]=arr[j];arr[j]=t}
+    if(a==='col'){b.closest('.sec').classList.toggle('collapsed');return}
+    if(a==='vis')items[ii].visible=items[ii].visible===false;
+    if(a==='dest')items[ii].destacado=!items[ii].destacado;
+    if(a==='up')sw(items,ii,ii-1);if(a==='down')sw(items,ii,ii+1);
+    if(a==='del'){if(!confirm('¿Eliminar "'+(items[ii].nombre||'este plato')+'"?'))return;items.splice(ii,1)}
+    if(a==='add'){items.push({nombre:'',detalle:'',visible:true})}
+    if(a==='sup'){sw(S,si,si-1);si=Math.max(0,si-1)}if(a==='sdown'){sw(S,si,si+1);si=Math.min(S.length-1,si+1)}
+    if(a==='sdel'){if(!confirm('¿Eliminar la sección "'+S[si].titulo+'" y sus platos?'))return;S.splice(si,1);si=0}
+    var collapsed=[].map.call(ed.querySelectorAll('.sec'),function(x){return x.classList.contains('collapsed')});
+    draw();[].forEach.call(ed.querySelectorAll('.sec'),function(x,i){if(collapsed[i]&&a!=='sup'&&a!=='sdown'&&a!=='sdel')x.classList.add('collapsed')});
+    if(a==='add'){var r=ed.querySelectorAll('.sec')[si].querySelectorAll('.row');r[r.length-1].querySelector('input').focus()}
+    pvIndex=Math.min(si,S.length-1);preview();setDirty(true);
+  });
+  document.getElementById('add-sec').addEventListener('click',function(){data.secciones.push({id:'s'+Date.now(),titulo:'Nueva sección',items:[{nombre:'',detalle:'',visible:true}]});draw();pvIndex=data.secciones.length-1;preview();setDirty(true);var s=ed.querySelectorAll('.sec');s[s.length-1].querySelector('input').select()});
+  document.getElementById('publish').addEventListener('click',function(){
+    data.secciones.forEach(function(s){s.items=s.items.filter(function(i){return i.nombre.trim()})});
+    PDLC.setOverride({secciones:data.secciones,guardado:new Date().toISOString()});draw();preview();setDirty(false);
+    toast('Publicado en esta demo. La web ya muestra la carta actualizada.');
+  });
+  document.getElementById('reset').addEventListener('click',function(){if(!confirm('¿Volver a la carta original? Se pierden los cambios de esta demo.'))return;PDLC.clearOverride();data=JSON.parse(JSON.stringify(base));draw();pvIndex=0;preview();setDirty(false);toast('Carta original restablecida.')});
+  window.addEventListener('beforeunload',function(e){if(dirty){e.preventDefault();e.returnValue=''}});
+  PDLC.load('assets/carta.json').then(function(r){base=r.base;data=JSON.parse(JSON.stringify(r.data));draw();preview();setDirty(false);st.textContent=r.edited?'Mostrando la versión editada':'Carta original'}).catch(function(){ed.innerHTML='<p class="status">No se pudo cargar assets/carta.json (abrí la demo desde un servidor web).</p>'});
+})();
+</script>
+</body>
+</html>
