@@ -55,7 +55,7 @@
   }
 
   /* lightbox */
-  var items=$$('.gal__item'),lb=$('#lb'),lbImg=$('img',lb),cap=$('figcaption',lb),idx=0,last;
+  var items=$$('.gal__item,[data-lb]'),lb=$('#lb'),lbImg=$('img',lb),cap=$('figcaption',lb),idx=0,last;
   function show(i){idx=(i+items.length)%items.length;var a=items[idx];lbImg.src=a.getAttribute('href');lbImg.alt=$('img',a).alt;cap.textContent=a.dataset.cap||''}
   function openLb(i){last=document.activeElement;show(i);lb.hidden=false;document.body.style.overflow='hidden';$('.lb__close',lb).focus()}
   function closeLb(){lb.hidden=true;document.body.style.overflow='';if(last)last.focus()}

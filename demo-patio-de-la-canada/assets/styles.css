@@ -988,3 +988,49 @@ body{background:var(--bg);color:var(--text)}
 .acc.is-open .acc__in>.mc-list,.acc.is-open .acc__in>.mc-wines{padding-bottom:6px}
 .menu-card__foot{margin-top:14px}
 @media (max-width:760px){.menu-card__foot{margin-top:10px}.mc-list li{padding:8px 0}.mc-n{font-size:1.04rem}}
+
+/* ===== v7: logo redondo, la gente al frente, página más simple ===== */
+img[src*="logo-redondo"]{border-radius:50%!important;object-fit:cover;background:transparent}
+.loader img,.nav__brand img,.hero__seal,.anf__seal,.reserva__seal,.final__logo,.gcard__logo,.salon__hero figcaption img{box-shadow:0 0 0 1px rgba(226,182,146,.45),0 18px 40px -14px rgba(0,0,0,.6)}
+.nav__brand img{box-shadow:0 0 0 1px rgba(226,182,146,.5),0 6px 18px rgba(42,33,26,.4)}
+@media (min-width:1101px){.hero__seal{box-shadow:0 0 0 1px rgba(226,182,146,.55),0 0 0 9px rgba(42,33,26,.35),0 0 0 10px rgba(226,182,146,.25),0 40px 80px -24px rgba(0,0,0,.8)}}
+.foot__logo{box-shadow:0 0 0 1px rgba(226,182,146,.4)}
+.canada__logo{width:auto;margin:0 0 2rem}
+.canada__logo img{width:112px;height:112px;box-shadow:0 0 0 1px rgba(144,103,81,.35),0 18px 36px -16px rgba(62,38,22,.55)}
+.carta{padding-top:120px}
+.visit{padding-top:120px}
+/* la gente */
+.vida{padding:130px 32px 120px}
+.vida .head{margin-top:0}
+.vida__grid{grid-auto-rows:118px}
+.vida__grid>a{position:relative;display:block;overflow:hidden;background:var(--walnut);cursor:zoom-in;border-radius:2px}
+.vida__grid>a img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.vida__grid>a:hover img{transform:scale(1.05)}
+.vida__cap{position:absolute;left:0;right:0;bottom:0;padding:48px 22px 18px;background:linear-gradient(0deg,rgba(42,33,26,.85),transparent);color:var(--crema);font-family:var(--serif);font-style:italic;font-size:1.15rem;line-height:1.2}
+.vida__a{grid-column:1/6;grid-row:span 5}
+.vida__b{grid-column:6/13;grid-row:span 3}
+.vida__c{grid-column:6/9;grid-row:span 2}
+.vida__d{grid-column:9/11;grid-row:span 2}
+.vida__e{grid-column:11/13;grid-row:span 2}
+.vida__a img{object-position:50% 45%}.vida__b img{object-position:50% 35%}.vida__d img{object-position:50% 35%}.vida__e img{object-position:50% 25%}
+.vida__more{text-align:center;margin:36px 0 0}
+@media (max-width:760px){
+  .vida{padding:84px 14px 80px}
+  .vida__grid{grid-template-columns:1fr 1fr;grid-auto-rows:150px;gap:8px}
+  .vida__a{grid-column:1/3;grid-row:span 2}
+  .vida__b{grid-column:1/3;grid-row:span 2}
+  .vida__c{grid-column:1/3;grid-row:span 1}
+  .vida__d,.vida__e{grid-column:auto;grid-row:span 2}
+  .vida__cap{font-size:1rem;padding:36px 14px 12px}
+  .carta,.visit{padding-top:84px}
+  .canada__logo img{width:88px;height:88px}
+}
+.nav__links a,.nav__name,.nav__cta,.nav__tel{white-space:nowrap}
+@media (max-width:1380px) and (min-width:1101px){.nav__tel{display:none}.nav__links{gap:24px;margin-right:26px}}
+/* celular/tablet: un solo logo en el hero; el del nav aparece al bajar */
+@media (max-width:1100px){
+  .nav__brand img{transition:opacity .4s var(--ease),transform .4s var(--ease),width .4s,height .4s}
+  .nav:not(.is-solid) .nav__brand img{opacity:0;transform:scale(.8);pointer-events:none}
+  .hero__seal{width:112px;height:112px}
+}
+@media (max-width:760px){.anf__plaque{right:10px;bottom:-34px;width:26%;border-width:4px}}
